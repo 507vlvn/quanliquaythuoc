@@ -125,7 +125,7 @@ namespace QuanLyQuayThuoc
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
-            //them
+            //them ne
 
 //hieu////cccc//cccccccccccccc
 
