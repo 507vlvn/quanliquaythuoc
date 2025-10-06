@@ -24,18 +24,50 @@ namespace QuanLyQuayThuoc
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            if (txtName.Text == "Hieu" && txtMK.Text == "123")
+            string role = cbChucVu.SelectedItem?.ToString();
+            string username = txtName.Text.Trim();
+            string password = txtMK.Text.Trim();
+
+            // Kiểm tra nếu chưa chọn chức vụ
+            if (string.IsNullOrEmpty(role))
             {
-                FromAdmin admin = new FromAdmin();
+                MessageBox.Show("Vui lòng chọn chức vụ trước khi đăng nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Đăng nhập Admin
+            if (username == "Hieu" && password == "123")
+            {
+                if (role != "Admin")
+                {
+                    MessageBox.Show("Tài khoản này thuộc quyền Admin. Vui lòng chọn lại chức vụ 'Admin'.", "Sai chức vụ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                FormAdmin admin = new FormAdmin();
                 admin.Show();
                 this.Hide();
+                return;
             }
-            else
-            {
-                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu","Lỗi",MessageBoxButtons.OK,MessageBoxIcon.Error);
-            }
-        }
 
+            // Đăng nhập Nhân viên
+            if (username == "NhanVien" && password == "123")
+            {
+                if (role != "Nhân viên")
+                {
+                    MessageBox.Show("Tài khoản này thuộc quyền Nhân viên. Vui lòng chọn lại chức vụ 'Nhân viên'.", "Sai chức vụ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                FormNV formNV = new FormNV();
+                formNV.Show();
+                this.Hide();
+                return;
+            }
+
+            // Nếu sai hết
+            MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
         private void btnReload_Click(object sender, EventArgs e)
         {
             txtName.Clear();
@@ -77,6 +109,23 @@ namespace QuanLyQuayThuoc
             {
                 txtMK.UseSystemPasswordChar = true;
             }
+        }
+
+        private void txtMK_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            cbChucVu.Items.Add("Admin");
+            cbChucVu.Items.Add("Nhân viên");
+            cbChucVu.SelectedIndex = -1; // Chưa chọn gì ban đầu
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

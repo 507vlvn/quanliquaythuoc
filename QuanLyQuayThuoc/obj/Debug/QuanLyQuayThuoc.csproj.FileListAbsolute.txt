@@ -1,0 +1,47 @@
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.exe.config
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.exe
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.pdb
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\bin\Debug\Guna.UI2.dll
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.AssemblyReference.cache
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Form1.resources
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Properties.Resources.resources
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.GenerateResource.cache
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.CoreCompileInputs.cache
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQu.BA465F03.Up2Date
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.pdb
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.FormNV.resources
+C:\Users\Quoc Hieu\source\repos\QuanLyQuayThuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.FormAdmin.resources
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.exe.config
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.exe
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.pdb
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\bin\Debug\Guna.UI2.dll
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.AssemblyReference.cache
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe.config
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Admin.UC_Dashbord.resources
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Form1.resources
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.FormNV.resources
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.FormAdmin.resources
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Properties.Resources.resources
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.GenerateResource.cache
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.CoreCompileInputs.cache
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQu.BA465F03.Up2Date
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe
+C:\Users\cuong\OneDrive\Tài liệu\doancc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.pdb
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.exe.config
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.exe
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.pdb
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\bin\Debug\Guna.UI2.dll
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.AssemblyReference.cache
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe.config
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Admin.UC_Dashbord.resources
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.FOMR_3.resources
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Form1.resources
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.FormNV.resources
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.FormAdmin.resources
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Properties.Resources.resources
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.GenerateResource.cache
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.CoreCompileInputs.cache
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQu.BA465F03.Up2Date
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe
+C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.pdb

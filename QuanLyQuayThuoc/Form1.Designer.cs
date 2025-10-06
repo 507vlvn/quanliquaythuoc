@@ -44,6 +44,8 @@
             this.btnReload = new Guna.UI2.WinForms.Guna2Button();
             this.btnhienMk = new Guna.UI2.WinForms.Guna2Button();
             this.btnanmk = new Guna.UI2.WinForms.Guna2Button();
+            this.cbChucVu = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -71,7 +73,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(755, 243);
+            this.label2.Location = new System.Drawing.Point(628, 253);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 28);
             this.label2.TabIndex = 2;
@@ -88,7 +90,7 @@
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(778, 285);
+            this.guna2TextBox1.Location = new System.Drawing.Point(764, 244);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PlaceholderText = "";
@@ -119,7 +121,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(72, 243);
+            this.pictureBox3.Location = new System.Drawing.Point(46, 217);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(297, 287);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,11 +133,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 31.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(48, 20);
+            this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(349, 192);
             this.label4.TabIndex = 0;
-            this.label4.Text = "      Quản Lý \r\nHiệu Thuốc Tây\r\n\r\n";
+            this.label4.Text = " Quản Lý \r\nHiệu Thuốc Tây\r\n\r\n";
             // 
             // txtName
             // 
@@ -149,19 +151,20 @@
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Location = new System.Drawing.Point(760, 285);
+            this.txtName.Location = new System.Drawing.Point(746, 244);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.Name = "txtName";
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
             this.txtName.Size = new System.Drawing.Size(377, 50);
             this.txtName.TabIndex = 3;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(755, 374);
+            this.label6.Location = new System.Drawing.Point(628, 341);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 28);
             this.label6.TabIndex = 2;
@@ -179,7 +182,7 @@
             this.txtMK.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMK.ForeColor = System.Drawing.Color.Black;
             this.txtMK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMK.Location = new System.Drawing.Point(760, 420);
+            this.txtMK.Location = new System.Drawing.Point(746, 331);
             this.txtMK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMK.Name = "txtMK";
             this.txtMK.PlaceholderText = "";
@@ -187,6 +190,7 @@
             this.txtMK.Size = new System.Drawing.Size(377, 50);
             this.txtMK.TabIndex = 3;
             this.txtMK.UseSystemPasswordChar = true;
+            this.txtMK.TextChanged += new System.EventHandler(this.txtMK_TextChanged);
             // 
             // guna2Panel1
             // 
@@ -249,11 +253,11 @@
             this.btnhienMk.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnhienMk.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnhienMk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnhienMk.FillColor = System.Drawing.Color.White;
+            this.btnhienMk.FillColor = System.Drawing.Color.WhiteSmoke;
             this.btnhienMk.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnhienMk.ForeColor = System.Drawing.Color.White;
             this.btnhienMk.Image = ((System.Drawing.Image)(resources.GetObject("btnhienMk.Image")));
-            this.btnhienMk.Location = new System.Drawing.Point(1087, 420);
+            this.btnhienMk.Location = new System.Drawing.Point(1118, 331);
             this.btnhienMk.Name = "btnhienMk";
             this.btnhienMk.PressedColor = System.Drawing.Color.White;
             this.btnhienMk.Size = new System.Drawing.Size(50, 50);
@@ -270,19 +274,39 @@
             this.btnanmk.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnanmk.ForeColor = System.Drawing.Color.White;
             this.btnanmk.Image = ((System.Drawing.Image)(resources.GetObject("btnanmk.Image")));
-            this.btnanmk.Location = new System.Drawing.Point(1087, 420);
+            this.btnanmk.Location = new System.Drawing.Point(1118, 331);
             this.btnanmk.Name = "btnanmk";
             this.btnanmk.Size = new System.Drawing.Size(50, 50);
             this.btnanmk.TabIndex = 9;
             this.btnanmk.Visible = false;
             this.btnanmk.Click += new System.EventHandler(this.btnanmk_Click);
             // 
+            // cbChucVu
+            // 
+            this.cbChucVu.FormattingEnabled = true;
+            this.cbChucVu.Location = new System.Drawing.Point(746, 407);
+            this.cbChucVu.Name = "cbChucVu";
+            this.cbChucVu.Size = new System.Drawing.Size(181, 24);
+            this.cbChucVu.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(628, 407);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 28);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "ChucVu";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1380, 768);
+            this.ClientSize = new System.Drawing.Size(1324, 653);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbChucVu);
             this.Controls.Add(this.btnanmk);
             this.Controls.Add(this.btnhienMk);
             this.Controls.Add(this.btnReload);
@@ -301,6 +325,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -326,6 +351,8 @@
         private Guna.UI2.WinForms.Guna2Button btnReload;
         private Guna.UI2.WinForms.Guna2Button btnhienMk;
         private Guna.UI2.WinForms.Guna2Button btnanmk;
+        private System.Windows.Forms.ComboBox cbChucVu;
+        private System.Windows.Forms.Label label1;
     }
 }
 
