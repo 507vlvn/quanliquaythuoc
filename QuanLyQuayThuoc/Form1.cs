@@ -35,8 +35,7 @@ namespace QuanLyQuayThuoc
                 return;
             }
 
-            // Đăng nhập Admin
-            if (username == "Hieu" && password == "123")
+            if (username == "1" && password == "1")
             {
                 if (role != "Admin")
                 {
@@ -50,8 +49,7 @@ namespace QuanLyQuayThuoc
                 return;
             }
 
-            // Đăng nhập Nhân viên
-            if (username == "NhanVien" && password == "123")
+            if (username == "" && password == "")
             {
                 if (role != "Nhân viên")
                 {
@@ -59,13 +57,13 @@ namespace QuanLyQuayThuoc
                     return;
                 }
 
+
                 FormNV formNV = new FormNV();
                 formNV.Show();
                 this.Hide();
                 return;
             }
 
-            // Nếu sai hết
             MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         private void btnReload_Click(object sender, EventArgs e)
@@ -125,11 +123,7 @@ namespace QuanLyQuayThuoc
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
-            //them ne
-
-//hieu////cccc//cccccccccccccc
-
-            //them
+  
 
         }
     }

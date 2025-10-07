@@ -18,12 +18,18 @@ namespace QuanLyQuayThuoc
         }
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+            this.Close();
+            return;
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
+  
+
+        private void btnprofile_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
