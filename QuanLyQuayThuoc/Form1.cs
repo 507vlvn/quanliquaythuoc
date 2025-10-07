@@ -20,6 +20,8 @@ namespace QuanLyQuayThuoc
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            //hhau ne
+
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
