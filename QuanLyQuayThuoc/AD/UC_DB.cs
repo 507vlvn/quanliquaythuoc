@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyQuayThuoc.Admin
+namespace QuanLyQuayThuoc.AD
 {
-    public partial class Uc_dashboard : UserControl
+    public partial class UC_DB : UserControl
     {
-        public Uc_dashboard()
+        public UC_DB()
         {
             InitializeComponent();
         }

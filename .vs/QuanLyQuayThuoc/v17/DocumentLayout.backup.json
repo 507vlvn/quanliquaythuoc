@@ -1,24 +1,5 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\hp\\documents\\quanliquaythuoc2\\quanlyquaythuoc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|C:\\Users\\HP\\Documents\\quanliquaythuoc2\\quanlyquaythuoc\\formnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\formnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|C:\\Users\\HP\\Documents\\quanliquaythuoc2\\quanlyquaythuoc\\formnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\formnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|C:\\Users\\HP\\Documents\\quanliquaythuoc2\\quanlyquaythuoc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-=======
   "WorkspaceRootPath": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\",
   "Documents": [
     {
@@ -26,17 +7,20 @@
       "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\quoc hieu\\documents\\quanliquaythuocv1\\quanlyquaythuoc\\formadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\quoc hieu\\documents\\quanliquaythuocv1\\quanlyquaythuoc\\ad\\uc_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\ad\\uc_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\quanlyquaythuoc\\formadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\formadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\quoc hieu\\documents\\quanliquaythuocv1\\quanlyquaythuoc\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\quanlyquaythuoc\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\quoc hieu\\documents\\quanliquaythuocv1\\quanlyquaythuoc\\admin\\uc_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\admin\\uc_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
->>>>>>> 046c47bba4280ce820d5fc07a144dc1d65e55200
+      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\quanlyquaythuoc\\formnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\formnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,93 +30,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\Form1.cs",
-              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\Form1.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\Form1.cs",
-              "RelativeToolTip": "QuanLyQuayThuoc\\Form1.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "FormNV.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\FormNV.cs",
+              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\FormNV.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\FormNV.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\FormNV.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T05:13:22.165Z",
-              "EditorCaption": ""
-=======
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Uc_dashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Admin\\Uc_dashboard.cs",
-              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\Admin\\Uc_dashboard.cs",
-              "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Admin\\Uc_dashboard.cs [Design]",
-              "RelativeToolTip": "QuanLyQuayThuoc\\Admin\\Uc_dashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T07:01:17.352Z",
-              "EditorCaption": " [Design]"
->>>>>>> 046c47bba4280ce820d5fc07a144dc1d65e55200
+              "WhenOpened": "2025-10-07T05:15:56.077Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-<<<<<<< HEAD
-              "Title": "FormNV.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\FormNV.cs",
-              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\FormNV.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\FormNV.cs",
-              "RelativeToolTip": "QuanLyQuayThuoc\\FormNV.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Title": "UC_DB.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\AD\\UC_DB.cs",
+              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\AD\\UC_DB.cs",
+              "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\AD\\UC_DB.cs [Design]",
+              "RelativeToolTip": "QuanLyQuayThuoc\\AD\\UC_DB.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T05:16:00.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormNV.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\FormNV.cs",
-              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\FormNV.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\FormNV.cs [Design]",
-              "RelativeToolTip": "QuanLyQuayThuoc\\FormNV.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T05:15:56.077Z"
+              "WhenOpened": "2025-10-07T08:23:30.231Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\Form1.cs",
-              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\Form1.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\Form1.cs [Design]",
-              "RelativeToolTip": "QuanLyQuayThuoc\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T19:10:52.82Z"
-=======
-              "Title": "FormAdmin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\FormAdmin.Designer.cs",
-              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\FormAdmin.Designer.cs",
-              "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\FormAdmin.Designer.cs",
-              "RelativeToolTip": "QuanLyQuayThuoc\\FormAdmin.Designer.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAawKEAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T05:14:41.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "FormAdmin.cs",
               "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\FormAdmin.cs",
               "RelativeDocumentMoniker": "QuanLyQuayThuoc\\FormAdmin.cs",
               "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\FormAdmin.cs",
               "RelativeToolTip": "QuanLyQuayThuoc\\FormAdmin.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAawCAAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T05:13:31.91Z",
+              "WhenOpened": "2025-10-07T08:14:03.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormAdmin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\FormAdmin.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\FormAdmin.Designer.cs",
+              "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\FormAdmin.Designer.cs",
+              "RelativeToolTip": "QuanLyQuayThuoc\\FormAdmin.Designer.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAawNYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T08:04:57.824Z",
               "EditorCaption": ""
             },
             {
@@ -144,9 +91,8 @@
               "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\FormAdmin.cs [Design]",
               "RelativeToolTip": "QuanLyQuayThuoc\\FormAdmin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T05:13:13.464Z",
+              "WhenOpened": "2025-10-07T08:02:28.599Z",
               "EditorCaption": " [Design]"
->>>>>>> 046c47bba4280ce820d5fc07a144dc1d65e55200
             }
           ]
         }
