@@ -1,5 +1,4 @@
-﻿using QuanLyQuayThuoc.Admin;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,8 +19,12 @@ namespace QuanLyQuayThuoc
          
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+
             this.Hide();
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
+            this.Close();
+            return;
         }
         private void FormAdmin_Load(object sender, EventArgs e)
         {
@@ -30,7 +33,6 @@ namespace QuanLyQuayThuoc
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            uc_dashboard1.Visible = true;
         }
     }
 }

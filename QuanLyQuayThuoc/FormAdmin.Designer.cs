@@ -41,7 +41,6 @@
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.uc_dashboard1 = new QuanLyQuayThuoc.Admin.Uc_dashboard();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -213,19 +212,13 @@
             // 
             // uc_dashboard1
             // 
-            this.uc_dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_dashboard1.Location = new System.Drawing.Point(259, 0);
-            this.uc_dashboard1.Name = "uc_dashboard1";
-            this.uc_dashboard1.Size = new System.Drawing.Size(1665, 1050);
-            this.uc_dashboard1.TabIndex = 2;
-            this.uc_dashboard1.Visible = false;
+            
             // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1050);
-            this.Controls.Add(this.uc_dashboard1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.splitter1);
             this.ForeColor = System.Drawing.Color.Black;
@@ -254,6 +247,5 @@
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Splitter splitter1;
-        private Admin.Uc_dashboard uc_dashboard1;
     }
 }
