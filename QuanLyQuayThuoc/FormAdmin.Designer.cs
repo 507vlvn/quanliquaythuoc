@@ -39,7 +39,9 @@
             this.lbAdmin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.uc_dashboard1 = new QuanLyQuayThuoc.Admin.Uc_dashboard();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +49,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Controls.Add(this.btnLogOut);
             this.guna2Panel1.Controls.Add(this.guna2Button4);
             this.guna2Panel1.Controls.Add(this.guna2Button3);
@@ -72,7 +75,7 @@
             this.btnLogOut.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLogOut.Location = new System.Drawing.Point(0, 533);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 564);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(256, 45);
             this.btnLogOut.TabIndex = 3;
@@ -92,7 +95,7 @@
             this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.Black;
             this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
             this.guna2Button4.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button4.Location = new System.Drawing.Point(0, 470);
+            this.guna2Button4.Location = new System.Drawing.Point(0, 503);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(256, 45);
             this.guna2Button4.TabIndex = 2;
@@ -111,7 +114,7 @@
             this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.Black;
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
             this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(0, 401);
+            this.guna2Button3.Location = new System.Drawing.Point(3, 440);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(256, 45);
             this.guna2Button3.TabIndex = 2;
@@ -130,7 +133,7 @@
             this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(3, 339);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 338);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(256, 45);
             this.guna2Button2.TabIndex = 2;
@@ -138,6 +141,7 @@
             // 
             // btnDashboard
             // 
+            this.btnDashboard.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -149,11 +153,12 @@
             this.btnDashboard.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDashboard.Location = new System.Drawing.Point(6, 278);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 287);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(250, 45);
             this.btnDashboard.TabIndex = 2;
             this.btnDashboard.Text = "DashBord";
+            this.btnDashboard.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // lbAdmin
@@ -177,27 +182,58 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // guna2Button1
             // 
-            this.button1.Location = new System.Drawing.Point(766, 169);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 187);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.guna2Button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Black;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button1.Location = new System.Drawing.Point(3, 389);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(256, 45);
+            this.guna2Button1.TabIndex = 3;
+            this.guna2Button1.Text = "Add Medicine";
+            this.guna2Button1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+            // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(259, 1050);
+            this.splitter1.TabIndex = 1;
+            this.splitter1.TabStop = false;
+            // 
+            // uc_dashboard1
+            // 
+            this.uc_dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_dashboard1.Location = new System.Drawing.Point(259, 0);
+            this.uc_dashboard1.Name = "uc_dashboard1";
+            this.uc_dashboard1.Size = new System.Drawing.Size(1665, 1050);
+            this.uc_dashboard1.TabIndex = 2;
+            this.uc_dashboard1.Visible = false;
             // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1050);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.uc_dashboard1);
             this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.splitter1);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FromAdmin";
+            this.Load += new System.EventHandler(this.FormAdmin_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -216,6 +252,8 @@
         private Guna.UI2.WinForms.Guna2Button btnDashboard;
         private Guna.UI2.WinForms.Guna2Button btnLogOut;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private System.Windows.Forms.Button button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Splitter splitter1;
+        private Admin.Uc_dashboard uc_dashboard1;
     }
 }

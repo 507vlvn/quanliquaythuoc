@@ -45,3 +45,19 @@ C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\Q
 C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQu.BA465F03.Up2Date
 C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe
 C:\Users\az012\OneDrive\Documents\quanliquaythuoc.v1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.pdb
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.exe.config
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.exe
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.pdb
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\bin\Debug\Guna.UI2.dll
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.AssemblyReference.cache
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Form1.resources
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.FormNV.resources
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.FormAdmin.resources
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Properties.Resources.resources
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.GenerateResource.cache
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.CoreCompileInputs.cache
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQu.BA465F03.Up2Date
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.pdb
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Admin.Uc_dashboard.resources
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe.config
