@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyQuayThuoc.Admin
 {
-    public partial class UC_Dashbord : UserControl
+    public partial class Uc_dashboard : UserControl
     {
-        public UC_Dashbord()
+        public Uc_dashboard()
         {
             InitializeComponent();
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyQuayThuoc.Admin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,10 +23,14 @@ namespace QuanLyQuayThuoc
             Form1 f1 = new Form1();
             this.Hide();
         }
+        private void FormAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            uc_dashboard1.Visible = true;
         }
     }
 }
