@@ -1,6 +1,6 @@
-﻿namespace QuanLyQuayThuoc.UC
+﻿namespace QuanLyQuayThuoc.Adminn
 {
-    partial class UC_DashB
+    partial class uc_ConTrolPanel
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,17 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // UC_DashB
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "UC_DashB";
-            this.Size = new System.Drawing.Size(1004, 630);
-            this.ResumeLayout(false);
-
         }
 
         #endregion

@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyQuayThuoc.UC
+namespace QuanLyQuayThuoc.Adminn
 {
-    public partial class UC_DashB : UserControl
+    public partial class uc_Profile : UserControl
     {
-        public UC_DashB()
+        public uc_Profile()
         {
             InitializeComponent();
         }
-
     }
 }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyQuayThuoc.UC
+namespace QuanLyQuayThuoc.Adminn
 {
-    public partial class Uc_adduse : UserControl
+    public partial class uc_ConTrolPanel : UserControl
     {
-        public Uc_adduse()
+        public uc_ConTrolPanel()
         {
             InitializeComponent();
         }

@@ -52,6 +52,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adminn\uc_ConTrolPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_ConTrolPanel.Designer.cs">
+      <DependentUpon>uc_ConTrolPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminn\uc_pay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_pay.Designer.cs">
+      <DependentUpon>uc_pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminn\uc_Pm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_Pm.Designer.cs">
+      <DependentUpon>uc_Pm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminn\uc_Product.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_Product.Designer.cs">
+      <DependentUpon>uc_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminn\uc_Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_Profile.Designer.cs">
+      <DependentUpon>uc_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminn\uc_Salary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_Salary.Designer.cs">
+      <DependentUpon>uc_Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminn\uc_Total.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_Total.Designer.cs">
+      <DependentUpon>uc_Total.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,18 +114,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UC\Uc_adduse.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\Uc_adduse.Designer.cs">
-      <DependentUpon>Uc_adduse.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC\UC_DashB.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\UC_DashB.Designer.cs">
-      <DependentUpon>UC_DashB.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,12 +132,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UC\Uc_adduse.resx">
-      <DependentUpon>Uc_adduse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\UC_DashB.resx">
-      <DependentUpon>UC_DashB.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
