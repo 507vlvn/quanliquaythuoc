@@ -28,11 +28,14 @@ namespace QuanLyQuayThuoc
         }
         private void FormAdmin_Load(object sender, EventArgs e)
         {
-
+            uC_DashB1.Visible = true;
+            btnDashboard.PerformClick();  
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
+            uC_DashB1.Visible=true;
+            uC_DashB1.BringToFront();
         }
     }
 }

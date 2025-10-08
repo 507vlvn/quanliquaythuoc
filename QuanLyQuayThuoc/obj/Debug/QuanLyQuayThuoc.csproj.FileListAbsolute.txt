@@ -80,3 +80,4 @@ C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQ
 C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Admin.Uc_dashboard.resources
 C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe.config
 >>>>>>> 046c47bba4280ce820d5fc07a144dc1d65e55200
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.UC.UC_DashB.resources

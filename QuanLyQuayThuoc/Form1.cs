@@ -59,10 +59,10 @@ namespace QuanLyQuayThuoc
                     return;
                 }
 
-
-                FormNV formNV = new FormNV();
-                formNV.Show();
                 this.Hide();
+                FormNV formNV = new FormNV();
+                formNV.ShowDialog();
+
                 return;
             }
 

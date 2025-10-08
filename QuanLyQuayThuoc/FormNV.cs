@@ -31,5 +31,10 @@ namespace QuanLyQuayThuoc
         {
 
         }
+
+        private void FormNV_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
