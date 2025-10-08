@@ -92,7 +92,7 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(38, 458);
+            this.guna2Button2.Location = new System.Drawing.Point(40, 458);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(239, 57);
@@ -112,7 +112,7 @@
             this.btnprofile.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprofile.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnprofile.Image = ((System.Drawing.Image)(resources.GetObject("btnprofile.Image")));
-            this.btnprofile.Location = new System.Drawing.Point(38, 263);
+            this.btnprofile.Location = new System.Drawing.Point(39, 263);
             this.btnprofile.Margin = new System.Windows.Forms.Padding(4);
             this.btnprofile.Name = "btnprofile";
             this.btnprofile.Size = new System.Drawing.Size(239, 60);
@@ -170,10 +170,10 @@
             this.btnLogOut.ForeColor = System.Drawing.Color.White;
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLogOut.Location = new System.Drawing.Point(37, 584);
+            this.btnLogOut.Location = new System.Drawing.Point(30, 584);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(240, 46);
+            this.btnLogOut.Size = new System.Drawing.Size(222, 46);
             this.btnLogOut.TabIndex = 3;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
