@@ -121,7 +121,7 @@
   <data name="guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAD1ISURBVHhe7d2L
+        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAD1ISURBVHhe7d2L
         f1x3ee97yZYviR3b+H6PfImTYC4pbjmbnrNPBQ2217MkxdLMkkYQmkIhdLd0h7Y0gbQHDAEargf2ZsMO
         O6UEKHvDPiFcyqUFQpoQAjTlnpCkJCSRLOs2M5JsOU4c6TmvkZ3b87OJLc381lqzPt/X6/0HEKTn+/Vo
         Zk1DAyEk0dFdu+Zpe/t6FblIg2C3inRpGF6uYXiVivytinxMRT6rQfAlFfmmBsH3VORODcN/V5Ffq0jJ
@@ -1436,7 +1436,7 @@
         zxb137U+nz84jcPd0zickMbh0NZrflJ+JsCF/wezJ+OgaYfOFAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btmaddser.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHDMSURBVHhe7d0H

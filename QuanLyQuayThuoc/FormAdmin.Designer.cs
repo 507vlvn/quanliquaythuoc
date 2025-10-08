@@ -35,12 +35,13 @@
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btmaddser = new Guna.UI2.WinForms.Guna2Button();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.lbAdmin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.splitter1 = new System.Windows.Forms.Splitter();
+            this.uc_adduse1 = new QuanLyQuayThuoc.UC.Uc_adduse();
             this.uC_DashB1 = new QuanLyQuayThuoc.UC.UC_DashB();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,7 +54,7 @@
             this.guna2Panel1.Controls.Add(this.btnLogOut);
             this.guna2Panel1.Controls.Add(this.guna2Button4);
             this.guna2Panel1.Controls.Add(this.guna2Button3);
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
+            this.guna2Panel1.Controls.Add(this.btmaddser);
             this.guna2Panel1.Controls.Add(this.btnDashboard);
             this.guna2Panel1.Controls.Add(this.lbAdmin);
             this.guna2Panel1.Controls.Add(this.pictureBox1);
@@ -141,24 +142,25 @@
             this.guna2Button3.TabIndex = 2;
             this.guna2Button3.Text = " View User";
             // 
-            // guna2Button2
+            // btmaddser
             // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.Black;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(0, 338);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(256, 45);
-            this.guna2Button2.TabIndex = 2;
-            this.guna2Button2.Text = "Add User";
+            this.btmaddser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btmaddser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btmaddser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btmaddser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btmaddser.FillColor = System.Drawing.Color.Black;
+            this.btmaddser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btmaddser.ForeColor = System.Drawing.Color.White;
+            this.btmaddser.HoverState.FillColor = System.Drawing.Color.White;
+            this.btmaddser.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btmaddser.Image = ((System.Drawing.Image)(resources.GetObject("btmaddser.Image")));
+            this.btmaddser.ImageSize = new System.Drawing.Size(30, 30);
+            this.btmaddser.Location = new System.Drawing.Point(0, 338);
+            this.btmaddser.Name = "btmaddser";
+            this.btmaddser.Size = new System.Drawing.Size(256, 45);
+            this.btmaddser.TabIndex = 2;
+            this.btmaddser.Text = "Add User";
+            this.btmaddser.Click += new System.EventHandler(this.btmaddser_Click);
             // 
             // btnDashboard
             // 
@@ -211,18 +213,30 @@
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
             // 
+            // uc_adduse1
+            // 
+            this.uc_adduse1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_adduse1.Location = new System.Drawing.Point(259, 0);
+            this.uc_adduse1.Name = "uc_adduse1";
+            this.uc_adduse1.Size = new System.Drawing.Size(1665, 1050);
+            this.uc_adduse1.TabIndex = 3;
+            // 
             // uC_DashB1
             // 
-            this.uC_DashB1.Location = new System.Drawing.Point(256, 3);
+            this.uC_DashB1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_DashB1.Location = new System.Drawing.Point(259, 0);
             this.uC_DashB1.Name = "uC_DashB1";
-            this.uC_DashB1.Size = new System.Drawing.Size(1171, 775);
+            this.uC_DashB1.Size = new System.Drawing.Size(1665, 1050);
             this.uC_DashB1.TabIndex = 2;
+            this.uC_DashB1.Visible = false;
+            this.uC_DashB1.Load += new System.EventHandler(this.uC_DashB1_Load);
             // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.Controls.Add(this.uc_adduse1);
             this.Controls.Add(this.uC_DashB1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.splitter1);
@@ -246,12 +260,13 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btmaddser;
         private Guna.UI2.WinForms.Guna2Button btnDashboard;
         private Guna.UI2.WinForms.Guna2Button btnLogOut;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Splitter splitter1;
         private UC.UC_DashB uC_DashB1;
+        private UC.Uc_adduse uc_adduse1;
     }
 }

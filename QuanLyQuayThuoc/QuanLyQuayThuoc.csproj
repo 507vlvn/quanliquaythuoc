@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC\Uc_adduse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\Uc_adduse.Designer.cs">
+      <DependentUpon>Uc_adduse.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\UC_DashB.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -96,6 +102,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UC\Uc_adduse.resx">
+      <DependentUpon>Uc_adduse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_DashB.resx">
       <DependentUpon>UC_DashB.cs</DependentUpon>
     </EmbeddedResource>
