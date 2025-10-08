@@ -30,41 +30,46 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnsalary = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnProfile = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.btmaddser = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPerson = new Guna.UI2.WinForms.Guna2Button();
             this.btnbangdk = new Guna.UI2.WinForms.Guna2Button();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.splitter2 = new System.Windows.Forms.Splitter();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbAdmin = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
+            this.btntotal = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.btnpay = new Guna.UI2.WinForms.Guna2Button();
+            this.btnProduct = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2Button1
+            // btnsalary
             // 
-            this.guna2Button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Black;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(341, 442);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(192, 37);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Add Medicine";
-            this.guna2Button1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+            this.btnsalary.BorderColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnsalary.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnsalary.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnsalary.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnsalary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnsalary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnsalary.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnsalary.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsalary.ForeColor = System.Drawing.Color.White;
+            this.btnsalary.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnsalary.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnsalary.Image = ((System.Drawing.Image)(resources.GetObject("btnsalary.Image")));
+            this.btnsalary.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnsalary.Location = new System.Drawing.Point(29, 407);
+            this.btnsalary.Margin = new System.Windows.Forms.Padding(2);
+            this.btnsalary.Name = "btnsalary";
+            this.btnsalary.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnsalary.Size = new System.Drawing.Size(225, 54);
+            this.btnsalary.TabIndex = 3;
+            this.btnsalary.Text = "salary statement";
+            this.btnsalary.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
             // 
             // btnLogOut
             // 
@@ -81,10 +86,10 @@
             this.btnLogOut.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLogOut.Location = new System.Drawing.Point(11, 775);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogOut.Location = new System.Drawing.Point(29, 818);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(192, 54);
+            this.btnLogOut.Size = new System.Drawing.Size(225, 54);
             this.btnLogOut.TabIndex = 3;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
@@ -102,52 +107,32 @@
             this.btnProfile.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnProfile.Location = new System.Drawing.Point(11, 215);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProfile.Location = new System.Drawing.Point(29, 223);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(2);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(192, 54);
+            this.btnProfile.Size = new System.Drawing.Size(225, 54);
             this.btnProfile.TabIndex = 2;
             this.btnProfile.Text = "Profile";
             // 
-            // guna2Button3
+            // btnPerson
             // 
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.Black;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(396, 324);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(192, 37);
-            this.guna2Button3.TabIndex = 2;
-            this.guna2Button3.Text = " View User";
-            // 
-            // btmaddser
-            // 
-            this.btmaddser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btmaddser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btmaddser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btmaddser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btmaddser.FillColor = System.Drawing.Color.Black;
-            this.btmaddser.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btmaddser.ForeColor = System.Drawing.Color.White;
-            this.btmaddser.HoverState.FillColor = System.Drawing.Color.White;
-            this.btmaddser.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btmaddser.Image = ((System.Drawing.Image)(resources.GetObject("btmaddser.Image")));
-            this.btmaddser.ImageSize = new System.Drawing.Size(30, 30);
-            this.btmaddser.Location = new System.Drawing.Point(446, 383);
-            this.btmaddser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btmaddser.Name = "btmaddser";
-            this.btmaddser.Size = new System.Drawing.Size(192, 37);
-            this.btmaddser.TabIndex = 2;
-            this.btmaddser.Text = "Add User";
+            this.btnPerson.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPerson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnPerson.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerson.ForeColor = System.Drawing.Color.White;
+            this.btnPerson.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnPerson.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnPerson.Image = ((System.Drawing.Image)(resources.GetObject("btnPerson.Image")));
+            this.btnPerson.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPerson.Location = new System.Drawing.Point(29, 339);
+            this.btnPerson.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPerson.Name = "btnPerson";
+            this.btnPerson.Size = new System.Drawing.Size(225, 64);
+            this.btnPerson.TabIndex = 2;
+            this.btnPerson.Text = "Personnel management";
             // 
             // btnbangdk
             // 
@@ -163,32 +148,33 @@
             this.btnbangdk.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnbangdk.Image = ((System.Drawing.Image)(resources.GetObject("btnbangdk.Image")));
             this.btnbangdk.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnbangdk.Location = new System.Drawing.Point(11, 273);
-            this.btnbangdk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnbangdk.Location = new System.Drawing.Point(29, 281);
+            this.btnbangdk.Margin = new System.Windows.Forms.Padding(2);
             this.btnbangdk.Name = "btnbangdk";
-            this.btnbangdk.Size = new System.Drawing.Size(192, 54);
+            this.btnbangdk.Size = new System.Drawing.Size(225, 54);
             this.btnbangdk.TabIndex = 2;
-            this.btnbangdk.Text = "ConTrol";
+            this.btnbangdk.Text = "ConTrol Panel";
             this.btnbangdk.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
             // 
             // splitter2
             // 
             this.splitter2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.splitter2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter2.Location = new System.Drawing.Point(217, 0);
+            this.splitter2.Location = new System.Drawing.Point(272, 0);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(1348, 51);
+            this.splitter2.Size = new System.Drawing.Size(1293, 65);
             this.splitter2.TabIndex = 2;
             this.splitter2.TabStop = false;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(70, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(144, 139);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -201,7 +187,7 @@
             this.lbAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.lbAdmin.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAdmin.ForeColor = System.Drawing.Color.White;
-            this.lbAdmin.Location = new System.Drawing.Point(62, 151);
+            this.lbAdmin.Location = new System.Drawing.Point(98, 152);
             this.lbAdmin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAdmin.Name = "lbAdmin";
             this.lbAdmin.Size = new System.Drawing.Size(93, 31);
@@ -213,28 +199,84 @@
             this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(217, 840);
+            this.splitter1.Size = new System.Drawing.Size(272, 883);
             this.splitter1.TabIndex = 4;
             this.splitter1.TabStop = false;
+            // 
+            // btntotal
+            // 
+            this.btntotal.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btntotal.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btntotal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btntotal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btntotal.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btntotal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntotal.ForeColor = System.Drawing.Color.White;
+            this.btntotal.Image = ((System.Drawing.Image)(resources.GetObject("btntotal.Image")));
+            this.btntotal.Location = new System.Drawing.Point(29, 466);
+            this.btntotal.Name = "btntotal";
+            this.btntotal.Size = new System.Drawing.Size(225, 54);
+            this.btntotal.TabIndex = 5;
+            this.btntotal.Text = "Total evenue";
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // btnpay
+            // 
+            this.btnpay.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnpay.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnpay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnpay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnpay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnpay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpay.ForeColor = System.Drawing.Color.White;
+            this.btnpay.Image = ((System.Drawing.Image)(resources.GetObject("btnpay.Image")));
+            this.btnpay.Location = new System.Drawing.Point(29, 526);
+            this.btnpay.Name = "btnpay";
+            this.btnpay.Size = new System.Drawing.Size(225, 54);
+            this.btnpay.TabIndex = 6;
+            this.btnpay.Text = "Pay List";
+            // 
+            // btnProduct
+            // 
+            this.btnProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnProduct.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProduct.ForeColor = System.Drawing.Color.White;
+            this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
+            this.btnProduct.Location = new System.Drawing.Point(29, 586);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(225, 54);
+            this.btnProduct.TabIndex = 7;
+            this.btnProduct.Text = "Product Management";
             // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1565, 840);
+            this.ClientSize = new System.Drawing.Size(1565, 883);
+            this.Controls.Add(this.btnProduct);
+            this.Controls.Add(this.btnpay);
+            this.Controls.Add(this.btntotal);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.lbAdmin);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btnsalary);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnProfile);
             this.Controls.Add(this.splitter2);
-            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.btnbangdk);
-            this.Controls.Add(this.btmaddser);
+            this.Controls.Add(this.btnPerson);
             this.Controls.Add(this.splitter1);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FromAdmin";
@@ -247,15 +289,18 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2Button btnProfile;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button btmaddser;
+        private Guna.UI2.WinForms.Guna2Button btnPerson;
         private Guna.UI2.WinForms.Guna2Button btnbangdk;
         private Guna.UI2.WinForms.Guna2Button btnLogOut;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnsalary;
         private System.Windows.Forms.Splitter splitter2;
         private System.Windows.Forms.Label lbAdmin;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Button btntotal;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2Button btnProduct;
+        private Guna.UI2.WinForms.Guna2Button btnpay;
     }
 }

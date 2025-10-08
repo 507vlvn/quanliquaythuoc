@@ -16,7 +16,9 @@ namespace QuanLyQuayThuoc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormNV());
+           // Application.Run(new FormNV());
+            Application.Run(new FormAdmin());
+
         }
     }
 }
