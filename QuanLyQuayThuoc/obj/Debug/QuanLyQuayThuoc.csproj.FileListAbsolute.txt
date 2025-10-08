@@ -98,3 +98,5 @@ C:\Users\cuong\OneDrive\Tài liệu\doanmonwindow\baicc\QuanLyQuayThuoc\obj\De
 C:\Users\cuong\OneDrive\Tài liệu\doanmonwindow\baicc\QuanLyQuayThuoc\obj\Debug\QuanLyQu.BA465F03.Up2Date
 C:\Users\cuong\OneDrive\Tài liệu\doanmonwindow\baicc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe
 C:\Users\cuong\OneDrive\Tài liệu\doanmonwindow\baicc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.pdb
+C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.UC.Uc_adduse.resources
+C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.UC.UC_DashB.resources

@@ -16,7 +16,7 @@ namespace QuanLyQuayThuoc
         {
             InitializeComponent();
         }
-         
+
         private void btnLogOut_Click(object sender, EventArgs e)
         {
 
@@ -28,27 +28,10 @@ namespace QuanLyQuayThuoc
         }
         private void FormAdmin_Load(object sender, EventArgs e)
         {
-            uC_DashB1.Visible = false;
-            uc_adduse1.Visible = false;
-          
-        }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            uC_DashB1.Visible=true;
-            uc_adduse1.Visible = false;
-            uC_DashB1.BringToFront();
-        }
-
-        private void uC_DashB1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btmaddser_Click(object sender, EventArgs e)
-        {
-            uC_DashB1.Visible = false;
-       uc_adduse1.Visible = true;
         }
     }
 }
+
+
+
