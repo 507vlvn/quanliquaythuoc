@@ -62,11 +62,11 @@
             this.btnsalary.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnsalary.Image = ((System.Drawing.Image)(resources.GetObject("btnsalary.Image")));
             this.btnsalary.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnsalary.Location = new System.Drawing.Point(29, 407);
-            this.btnsalary.Margin = new System.Windows.Forms.Padding(2);
+            this.btnsalary.Location = new System.Drawing.Point(39, 501);
+            this.btnsalary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsalary.Name = "btnsalary";
             this.btnsalary.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnsalary.Size = new System.Drawing.Size(225, 54);
+            this.btnsalary.Size = new System.Drawing.Size(300, 66);
             this.btnsalary.TabIndex = 3;
             this.btnsalary.Text = "salary statement";
             this.btnsalary.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
@@ -86,10 +86,10 @@
             this.btnLogOut.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLogOut.Location = new System.Drawing.Point(29, 818);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogOut.Location = new System.Drawing.Point(39, 1007);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(225, 54);
+            this.btnLogOut.Size = new System.Drawing.Size(300, 66);
             this.btnLogOut.TabIndex = 3;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
@@ -107,10 +107,10 @@
             this.btnProfile.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnProfile.Location = new System.Drawing.Point(29, 223);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProfile.Location = new System.Drawing.Point(39, 274);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(225, 54);
+            this.btnProfile.Size = new System.Drawing.Size(300, 66);
             this.btnProfile.TabIndex = 2;
             this.btnProfile.Text = "Profile";
             // 
@@ -127,10 +127,10 @@
             this.btnPerson.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnPerson.Image = ((System.Drawing.Image)(resources.GetObject("btnPerson.Image")));
             this.btnPerson.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnPerson.Location = new System.Drawing.Point(29, 339);
-            this.btnPerson.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPerson.Location = new System.Drawing.Point(39, 417);
+            this.btnPerson.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPerson.Name = "btnPerson";
-            this.btnPerson.Size = new System.Drawing.Size(225, 64);
+            this.btnPerson.Size = new System.Drawing.Size(300, 79);
             this.btnPerson.TabIndex = 2;
             this.btnPerson.Text = "Personnel management";
             // 
@@ -148,10 +148,10 @@
             this.btnbangdk.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnbangdk.Image = ((System.Drawing.Image)(resources.GetObject("btnbangdk.Image")));
             this.btnbangdk.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnbangdk.Location = new System.Drawing.Point(29, 281);
-            this.btnbangdk.Margin = new System.Windows.Forms.Padding(2);
+            this.btnbangdk.Location = new System.Drawing.Point(39, 346);
+            this.btnbangdk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnbangdk.Name = "btnbangdk";
-            this.btnbangdk.Size = new System.Drawing.Size(225, 54);
+            this.btnbangdk.Size = new System.Drawing.Size(300, 66);
             this.btnbangdk.TabIndex = 2;
             this.btnbangdk.Text = "ConTrol Panel";
             this.btnbangdk.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
@@ -160,9 +160,10 @@
             // 
             this.splitter2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.splitter2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter2.Location = new System.Drawing.Point(272, 0);
+            this.splitter2.Location = new System.Drawing.Point(363, 0);
+            this.splitter2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(1293, 101);
+            this.splitter2.Size = new System.Drawing.Size(1579, 124);
             this.splitter2.TabIndex = 2;
             this.splitter2.TabStop = false;
             // 
@@ -173,10 +174,10 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(93, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 139);
+            this.pictureBox1.Size = new System.Drawing.Size(192, 171);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -187,10 +188,9 @@
             this.lbAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.lbAdmin.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAdmin.ForeColor = System.Drawing.Color.White;
-            this.lbAdmin.Location = new System.Drawing.Point(98, 152);
-            this.lbAdmin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbAdmin.Location = new System.Drawing.Point(131, 187);
             this.lbAdmin.Name = "lbAdmin";
-            this.lbAdmin.Size = new System.Drawing.Size(93, 31);
+            this.lbAdmin.Size = new System.Drawing.Size(117, 38);
             this.lbAdmin.TabIndex = 1;
             this.lbAdmin.Text = "Admin";
             // 
@@ -198,8 +198,9 @@
             // 
             this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(272, 883);
+            this.splitter1.Size = new System.Drawing.Size(363, 1087);
             this.splitter1.TabIndex = 4;
             this.splitter1.TabStop = false;
             // 
@@ -213,9 +214,10 @@
             this.btntotal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntotal.ForeColor = System.Drawing.Color.White;
             this.btntotal.Image = ((System.Drawing.Image)(resources.GetObject("btntotal.Image")));
-            this.btntotal.Location = new System.Drawing.Point(29, 466);
+            this.btntotal.Location = new System.Drawing.Point(39, 574);
+            this.btntotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btntotal.Name = "btntotal";
-            this.btntotal.Size = new System.Drawing.Size(225, 54);
+            this.btntotal.Size = new System.Drawing.Size(300, 66);
             this.btntotal.TabIndex = 5;
             this.btntotal.Text = "Total evenue";
             // 
@@ -235,9 +237,10 @@
             this.btnpay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpay.ForeColor = System.Drawing.Color.White;
             this.btnpay.Image = ((System.Drawing.Image)(resources.GetObject("btnpay.Image")));
-            this.btnpay.Location = new System.Drawing.Point(29, 526);
+            this.btnpay.Location = new System.Drawing.Point(39, 647);
+            this.btnpay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnpay.Name = "btnpay";
-            this.btnpay.Size = new System.Drawing.Size(225, 54);
+            this.btnpay.Size = new System.Drawing.Size(300, 66);
             this.btnpay.TabIndex = 6;
             this.btnpay.Text = "Pay List";
             // 
@@ -251,17 +254,18 @@
             this.btnProduct.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
-            this.btnProduct.Location = new System.Drawing.Point(29, 586);
+            this.btnProduct.Location = new System.Drawing.Point(39, 721);
+            this.btnProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(225, 54);
+            this.btnProduct.Size = new System.Drawing.Size(300, 66);
             this.btnProduct.TabIndex = 7;
             this.btnProduct.Text = "Product Management";
             // 
             // FormAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1565, 883);
+            this.ClientSize = new System.Drawing.Size(1942, 1087);
             this.Controls.Add(this.btnProduct);
             this.Controls.Add(this.btnpay);
             this.Controls.Add(this.btntotal);
@@ -276,7 +280,7 @@
             this.Controls.Add(this.splitter1);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FromAdmin";

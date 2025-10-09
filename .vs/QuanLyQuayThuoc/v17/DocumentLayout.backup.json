@@ -1,14 +1,27 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\",
+  "WorkspaceRootPath": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\hp\\documents\\quanliquaythuoc2\\quanlyquaythuoc\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\quoc hieu\\documents\\quanliquaythuocv1\\quanlyquaythuoc\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\hp\\documents\\quanliquaythuoc2\\quanlyquaythuoc\\adminn\\uc_pm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\adminn\\uc_pm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\quanlyquaythuoc\\adminn\\uc_pm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\adminn\\uc_pm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\quoc hieu\\documents\\quanliquaythuocv1\\quanlyquaythuoc\\adminn\\uc_prof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\adminn\\uc_prof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\quoc hieu\\documents\\quanliquaythuocv1\\quanlyquaythuoc\\adminn\\uc_prof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\adminn\\uc_prof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> c1b67a1b0e5ea7f1b16986468cbd1bda3de8e56a
     }
   ],
   "DocumentGroupContainers": [
@@ -21,16 +34,41 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "uc_prof.cs",
+              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Adminn\\uc_prof.cs",
+              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\Adminn\\uc_prof.cs",
+              "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Adminn\\uc_prof.cs",
+              "RelativeToolTip": "QuanLyQuayThuoc\\Adminn\\uc_prof.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAUwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T12:38:30.844Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "uc_prof.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Adminn\\uc_prof.cs",
+              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\Adminn\\uc_prof.cs",
+              "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Adminn\\uc_prof.cs [Design]",
+              "RelativeToolTip": "QuanLyQuayThuoc\\Adminn\\uc_prof.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T12:30:54.32Z",
+              "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "uc_Pm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Adminn\\uc_Pm.cs",
+              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\Adminn\\uc_Pm.cs",
+              "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Adminn\\uc_Pm.cs [Design]",
+              "RelativeToolTip": "QuanLyQuayThuoc\\Adminn\\uc_Pm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T12:24:50.722Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -48,10 +86,15 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FormAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\FormAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\FormAdmin.cs",
               "RelativeDocumentMoniker": "QuanLyQuayThuoc\\FormAdmin.cs",
+<<<<<<< HEAD
               "ToolTip": "C:\\Users\\HP\\Documents\\quanliquaythuoc2\\QuanLyQuayThuoc\\FormAdmin.cs [Design]",
               "RelativeToolTip": "QuanLyQuayThuoc\\FormAdmin.cs [Design]",
+=======
+              "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\FormAdmin.cs [Design]*",
+              "RelativeToolTip": "QuanLyQuayThuoc\\FormAdmin.cs [Design]*",
+>>>>>>> c1b67a1b0e5ea7f1b16986468cbd1bda3de8e56a
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T15:22:01.42Z",
               "EditorCaption": " [Design]"

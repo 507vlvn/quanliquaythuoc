@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyQuayThuoc.Adminn
 {
-    public partial class uc_Profile : UserControl
+    public partial class uc_prof : UserControl
     {
-        public uc_Profile()
+        public uc_prof()
         {
             InitializeComponent();
         }

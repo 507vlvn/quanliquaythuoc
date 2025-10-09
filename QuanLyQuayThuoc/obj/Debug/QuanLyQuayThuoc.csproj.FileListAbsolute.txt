@@ -101,3 +101,6 @@ C:\Users\cuong\OneDrive\Tài liệu\doanmonwindow\baicc\QuanLyQuayThuoc\obj\De
 C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.UC.Uc_adduse.resources
 C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.UC.UC_DashB.resources
 C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.UC.Uc_adduse.resources
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_pay.resources
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_Pm.resources
+C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_prof.resources
