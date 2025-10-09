@@ -15,6 +15,7 @@ namespace QuanLyQuayThuoc
         public FormAdmin()
         {
             InitializeComponent();
+            //uc_prof1.Visible = false;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -29,6 +30,11 @@ namespace QuanLyQuayThuoc
         private void FormAdmin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            //uc_prof1.Visible=true;
         }
     }
 }

@@ -52,12 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adminn\uc_ConTrolPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Adminn\uc_ConTrolPanel.Designer.cs">
-      <DependentUpon>uc_ConTrolPanel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Adminn\uc_pay.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,18 +75,6 @@
     </Compile>
     <Compile Include="Adminn\uc_prof.Designer.cs">
       <DependentUpon>uc_prof.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Adminn\uc_Salary.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Adminn\uc_Salary.Designer.cs">
-      <DependentUpon>uc_Salary.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Adminn\uc_Total.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Adminn\uc_Total.Designer.cs">
-      <DependentUpon>uc_Total.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

@@ -55,7 +55,7 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
             this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(24, 434);
+            this.guna2Button3.Location = new System.Drawing.Point(24, 447);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(240, 60);
             this.guna2Button3.TabIndex = 4;
@@ -72,7 +72,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
             this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(24, 302);
+            this.guna2Button1.Location = new System.Drawing.Point(24, 315);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(240, 60);
             this.guna2Button1.TabIndex = 4;
@@ -89,7 +89,7 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(12, 500);
+            this.guna2Button2.Location = new System.Drawing.Point(12, 513);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(264, 60);
             this.guna2Button2.TabIndex = 4;
@@ -108,7 +108,7 @@
             this.btnprofileUser.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprofileUser.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnprofileUser.Image = ((System.Drawing.Image)(resources.GetObject("btnprofileUser.Image")));
-            this.btnprofileUser.Location = new System.Drawing.Point(24, 236);
+            this.btnprofileUser.Location = new System.Drawing.Point(24, 249);
             this.btnprofileUser.Name = "btnprofileUser";
             this.btnprofileUser.Size = new System.Drawing.Size(240, 60);
             this.btnprofileUser.TabIndex = 4;
@@ -135,7 +135,7 @@
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
             this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button5.Location = new System.Drawing.Point(24, 368);
+            this.guna2Button5.Location = new System.Drawing.Point(24, 381);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(240, 60);
             this.guna2Button5.TabIndex = 4;
@@ -153,7 +153,7 @@
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageSize = new System.Drawing.Size(30, 30);
             this.btnLogOut.Location = new System.Drawing.Point(24, 815);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.PressedColor = System.Drawing.Color.White;
             this.btnLogOut.Size = new System.Drawing.Size(240, 60);
@@ -183,7 +183,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(74)))));
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(74)))));
             this.panel1.Location = new System.Drawing.Point(232, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1335, 99);
             this.panel1.TabIndex = 6;
@@ -193,7 +193,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(74)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(76, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(85, 14);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(127, 137);
             this.pictureBox1.TabIndex = 7;
@@ -203,7 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1565, 883);
+            this.ClientSize = new System.Drawing.Size(1455, 883);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.btnLogOut);
@@ -216,7 +216,7 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormNV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FromAdmin";
