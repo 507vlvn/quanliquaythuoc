@@ -32,10 +32,16 @@
             // 
             // uc_pay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.Name = "uc_pay";
             this.Size = new System.Drawing.Size(464, 265);
+=======
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "uc_pay";
+            this.Size = new System.Drawing.Size(1724, 962);
+>>>>>>> a8b9606d4be8bcc24744f31fffeeec7a7352df81
             this.ResumeLayout(false);
 
         }
