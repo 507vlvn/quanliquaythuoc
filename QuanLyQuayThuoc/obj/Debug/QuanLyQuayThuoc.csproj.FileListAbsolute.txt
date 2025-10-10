@@ -113,4 +113,9 @@ C:\Users\cuong\OneDrive\Tài liệu\doanmonwindow\baicc\QuanLyQuayThuoc\obj\De
 C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_ProfilrUser.resources
 C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.admin2.resources
 >>>>>>> 74011cc226264fe77700385e3af0b9e2ceaa2381
+<<<<<<< HEAD
 C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_Order.resources
+=======
+C:\Users\cuong\OneDrive\Tài liệu\doanmonwindow\baicc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.admin2.resources
+C:\Users\cuong\OneDrive\Tài liệu\doanmonwindow\baicc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_ProfilrUser.resources
+>>>>>>> a8b9606d4be8bcc24744f31fffeeec7a7352df81
