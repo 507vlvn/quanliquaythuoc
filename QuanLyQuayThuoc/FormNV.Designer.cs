@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNV));
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnprofileUser = new Guna.UI2.WinForms.Guna2Button();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
@@ -56,7 +55,7 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
             this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(37, 368);
+            this.guna2Button3.Location = new System.Drawing.Point(37, 385);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(156, 60);
             this.guna2Button3.TabIndex = 4;
@@ -73,29 +72,11 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
             this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(35, 270);
+            this.guna2Button1.Location = new System.Drawing.Point(40, 253);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(155, 60);
             this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "Order";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(74)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(12, 419);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(199, 60);
-            this.guna2Button2.TabIndex = 4;
-            this.guna2Button2.Text = "Customer management";
-            this.guna2Button2.TextFormatNoPrefix = true;
             // 
             // btnprofileUser
             // 
@@ -109,7 +90,7 @@
             this.btnprofileUser.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprofileUser.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnprofileUser.Image = ((System.Drawing.Image)(resources.GetObject("btnprofileUser.Image")));
-            this.btnprofileUser.Location = new System.Drawing.Point(35, 220);
+            this.btnprofileUser.Location = new System.Drawing.Point(37, 197);
             this.btnprofileUser.Name = "btnprofileUser";
             this.btnprofileUser.Size = new System.Drawing.Size(158, 60);
             this.btnprofileUser.TabIndex = 4;
@@ -136,11 +117,11 @@
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
             this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button5.Location = new System.Drawing.Point(23, 318);
+            this.guna2Button5.Location = new System.Drawing.Point(23, 319);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(181, 60);
             this.guna2Button5.TabIndex = 4;
-            this.guna2Button5.Text = "Sales Statistics";
+            this.guna2Button5.Text = "Add Medicine";
             // 
             // btnLogOut
             // 
@@ -216,7 +197,6 @@
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button5);
-            this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.btnprofileUser);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.splitter1);
@@ -234,7 +214,6 @@
 
         #endregion
         private System.Windows.Forms.Splitter splitter1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button btnprofileUser;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;

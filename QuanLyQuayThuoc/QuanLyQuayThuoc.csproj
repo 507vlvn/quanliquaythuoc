@@ -96,6 +96,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\uc_Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\uc_Order.Designer.cs">
+      <DependentUpon>uc_Order.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\uc_ProfilrUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +135,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="User\uc_Order.resx">
+      <DependentUpon>uc_Order.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User\uc_ProfilrUser.resx">
       <DependentUpon>uc_ProfilrUser.cs</DependentUpon>
     </EmbeddedResource>
