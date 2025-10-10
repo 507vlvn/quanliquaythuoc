@@ -29,7 +29,7 @@ namespace QuanLyQuayThuoc
         }
         private void FormAdmin_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnProfile_Click(object sender, EventArgs e)

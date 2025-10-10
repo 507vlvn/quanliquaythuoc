@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyQuayThuoc.Adminn;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ namespace QuanLyQuayThuoc
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new FormNV());
             Application.Run(new FormAdmin());
+            //Application.Run(new uc_prof());
 
         }
     }
