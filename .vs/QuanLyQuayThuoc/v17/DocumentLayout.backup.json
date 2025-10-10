@@ -1,6 +1,7 @@
 {
   "Version": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\az012\\OneDrive\\Documents\\quanliquaythuoc1\\",
   "Documents": [
     {
@@ -48,6 +49,21 @@
       "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|C:\\Users\\cuong\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\doanmonwindow\\baicc\\quanlyquaythuoc\\admin2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
 >>>>>>> a8b9606d4be8bcc24744f31fffeeec7a7352df81
       "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\admin2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+  "WorkspaceRootPath": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\quoc hieu\\documents\\quanliquaythuocv1\\quanlyquaythuoc\\adminn\\uc_res.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\adminn\\uc_res.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\quoc hieu\\documents\\quanliquaythuocv1\\quanlyquaythuoc\\admin2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\admin2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|c:\\users\\quoc hieu\\documents\\quanliquaythuocv1\\quanlyquaythuoc\\adminn\\uc_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0B3A64BF-CF19-4379-A97E-4D0514D349A1}|QuanLyQuayThuoc\\QuanLyQuayThuoc.csproj|solutionrelative:quanlyquaythuoc\\adminn\\uc_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> origin/hieu
     }
   ],
   "DocumentGroupContainers": [
@@ -60,6 +76,7 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
@@ -68,9 +85,12 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+=======
+>>>>>>> origin/hieu
               "$type": "Document",
 <<<<<<< HEAD
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "uc_BaoCaoDonHang.cs [Design]",
               "DocumentMoniker": "C:\\Users\\az012\\OneDrive\\Documents\\quanliquaythuoc1\\QuanLyQuayThuoc\\User\\uc_BaoCaoDonHang.cs",
               "RelativeDocumentMoniker": "QuanLyQuayThuoc\\User\\uc_BaoCaoDonHang.cs",
@@ -78,6 +98,15 @@
               "RelativeToolTip": "QuanLyQuayThuoc\\User\\uc_BaoCaoDonHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-10T08:24:48.446Z",
+=======
+              "Title": "uc_Product.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Adminn\\uc_Product.cs",
+              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\Adminn\\uc_Product.cs",
+              "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Adminn\\uc_Product.cs [Design]",
+              "RelativeToolTip": "QuanLyQuayThuoc\\Adminn\\uc_Product.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T07:56:50.836Z",
+>>>>>>> origin/hieu
               "EditorCaption": " [Design]"
             },
             {
@@ -91,6 +120,7 @@
 =======
               "DocumentIndex": 0,
               "Title": "admin2.cs [Design]",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\cuong\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\doanmonwindow\\baicc\\QuanLyQuayThuoc\\admin2.cs",
               "RelativeDocumentMoniker": "QuanLyQuayThuoc\\admin2.cs",
               "ToolTip": "C:\\Users\\cuong\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\doanmonwindow\\baicc\\QuanLyQuayThuoc\\admin2.cs [Design]",
@@ -98,11 +128,20 @@
 >>>>>>> a8b9606d4be8bcc24744f31fffeeec7a7352df81
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-10T07:58:07.994Z",
+=======
+              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\admin2.cs",
+              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\admin2.cs",
+              "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\admin2.cs [Design]",
+              "RelativeToolTip": "QuanLyQuayThuoc\\admin2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T07:44:45.025Z",
+>>>>>>> origin/hieu
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "uc_BaoCaoDonHang.cs",
               "DocumentMoniker": "C:\\Users\\az012\\OneDrive\\Documents\\quanliquaythuoc1\\QuanLyQuayThuoc\\User\\uc_BaoCaoDonHang.cs",
               "RelativeDocumentMoniker": "QuanLyQuayThuoc\\User\\uc_BaoCaoDonHang.cs",
@@ -197,6 +236,15 @@
               "RelativeToolTip": "QuanLyQuayThuoc\\FormNV.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-10T07:45:29.15Z",
+=======
+              "Title": "uc_Res.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Adminn\\uc_Res.cs",
+              "RelativeDocumentMoniker": "QuanLyQuayThuoc\\Adminn\\uc_Res.cs",
+              "ToolTip": "C:\\Users\\Quoc Hieu\\Documents\\quanliquaythuocV1\\QuanLyQuayThuoc\\Adminn\\uc_Res.cs [Design]",
+              "RelativeToolTip": "QuanLyQuayThuoc\\Adminn\\uc_Res.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T07:10:58.238Z",
+>>>>>>> origin/hieu
               "EditorCaption": " [Design]"
             }
           ]
