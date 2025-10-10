@@ -42,7 +42,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitter2 = new System.Windows.Forms.Splitter();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.uc_ProfilrUser1 = new QuanLyQuayThuoc.User.uc_ProfilrUser();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -206,20 +205,11 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // uc_ProfilrUser1
-            // 
-            this.uc_ProfilrUser1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.uc_ProfilrUser1.Location = new System.Drawing.Point(221, 72);
-            this.uc_ProfilrUser1.Name = "uc_ProfilrUser1";
-            this.uc_ProfilrUser1.Size = new System.Drawing.Size(1179, 628);
-            this.uc_ProfilrUser1.TabIndex = 10;
-            // 
             // FormNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1400, 700);
-            this.Controls.Add(this.uc_ProfilrUser1);
             this.Controls.Add(this.splitter2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2Button4);
@@ -255,6 +245,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Splitter splitter2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private User.uc_ProfilrUser uc_ProfilrUser1;
     }
 }

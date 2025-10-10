@@ -108,3 +108,4 @@ C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc
 C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_Pm.resources
 C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_prof.resources
 C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_ProfilrUser.resources
+C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.admin2.resources

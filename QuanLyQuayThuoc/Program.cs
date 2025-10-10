@@ -18,8 +18,8 @@ namespace QuanLyQuayThuoc
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new FormNV());
-            Application.Run(new FormAdmin());
-            //Application.Run(new uc_prof());
+            Application.Run(new admin2());
+           
 
         }
     }
