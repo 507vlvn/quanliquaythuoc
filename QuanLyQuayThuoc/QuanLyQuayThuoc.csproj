@@ -41,6 +41,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -82,6 +83,12 @@
     <Compile Include="Adminn\uc_prof.Designer.cs">
       <DependentUpon>uc_prof.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adminn\uc_Res.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_Res.Designer.cs">
+      <DependentUpon>uc_Res.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,8 +118,14 @@
     <EmbeddedResource Include="Adminn\uc_Pm.resx">
       <DependentUpon>uc_Pm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Adminn\uc_Product.resx">
+      <DependentUpon>uc_Product.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Adminn\uc_prof.resx">
       <DependentUpon>uc_prof.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminn\uc_Res.resx">
+      <DependentUpon>uc_Res.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
