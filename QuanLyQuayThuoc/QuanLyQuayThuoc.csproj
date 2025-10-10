@@ -102,17 +102,37 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="User\uc_Order.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User\uc_Order.Designer.cs">
       <DependentUpon>uc_Order.cs</DependentUpon>
+=======
+    <Compile Include="User\uc_BanThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\uc_BanThuoc.Designer.cs">
+      <DependentUpon>uc_BanThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\uc_BaoCaoDonHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\uc_BaoCaoDonHang.Designer.cs">
+      <DependentUpon>uc_BaoCaoDonHang.cs</DependentUpon>
+>>>>>>> 4f5e509d37da71ad7dae458950735cf2d82dd91a
     </Compile>
     <Compile Include="User\uc_ProfilrUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User\uc_ProfilrUser.Designer.cs">
       <DependentUpon>uc_ProfilrUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\uc_ThemThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\uc_ThemThuoc.Designer.cs">
+      <DependentUpon>uc_ThemThuoc.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="admin2.resx">
       <DependentUpon>admin2.cs</DependentUpon>
@@ -144,11 +164,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="User\uc_Order.resx">
       <DependentUpon>uc_Order.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="User\uc_BanThuoc.resx">
+      <DependentUpon>uc_BanThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\uc_BaoCaoDonHang.resx">
+      <DependentUpon>uc_BaoCaoDonHang.cs</DependentUpon>
+>>>>>>> 4f5e509d37da71ad7dae458950735cf2d82dd91a
     </EmbeddedResource>
     <EmbeddedResource Include="User\uc_ProfilrUser.resx">
       <DependentUpon>uc_ProfilrUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\uc_ThemThuoc.resx">
+      <DependentUpon>uc_ThemThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
