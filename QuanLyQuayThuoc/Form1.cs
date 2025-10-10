@@ -20,7 +20,7 @@ namespace QuanLyQuayThuoc
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-            //hhau ne
+         
 
         }
 
@@ -44,10 +44,10 @@ namespace QuanLyQuayThuoc
                     MessageBox.Show("Tài khoản này thuộc quyền Admin. Vui lòng chọn lại chức vụ 'Admin'.", "Sai chức vụ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-
-                FormAdmin admin = new FormAdmin();
-                admin.Show();
                 this.Hide();
+                admin2 admin = new admin2();
+                admin.ShowDialog();
+             
                 return;
             }
 

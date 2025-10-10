@@ -107,6 +107,11 @@ C:\Users\Quoc Hieu\Documents\quanliquaythuocV1\QuanLyQuayThuoc\obj\Debug\QuanLyQ
 C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_pay.resources
 C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_Pm.resources
 C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_prof.resources
+<<<<<<< HEAD
 C:\Users\cuong\OneDrive\Tài liệu\doanmonwindow\baicc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_pay.resources
 C:\Users\cuong\OneDrive\Tài liệu\doanmonwindow\baicc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_Pm.resources
 C:\Users\cuong\OneDrive\Tài liệu\doanmonwindow\baicc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_prof.resources
+=======
+C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_ProfilrUser.resources
+C:\Users\HP\Documents\quanliquaythuoc2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.admin2.resources
+>>>>>>> 74011cc226264fe77700385e3af0b9e2ceaa2381

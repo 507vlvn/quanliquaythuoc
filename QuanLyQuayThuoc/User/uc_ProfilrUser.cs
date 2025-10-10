@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyQuayThuoc.Adminn
+namespace QuanLyQuayThuoc.User
 {
-    public partial class uc_prof : UserControl
+    public partial class uc_ProfilrUser : UserControl
     {
-        public uc_prof()
+        public uc_ProfilrUser()
         {
             InitializeComponent();
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
