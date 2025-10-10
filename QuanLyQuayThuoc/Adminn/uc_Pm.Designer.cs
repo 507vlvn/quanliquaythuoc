@@ -117,7 +117,6 @@
             this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 2;
             this.label4.Text = "Họ Tên:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox1
             // 
@@ -142,7 +141,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1081, 374);
             this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // guna2Button1
             // 
@@ -219,7 +217,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(150, 27);
             this.textBox2.TabIndex = 4;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1
             // 
@@ -255,7 +252,6 @@
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "uc_Pm";
             this.Size = new System.Drawing.Size(1183, 782);
-            this.Load += new System.EventHandler(this.uc_Pm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

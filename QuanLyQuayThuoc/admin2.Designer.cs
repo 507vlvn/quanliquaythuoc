@@ -44,7 +44,6 @@
             this.btnpay = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.uc_prof1 = new QuanLyQuayThuoc.Adminn.uc_prof();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +69,7 @@
             this.btnLogOut.Size = new System.Drawing.Size(204, 54);
             this.btnLogOut.TabIndex = 13;
             this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnProfile
             // 
@@ -256,22 +256,11 @@
             this.guna2Button2.TabIndex = 18;
             this.guna2Button2.Text = "Pay List";
             // 
-            // uc_prof1
-            // 
-            this.uc_prof1.BackColor = System.Drawing.Color.Silver;
-            this.uc_prof1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_prof1.Location = new System.Drawing.Point(225, 63);
-            this.uc_prof1.Margin = new System.Windows.Forms.Padding(2);
-            this.uc_prof1.Name = "uc_prof1";
-            this.uc_prof1.Size = new System.Drawing.Size(1075, 637);
-            this.uc_prof1.TabIndex = 20;
-            // 
             // admin2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1300, 700);
-            this.Controls.Add(this.uc_prof1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.btnLogOut);
@@ -286,6 +275,7 @@
             this.Controls.Add(this.btnpay);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "admin2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin2";
             this.Load += new System.EventHandler(this.admin2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -310,6 +300,5 @@
         private Guna.UI2.WinForms.Guna2Button btnpay;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Adminn.uc_prof uc_prof1;
     }
 }
