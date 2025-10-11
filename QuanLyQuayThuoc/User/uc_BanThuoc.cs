@@ -17,6 +17,6 @@ namespace QuanLyQuayThuoc.User
             InitializeComponent();
         }
 
-    
+
     }
 }

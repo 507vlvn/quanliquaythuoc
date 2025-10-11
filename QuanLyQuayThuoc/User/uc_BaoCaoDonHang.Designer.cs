@@ -60,13 +60,13 @@
             this.VolGiaBan,
             this.colThanhTien});
             this.dataGridViewHoaDon.Location = new System.Drawing.Point(22, 89);
-            this.dataGridViewHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewHoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewHoaDon.Name = "dataGridViewHoaDon";
             this.dataGridViewHoaDon.ReadOnly = true;
             this.dataGridViewHoaDon.RowHeadersVisible = false;
             this.dataGridViewHoaDon.RowHeadersWidth = 102;
             this.dataGridViewHoaDon.RowTemplate.Height = 28;
-            this.dataGridViewHoaDon.Size = new System.Drawing.Size(1142, 146);
+            this.dataGridViewHoaDon.Size = new System.Drawing.Size(1142, 356);
             this.dataGridViewHoaDon.TabIndex = 10;
             this.dataGridViewHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHoaDon_CellContentClick);
             // 
@@ -134,7 +134,7 @@
             this.labelTitle.Location = new System.Drawing.Point(13, 17);
             this.labelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(203, 30);
+            this.labelTitle.Size = new System.Drawing.Size(250, 37);
             this.labelTitle.TabIndex = 11;
             this.labelTitle.Text = "Quản lý Đơn Hàng";
             // 
@@ -146,8 +146,8 @@
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(22, 405);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Location = new System.Drawing.Point(20, 557);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(203, 56);
             this.guna2Button1.TabIndex = 12;
@@ -164,21 +164,22 @@
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(22, 271);
+            this.guna2TextBox1.Location = new System.Drawing.Point(20, 494);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(847, 55);
+            this.guna2TextBox1.Size = new System.Drawing.Size(1144, 55);
             this.guna2TextBox1.TabIndex = 13;
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(34, 249);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(22, 462);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(51, 15);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(85, 24);
             this.guna2HtmlLabel1.TabIndex = 14;
             this.guna2HtmlLabel1.Text = "Tiềm kiếm ";
             // 
@@ -191,7 +192,7 @@
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.dataGridViewHoaDon);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "uc_BaoCaoDonHang";
             this.Size = new System.Drawing.Size(1179, 628);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoaDon)).EndInit();
