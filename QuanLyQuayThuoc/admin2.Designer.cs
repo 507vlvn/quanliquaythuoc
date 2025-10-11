@@ -28,18 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin2));
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnProfile = new Guna.UI2.WinForms.Guna2Button();
             this.btnPerson = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.btntotal = new Guna.UI2.WinForms.Guna2Button();
             this.lbAdmin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitter2 = new System.Windows.Forms.Splitter();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.btnProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnpay = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -64,10 +61,10 @@
             this.btnLogOut.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLogOut.Location = new System.Drawing.Point(16, 764);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogOut.Location = new System.Drawing.Point(12, 621);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(272, 66);
+            this.btnLogOut.Size = new System.Drawing.Size(204, 54);
             this.btnLogOut.TabIndex = 13;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
@@ -86,10 +83,10 @@
             this.btnProfile.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnProfile.Location = new System.Drawing.Point(49, 286);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProfile.Location = new System.Drawing.Point(37, 232);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(2);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(207, 66);
+            this.btnProfile.Size = new System.Drawing.Size(155, 54);
             this.btnProfile.TabIndex = 10;
             this.btnProfile.Text = "Profile";
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
@@ -109,10 +106,10 @@
             this.btnPerson.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnPerson.Image = ((System.Drawing.Image)(resources.GetObject("btnPerson.Image")));
             this.btnPerson.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnPerson.Location = new System.Drawing.Point(29, 357);
-            this.btnPerson.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPerson.Location = new System.Drawing.Point(22, 290);
+            this.btnPerson.Margin = new System.Windows.Forms.Padding(2);
             this.btnPerson.Name = "btnPerson";
-            this.btnPerson.Size = new System.Drawing.Size(241, 79);
+            this.btnPerson.Size = new System.Drawing.Size(181, 64);
             this.btnPerson.TabIndex = 11;
             this.btnPerson.Text = "Personnel management";
             // 
@@ -128,10 +125,9 @@
             this.btntotal.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntotal.ForeColor = System.Drawing.Color.White;
             this.btntotal.Image = ((System.Drawing.Image)(resources.GetObject("btntotal.Image")));
-            this.btntotal.Location = new System.Drawing.Point(16, 442);
-            this.btntotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btntotal.Location = new System.Drawing.Point(12, 359);
             this.btntotal.Name = "btntotal";
-            this.btntotal.Size = new System.Drawing.Size(255, 66);
+            this.btntotal.Size = new System.Drawing.Size(191, 54);
             this.btntotal.TabIndex = 15;
             this.btntotal.Text = "Revenue Statistics";
             // 
@@ -141,7 +137,8 @@
             this.lbAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(126)))), ((int)(((byte)(52)))));
             this.lbAdmin.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAdmin.ForeColor = System.Drawing.Color.White;
-            this.lbAdmin.Location = new System.Drawing.Point(92, 192);
+            this.lbAdmin.Location = new System.Drawing.Point(69, 156);
+            this.lbAdmin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAdmin.Name = "lbAdmin";
             this.lbAdmin.Size = new System.Drawing.Size(117, 38);
             this.lbAdmin.TabIndex = 9;
@@ -154,10 +151,10 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(60, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(45, -50);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(192, 171);
+            this.pictureBox1.Size = new System.Drawing.Size(144, 139);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -166,10 +163,9 @@
             // 
             this.splitter2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
             this.splitter2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter2.Location = new System.Drawing.Point(300, 0);
-            this.splitter2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitter2.Location = new System.Drawing.Point(220, 0);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(1433, 78);
+            this.splitter2.Size = new System.Drawing.Size(1080, 63);
             this.splitter2.TabIndex = 12;
             this.splitter2.TabStop = false;
             // 
@@ -177,17 +173,10 @@
             // 
             this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(126)))), ((int)(((byte)(52)))));
             this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(300, 862);
+            this.splitter1.Size = new System.Drawing.Size(220, 567);
             this.splitter1.TabIndex = 14;
             this.splitter1.TabStop = false;
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // btnProduct
             // 
@@ -200,10 +189,9 @@
             this.btnProduct.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
-            this.btnProduct.Location = new System.Drawing.Point(16, 537);
-            this.btnProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProduct.Location = new System.Drawing.Point(12, 436);
             this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(256, 66);
+            this.btnProduct.Size = new System.Drawing.Size(192, 54);
             this.btnProduct.TabIndex = 17;
             this.btnProduct.Text = "Product Management";
             // 
@@ -219,10 +207,9 @@
             this.btnpay.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpay.ForeColor = System.Drawing.Color.White;
             this.btnpay.Image = ((System.Drawing.Image)(resources.GetObject("btnpay.Image")));
-            this.btnpay.Location = new System.Drawing.Point(41, 463);
-            this.btnpay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnpay.Location = new System.Drawing.Point(31, 376);
             this.btnpay.Name = "btnpay";
-            this.btnpay.Size = new System.Drawing.Size(215, 66);
+            this.btnpay.Size = new System.Drawing.Size(161, 54);
             this.btnpay.TabIndex = 16;
             this.btnpay.Text = "Pay List";
             // 
@@ -237,10 +224,9 @@
             this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(16, 590);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Location = new System.Drawing.Point(12, 479);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(256, 66);
+            this.guna2Button1.Size = new System.Drawing.Size(192, 54);
             this.guna2Button1.TabIndex = 19;
             this.guna2Button1.Text = "Product Management";
             // 
@@ -256,28 +242,28 @@
             this.guna2Button2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.Location = new System.Drawing.Point(41, 516);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button2.Location = new System.Drawing.Point(31, 419);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(215, 66);
+            this.guna2Button2.Size = new System.Drawing.Size(161, 54);
             this.guna2Button2.TabIndex = 18;
             this.guna2Button2.Text = "Pay List";
             // 
             // uc_Pm1
             // 
             this.uc_Pm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.uc_Pm1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.uc_Pm1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uc_Pm1.Location = new System.Drawing.Point(300, 78);
-            this.uc_Pm1.Margin = new System.Windows.Forms.Padding(5);
+            this.uc_Pm1.Location = new System.Drawing.Point(220, -70);
+            this.uc_Pm1.Margin = new System.Windows.Forms.Padding(4);
             this.uc_Pm1.Name = "uc_Pm1";
-            this.uc_Pm1.Size = new System.Drawing.Size(1433, 784);
+            this.uc_Pm1.Size = new System.Drawing.Size(1080, 637);
             this.uc_Pm1.TabIndex = 20;
             // 
             // admin2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1733, 862);
+            this.ClientSize = new System.Drawing.Size(1300, 567);
             this.Controls.Add(this.uc_Pm1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Button2);
@@ -292,7 +278,6 @@
             this.Controls.Add(this.btnProduct);
             this.Controls.Add(this.btnpay);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "admin2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin2";
@@ -308,13 +293,11 @@
         private Guna.UI2.WinForms.Guna2Button btnLogOut;
         private Guna.UI2.WinForms.Guna2Button btnProfile;
         private Guna.UI2.WinForms.Guna2Button btnPerson;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2Button btntotal;
         private System.Windows.Forms.Label lbAdmin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Splitter splitter2;
         private System.Windows.Forms.Splitter splitter1;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2Button btnProduct;
         private Guna.UI2.WinForms.Guna2Button btnpay;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;

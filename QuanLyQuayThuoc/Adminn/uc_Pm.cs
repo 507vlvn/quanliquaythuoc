@@ -16,5 +16,25 @@ namespace QuanLyQuayThuoc.Adminn
         {
             InitializeComponent();
         }
+
+        private void guna2HtmlToolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void uc_Pm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlToolTip2_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

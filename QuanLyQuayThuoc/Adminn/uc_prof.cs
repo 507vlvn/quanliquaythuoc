@@ -21,5 +21,10 @@ namespace QuanLyQuayThuoc.Adminn
         {
 
         }
+
+        private void guna2TextBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
