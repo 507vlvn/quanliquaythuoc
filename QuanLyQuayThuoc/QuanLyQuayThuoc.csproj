@@ -59,12 +59,6 @@
     <Compile Include="admin2.Designer.cs">
       <DependentUpon>admin2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Adminn\uc_pay.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Adminn\uc_pay.Designer.cs">
-      <DependentUpon>uc_pay.cs</DependentUpon>
-    </Compile>
     <Compile Include="Adminn\uc_Pm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -121,12 +115,6 @@
     <Compile Include="User\uc_BaoCaoDonHang.Designer.cs">
       <DependentUpon>uc_BaoCaoDonHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\uc_ProfilrUser.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User\uc_ProfilrUser.Designer.cs">
-      <DependentUpon>uc_ProfilrUser.cs</DependentUpon>
-    </Compile>
     <Compile Include="User\uc_ThemThuoc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,9 +123,6 @@
     </Compile>
     <EmbeddedResource Include="admin2.resx">
       <DependentUpon>admin2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Adminn\uc_pay.resx">
-      <DependentUpon>uc_pay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Adminn\uc_Pm.resx">
       <DependentUpon>uc_Pm.cs</DependentUpon>
@@ -174,9 +159,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User\uc_BaoCaoDonHang.resx">
       <DependentUpon>uc_BaoCaoDonHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User\uc_ProfilrUser.resx">
-      <DependentUpon>uc_ProfilrUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\uc_ThemThuoc.resx">
       <DependentUpon>uc_ThemThuoc.cs</DependentUpon>
