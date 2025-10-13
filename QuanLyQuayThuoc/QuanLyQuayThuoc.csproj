@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B3A64BF-CF19-4379-A97E-4D0514D349A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyQuayThuoc</RootNamespace>
+    <AssemblyName>QuanLyQuayThuoc</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="NotifyIcon, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NotifyIconEx.1.1.2\lib\net472\NotifyIcon.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin2.Designer.cs">
+      <DependentUpon>admin2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminn\uc_User.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_User.Designer.cs">
+      <DependentUpon>uc_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_con\uc_banChay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_con\uc_banChay.Designer.cs">
+      <DependentUpon>uc_banChay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_con\uc_ChartNgang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_con\uc_ChartNgang.Designer.cs">
+      <DependentUpon>uc_ChartNgang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_con\uc_ChartTron.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_con\uc_ChartTron.Designer.cs">
+      <DependentUpon>uc_ChartTron.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_con\uc_danhsachdonhang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_con\uc_danhsachdonhang.Designer.cs">
+      <DependentUpon>uc_danhsachdonhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminn\uc_Product.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_Product.Designer.cs">
+      <DependentUpon>uc_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminn\uc_Dashbord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_Dashbord.Designer.cs">
+      <DependentUpon>uc_Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNV.Designer.cs">
+      <DependentUpon>FormNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formtinhluong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formtinhluong.Designer.cs">
+      <DependentUpon>formtinhluong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uc_con\uc_DanhSachThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_con\uc_DanhSachThuoc.Designer.cs">
+      <DependentUpon>uc_DanhSachThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\uc_BanThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\uc_BanThuoc.Designer.cs">
+      <DependentUpon>uc_BanThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminn\uc_BaoCaoDonHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_BaoCaoDonHang.Designer.cs">
+      <DependentUpon>uc_BaoCaoDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\uc_proNv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\uc_proNv.Designer.cs">
+      <DependentUpon>uc_proNv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\uc_XemThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\uc_XemThuoc.Designer.cs">
+      <DependentUpon>uc_XemThuoc.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin2.resx">
+      <DependentUpon>admin2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminn\uc_User.resx">
+      <DependentUpon>uc_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_con\uc_banChay.resx">
+      <DependentUpon>uc_banChay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_con\uc_ChartNgang.resx">
+      <DependentUpon>uc_ChartNgang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_con\uc_ChartTron.resx">
+      <DependentUpon>uc_ChartTron.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_con\uc_danhsachdonhang.resx">
+      <DependentUpon>uc_danhsachdonhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminn\uc_Product.resx">
+      <DependentUpon>uc_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminn\uc_Dashbord.resx">
+      <DependentUpon>uc_Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNV.resx">
+      <DependentUpon>FormNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formtinhluong.resx">
+      <DependentUpon>formtinhluong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="uc_con\uc_DanhSachThuoc.resx">
+      <DependentUpon>uc_DanhSachThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\uc_BanThuoc.resx">
+      <DependentUpon>uc_BanThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminn\uc_BaoCaoDonHang.resx">
+      <DependentUpon>uc_BaoCaoDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\uc_proNv.resx">
+      <DependentUpon>uc_proNv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\uc_XemThuoc.resx">
+      <DependentUpon>uc_XemThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+</Project>
