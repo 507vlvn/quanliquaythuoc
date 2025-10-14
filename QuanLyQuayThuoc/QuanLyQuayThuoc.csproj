@@ -86,6 +86,12 @@
     <Compile Include="admin2.Designer.cs">
       <DependentUpon>admin2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adminn\uc_ThongKeDoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminn\uc_ThongKeDoanhThu.Designer.cs">
+      <DependentUpon>uc_ThongKeDoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adminn\uc_User.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </Compile>
     <EmbeddedResource Include="admin2.resx">
       <DependentUpon>admin2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminn\uc_ThongKeDoanhThu.resx">
+      <DependentUpon>uc_ThongKeDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Adminn\uc_User.resx">
       <DependentUpon>uc_User.cs</DependentUpon>
