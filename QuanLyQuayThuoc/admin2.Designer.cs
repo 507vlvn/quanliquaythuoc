@@ -41,9 +41,7 @@
             this.btnKiemTraDonHang = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemThuoc = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Panel1.SuspendLayout();
+            this.uc_Dashbord1 = new QuanLyQuayThuoc.Adminn.uc_Dashbord();
             this.SuspendLayout();
             // 
             // btnLogOut
@@ -70,7 +68,6 @@
             this.btnLogOut.TabIndex = 13;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseTransparentBackground = true;
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // splitter1
             // 
@@ -78,10 +75,9 @@
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Margin = new System.Windows.Forms.Padding(0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(293, 698);
+            this.splitter1.Size = new System.Drawing.Size(366, 698);
             this.splitter1.TabIndex = 14;
             this.splitter1.TabStop = false;
-            this.splitter1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter1_SplitterMoved);
             // 
             // btnProduct
             // 
@@ -95,7 +91,7 @@
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
             this.btnProduct.Location = new System.Drawing.Point(16, 537);
-            this.btnProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(256, 66);
             this.btnProduct.TabIndex = 17;
@@ -114,7 +110,7 @@
             this.btnpay.ForeColor = System.Drawing.Color.White;
             this.btnpay.Image = ((System.Drawing.Image)(resources.GetObject("btnpay.Image")));
             this.btnpay.Location = new System.Drawing.Point(41, 463);
-            this.btnpay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnpay.Margin = new System.Windows.Forms.Padding(4);
             this.btnpay.Name = "btnpay";
             this.btnpay.Size = new System.Drawing.Size(215, 66);
             this.btnpay.TabIndex = 16;
@@ -144,7 +140,6 @@
             this.btnPerson.TabIndex = 21;
             this.btnPerson.Text = "Person";
             this.btnPerson.UseTransparentBackground = true;
-            this.btnPerson.Click += new System.EventHandler(this.btnPerson_Click);
             // 
             // btnDashbord
             // 
@@ -245,7 +240,6 @@
             this.btnOder.TabIndex = 25;
             this.btnOder.Text = "Oder";
             this.btnOder.UseTransparentBackground = true;
-            this.btnOder.Click += new System.EventHandler(this.btnOder_Click);
             // 
             // btnKiemTraDonHang
             // 
@@ -272,7 +266,6 @@
             this.btnKiemTraDonHang.Text = "Check Oder";
             this.btnKiemTraDonHang.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
             this.btnKiemTraDonHang.UseTransparentBackground = true;
-            this.btnKiemTraDonHang.Click += new System.EventHandler(this.btnKiemTraDonHang_Click);
             // 
             // guna2Button7
             // 
@@ -322,35 +315,22 @@
             this.btnThemThuoc.TabIndex = 30;
             this.btnThemThuoc.Text = "Add Medicin";
             this.btnThemThuoc.UseTransparentBackground = true;
-            this.btnThemThuoc.Click += new System.EventHandler(this.btnThemThuoc_Click);
             // 
-            // guna2Panel1
+            // uc_Dashbord1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Controls.Add(this.panel1);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel1.Location = new System.Drawing.Point(293, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1440, 698);
-            this.guna2Panel1.TabIndex = 33;
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1440, 698);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.uc_Dashbord1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
+            this.uc_Dashbord1.Location = new System.Drawing.Point(369, 0);
+            this.uc_Dashbord1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uc_Dashbord1.Name = "uc_Dashbord1";
+            this.uc_Dashbord1.Size = new System.Drawing.Size(1439, 698);
+            this.uc_Dashbord1.TabIndex = 32;
             // 
             // admin2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1733, 698);
-            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.uc_Dashbord1);
             this.Controls.Add(this.btnThemThuoc);
             this.Controls.Add(this.guna2Button7);
             this.Controls.Add(this.btnKiemTraDonHang);
@@ -365,12 +345,11 @@
             this.Controls.Add(this.btnpay);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "admin2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin2";
             this.Load += new System.EventHandler(this.admin2_Load);
-            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -389,7 +368,6 @@
         private Guna.UI2.WinForms.Guna2Button btnKiemTraDonHang;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Button btnThemThuoc;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Panel panel1;
+        private Adminn.uc_Dashbord uc_Dashbord1;
     }
 }

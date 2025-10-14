@@ -18,88 +18,57 @@ namespace QuanLyQuayThuoc
         {
             InitializeComponent();
         }
-        private void btnLogOut_Click(object sender, EventArgs e)
+
+        private void btnOder_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 form1 = new Form1();
-            form1.ShowDialog();
-            this.Close();
-            return;
+            uc_BanThuoc1.Visible = true;
+            uc_BaoCaoDonHang1.Visible = false;
+            uc_XemThuoc1.Visible = false;
+            uc_proNv1.Visible = false;
         }
 
-        private void addControlsToPanel(Control c)
+        private void FormNV_Load(object sender, EventArgs e)
         {
-            panel1.Controls.Clear();
-            c.Dock = DockStyle.Fill;
-            panel1.Controls.Add(c);
-        }
-                private void btnOder_Click(object sender, EventArgs e)
-            {
-            foreach (Control ctrl in panel1.Controls)
-            {
-                if (ctrl is uc_Dashbord)
-                {
-                    panel1.Controls.Remove(ctrl);
-                    ctrl.Dispose();
-                    break;
-                }
-            }
-            uc_BanThuoc uc_BanThuoc = new uc_BanThuoc();
-            addControlsToPanel(uc_BanThuoc);
+            uc_BanThuoc1.Visible = false;
+            uc_BaoCaoDonHang1.Visible = false;
+            uc_XemThuoc1.Visible = false;
+            uc_proNv1.Visible = false;
         }
 
         private void btnKiemTraDonHang_Click(object sender, EventArgs e)
         {
-
-            foreach (Control ctrl in panel1.Controls)
-            {
-                if (ctrl is uc_Dashbord)
-                {
-                    panel1.Controls.Remove(ctrl);
-                    ctrl.Dispose();
-                    break;
-                }
-            }
-            uc_BaoCaoDonHang uc_BaoCaoDonHang = new uc_BaoCaoDonHang();
-            addControlsToPanel(uc_BaoCaoDonHang);
+            uc_BaoCaoDonHang1.Visible = true;
+            uc_BanThuoc1.Visible = false;
+            uc_XemThuoc1.Visible = false;
+            uc_proNv1.Visible = false;
         }
 
         private void btnThemThuoc_Click(object sender, EventArgs e)
         {
-            foreach (Control ctrl in panel1.Controls)
-            {
-                if (ctrl is uc_Dashbord)
-                {
-                    panel1.Controls.Remove(ctrl);
-                    ctrl.Dispose();
-                    break;
-                }
-            }
-          uc_XemThuoc uc_XemThuoc = new uc_XemThuoc();
-            addControlsToPanel(uc_XemThuoc);
+            uc_XemThuoc1.Visible=true;
+            uc_BaoCaoDonHang1.Visible = false;
+            uc_BanThuoc1.Visible = false;
+            uc_proNv1.Visible = false;
+
+
+
         }
 
         private void btnPerson_Click(object sender, EventArgs e)
         {
-            foreach (Control ctrl in panel1.Controls)
-            {
-                if (ctrl is uc_Dashbord)
-                {
-                    panel1.Controls.Remove(ctrl);
-                    ctrl.Dispose();
-                    break;
-                }
-            }
-            uc_proNv uc_ProNv = new uc_proNv(); 
-            addControlsToPanel(uc_ProNv);
+            uc_proNv1.Visible=true;
+            uc_XemThuoc1.Visible = false;
+            uc_BaoCaoDonHang1.Visible = false;
+            uc_BanThuoc1.Visible = false;
+            
         }
 
-        private void guna2Button8_Click(object sender, EventArgs e)
+        private void btnOut_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 f1 = new Form1();
-            f1.ShowDialog();
-            this.Close();
+            Form1 frm=new Form1();
+            frm.ShowDialog();
+            Application.Exit();
         }
     }
 }

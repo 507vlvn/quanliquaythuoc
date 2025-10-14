@@ -31,13 +31,10 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +44,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(4, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 19);
+            this.label2.Size = new System.Drawing.Size(87, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Bộ Phận:";
             // 
@@ -57,7 +54,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(98, 78);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 25);
+            this.comboBox1.Size = new System.Drawing.Size(165, 28);
             this.comboBox1.TabIndex = 3;
             // 
             // label4
@@ -66,7 +63,7 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(267, 5);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 19);
+            this.label4.Size = new System.Drawing.Size(79, 23);
             this.label4.TabIndex = 2;
             this.label4.Text = "Họ Tên:";
             // 
@@ -74,7 +71,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(337, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 23);
+            this.textBox1.Size = new System.Drawing.Size(150, 27);
             this.textBox1.TabIndex = 4;
             // 
             // dataGridView1
@@ -143,33 +140,11 @@
             this.guna2Button3.TabIndex = 8;
             this.guna2Button3.Text = "Xóa Nhân Viên";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 22);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Thông Tin Nhân Sự";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1086, 69);
-            this.panel1.TabIndex = 10;
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(865, 0);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 23);
+            this.textBox2.Size = new System.Drawing.Size(150, 27);
             this.textBox2.TabIndex = 4;
             // 
             // guna2Button6
@@ -208,20 +183,17 @@
             // 
             // uc_User
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "uc_User";
-            this.Size = new System.Drawing.Size(1086, 567);
+            this.Size = new System.Drawing.Size(1151, 558);
             this.Load += new System.EventHandler(this.uc_User_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -237,8 +209,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox2;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;

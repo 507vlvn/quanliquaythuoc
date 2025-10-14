@@ -57,14 +57,14 @@
             this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconLeft")));
-            this.guna2TextBox1.Location = new System.Drawing.Point(13, 21);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox1.Location = new System.Drawing.Point(17, 26);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.ReadOnly = true;
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(186, 51);
+            this.guna2TextBox1.Size = new System.Drawing.Size(248, 63);
             this.guna2TextBox1.TabIndex = 13;
             this.guna2TextBox1.TabStop = false;
             this.guna2TextBox1.Tag = "";
@@ -86,14 +86,14 @@
             this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox2.IconLeft")));
-            this.guna2TextBox2.Location = new System.Drawing.Point(664, 21);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox2.Location = new System.Drawing.Point(885, 26);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.ReadOnly = true;
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(144, 51);
+            this.guna2TextBox2.Size = new System.Drawing.Size(192, 63);
             this.guna2TextBox2.TabIndex = 21;
             this.guna2TextBox2.TabStop = false;
             this.guna2TextBox2.Tag = "";
@@ -115,14 +115,14 @@
             this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox3.IconLeft")));
-            this.guna2TextBox3.Location = new System.Drawing.Point(236, 21);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox3.Location = new System.Drawing.Point(315, 26);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.ReadOnly = true;
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(177, 51);
+            this.guna2TextBox3.Size = new System.Drawing.Size(236, 63);
             this.guna2TextBox3.TabIndex = 22;
             this.guna2TextBox3.TabStop = false;
             this.guna2TextBox3.Tag = "";
@@ -144,14 +144,14 @@
             this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox4.IconLeft")));
-            this.guna2TextBox4.Location = new System.Drawing.Point(845, 21);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox4.Location = new System.Drawing.Point(1127, 26);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.guna2TextBox4.PlaceholderText = "";
             this.guna2TextBox4.ReadOnly = true;
             this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(214, 51);
+            this.guna2TextBox4.Size = new System.Drawing.Size(285, 63);
             this.guna2TextBox4.TabIndex = 23;
             this.guna2TextBox4.TabStop = false;
             this.guna2TextBox4.Tag = "";
@@ -173,49 +173,53 @@
             this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox5.IconLeft")));
-            this.guna2TextBox5.Location = new System.Drawing.Point(450, 21);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox5.Location = new System.Drawing.Point(600, 26);
+            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.guna2TextBox5.PlaceholderText = "";
             this.guna2TextBox5.ReadOnly = true;
             this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(177, 51);
+            this.guna2TextBox5.Size = new System.Drawing.Size(236, 63);
             this.guna2TextBox5.TabIndex = 24;
             this.guna2TextBox5.TabStop = false;
             this.guna2TextBox5.Tag = "";
             // 
             // uc_ChartTron1
             // 
-            this.uc_ChartTron1.Location = new System.Drawing.Point(767, 101);
+            this.uc_ChartTron1.Location = new System.Drawing.Point(1023, 124);
+            this.uc_ChartTron1.Margin = new System.Windows.Forms.Padding(5);
             this.uc_ChartTron1.Name = "uc_ChartTron1";
-            this.uc_ChartTron1.Size = new System.Drawing.Size(294, 327);
+            this.uc_ChartTron1.Size = new System.Drawing.Size(392, 402);
             this.uc_ChartTron1.TabIndex = 20;
             // 
             // uc_ChartNgang1
             // 
-            this.uc_ChartNgang1.Location = new System.Drawing.Point(13, 102);
+            this.uc_ChartNgang1.Location = new System.Drawing.Point(17, 126);
+            this.uc_ChartNgang1.Margin = new System.Windows.Forms.Padding(5);
             this.uc_ChartNgang1.Name = "uc_ChartNgang1";
-            this.uc_ChartNgang1.Size = new System.Drawing.Size(739, 326);
+            this.uc_ChartNgang1.Size = new System.Drawing.Size(985, 401);
             this.uc_ChartNgang1.TabIndex = 19;
             // 
             // uc_banChay1
             // 
-            this.uc_banChay1.Location = new System.Drawing.Point(767, 434);
+            this.uc_banChay1.Location = new System.Drawing.Point(1023, 534);
+            this.uc_banChay1.Margin = new System.Windows.Forms.Padding(5);
             this.uc_banChay1.Name = "uc_banChay1";
-            this.uc_banChay1.Size = new System.Drawing.Size(298, 136);
+            this.uc_banChay1.Size = new System.Drawing.Size(496, 209);
             this.uc_banChay1.TabIndex = 16;
             // 
             // uc_danhsachdonhang1
             // 
-            this.uc_danhsachdonhang1.Location = new System.Drawing.Point(13, 434);
+            this.uc_danhsachdonhang1.Location = new System.Drawing.Point(17, 534);
+            this.uc_danhsachdonhang1.Margin = new System.Windows.Forms.Padding(5);
             this.uc_danhsachdonhang1.Name = "uc_danhsachdonhang1";
-            this.uc_danhsachdonhang1.Size = new System.Drawing.Size(739, 130);
+            this.uc_danhsachdonhang1.Size = new System.Drawing.Size(985, 160);
             this.uc_danhsachdonhang1.TabIndex = 15;
             // 
             // uc_Dashbord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
             this.Controls.Add(this.guna2TextBox5);
@@ -227,9 +231,9 @@
             this.Controls.Add(this.uc_banChay1);
             this.Controls.Add(this.uc_danhsachdonhang1);
             this.Controls.Add(this.guna2TextBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "uc_Dashbord";
-            this.Size = new System.Drawing.Size(1079, 567);
+            this.Size = new System.Drawing.Size(1151, 558);
             this.ResumeLayout(false);
 
         }
