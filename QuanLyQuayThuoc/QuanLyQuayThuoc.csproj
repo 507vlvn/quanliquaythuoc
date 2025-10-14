@@ -64,6 +64,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xaml" />
@@ -86,6 +88,10 @@
     <Compile Include="admin2.Designer.cs">
       <DependentUpon>admin2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adminn\DSThuoc.cs" />
+    <Compile Include="Adminn\HoaDon.cs" />
+    <Compile Include="Adminn\Model1.cs" />
+    <Compile Include="Adminn\NhanVien.cs" />
     <Compile Include="Adminn\uc_ThongKeDoanhThu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -245,6 +251,7 @@
       <DependentUpon>uc_XemThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\QuanLyQuayThuoc.Adminn.DSThuoc.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -258,7 +265,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="sql\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

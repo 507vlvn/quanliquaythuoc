@@ -19,7 +19,9 @@ namespace QuanLyQuayThuoc.Adminn
 
         private void uc_Product_Load(object sender, EventArgs e)
         {
-
+            Model1 db = new Model1();
+            List<DSThuoc> ds = db.DSThuocs.ToList();
+            dgvDsthuoc.DataSource = ds;
         }
     }
 }
