@@ -33,23 +33,19 @@
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.btnKiemTraDonHang = new Guna.UI2.WinForms.Guna2Button();
             this.btnOder = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPerson = new Guna.UI2.WinForms.Guna2Button();
+            this.btnProfilde = new Guna.UI2.WinForms.Guna2Button();
             this.btnOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaff = new Guna.UI2.WinForms.Guna2Button();
-            this.btnThemThuoc = new Guna.UI2.WinForms.Guna2Button();
-            this.uc_proNv1 = new QuanLyQuayThuoc.User.uc_proNv();
-            this.uc_XemThuoc1 = new QuanLyQuayThuoc.User.uc_XemThuoc();
-            this.uc_BaoCaoDonHang1 = new QuanLyQuayThuoc.User.uc_BaoCaoDonHang();
-            this.uc_BanThuoc1 = new QuanLyQuayThuoc.User.uc_BanThuoc();
+            this.btnXemDuLieuThuoc = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // splitter1
             // 
             this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
             this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Margin = new System.Windows.Forms.Padding(4);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(293, 698);
+            this.splitter1.Size = new System.Drawing.Size(220, 567);
             this.splitter1.TabIndex = 2;
             this.splitter1.TabStop = false;
             // 
@@ -69,11 +65,11 @@
             this.guna2Button7.HoverState.ForeColor = System.Drawing.Color.Black;
             this.guna2Button7.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.Image")));
             this.guna2Button7.ImageSize = new System.Drawing.Size(120, 120);
-            this.guna2Button7.Location = new System.Drawing.Point(41, 12);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button7.Location = new System.Drawing.Point(31, 10);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.PressedColor = System.Drawing.Color.Empty;
-            this.guna2Button7.Size = new System.Drawing.Size(225, 203);
+            this.guna2Button7.Size = new System.Drawing.Size(169, 165);
             this.guna2Button7.TabIndex = 37;
             this.guna2Button7.UseTransparentBackground = true;
             // 
@@ -93,11 +89,11 @@
             this.btnKiemTraDonHang.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnKiemTraDonHang.Image = ((System.Drawing.Image)(resources.GetObject("btnKiemTraDonHang.Image")));
             this.btnKiemTraDonHang.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnKiemTraDonHang.Location = new System.Drawing.Point(59, 335);
-            this.btnKiemTraDonHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnKiemTraDonHang.Location = new System.Drawing.Point(44, 272);
+            this.btnKiemTraDonHang.Margin = new System.Windows.Forms.Padding(2);
             this.btnKiemTraDonHang.Name = "btnKiemTraDonHang";
             this.btnKiemTraDonHang.PressedColor = System.Drawing.Color.Empty;
-            this.btnKiemTraDonHang.Size = new System.Drawing.Size(172, 41);
+            this.btnKiemTraDonHang.Size = new System.Drawing.Size(129, 33);
             this.btnKiemTraDonHang.TabIndex = 36;
             this.btnKiemTraDonHang.Text = "Check Bill";
             this.btnKiemTraDonHang.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
@@ -120,41 +116,41 @@
             this.btnOder.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnOder.Image = ((System.Drawing.Image)(resources.GetObject("btnOder.Image")));
             this.btnOder.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnOder.Location = new System.Drawing.Point(83, 246);
-            this.btnOder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOder.Location = new System.Drawing.Point(62, 200);
+            this.btnOder.Margin = new System.Windows.Forms.Padding(2);
             this.btnOder.Name = "btnOder";
             this.btnOder.PressedColor = System.Drawing.Color.Empty;
-            this.btnOder.Size = new System.Drawing.Size(148, 38);
+            this.btnOder.Size = new System.Drawing.Size(111, 31);
             this.btnOder.TabIndex = 35;
             this.btnOder.Text = "Oder";
             this.btnOder.UseTransparentBackground = true;
             this.btnOder.Click += new System.EventHandler(this.btnOder_Click);
             // 
-            // btnPerson
+            // btnProfilde
             // 
-            this.btnPerson.BackColor = System.Drawing.Color.Transparent;
-            this.btnPerson.BorderColor = System.Drawing.Color.Empty;
-            this.btnPerson.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnPerson.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPerson.FillColor = System.Drawing.Color.Empty;
-            this.btnPerson.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerson.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnPerson.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnPerson.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnPerson.Image = ((System.Drawing.Image)(resources.GetObject("btnPerson.Image")));
-            this.btnPerson.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnPerson.Location = new System.Drawing.Point(83, 529);
-            this.btnPerson.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPerson.Name = "btnPerson";
-            this.btnPerson.PressedColor = System.Drawing.Color.Empty;
-            this.btnPerson.Size = new System.Drawing.Size(148, 33);
-            this.btnPerson.TabIndex = 32;
-            this.btnPerson.Text = "Profile";
-            this.btnPerson.UseTransparentBackground = true;
-            this.btnPerson.Click += new System.EventHandler(this.btnPerson_Click);
+            this.btnProfilde.BackColor = System.Drawing.Color.Transparent;
+            this.btnProfilde.BorderColor = System.Drawing.Color.Empty;
+            this.btnProfilde.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnProfilde.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnProfilde.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnProfilde.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnProfilde.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnProfilde.FillColor = System.Drawing.Color.Empty;
+            this.btnProfilde.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfilde.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnProfilde.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnProfilde.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnProfilde.Image = ((System.Drawing.Image)(resources.GetObject("btnProfilde.Image")));
+            this.btnProfilde.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnProfilde.Location = new System.Drawing.Point(62, 430);
+            this.btnProfilde.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProfilde.Name = "btnProfilde";
+            this.btnProfilde.PressedColor = System.Drawing.Color.Empty;
+            this.btnProfilde.Size = new System.Drawing.Size(111, 27);
+            this.btnProfilde.TabIndex = 32;
+            this.btnProfilde.Text = "Profile";
+            this.btnProfilde.UseTransparentBackground = true;
+            this.btnProfilde.Click += new System.EventHandler(this.btnProfilde_Click);
             // 
             // btnOut
             // 
@@ -172,11 +168,11 @@
             this.btnOut.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnOut.Image = ((System.Drawing.Image)(resources.GetObject("btnOut.Image")));
             this.btnOut.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnOut.Location = new System.Drawing.Point(83, 618);
-            this.btnOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOut.Location = new System.Drawing.Point(62, 502);
+            this.btnOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnOut.Name = "btnOut";
             this.btnOut.PressedColor = System.Drawing.Color.Empty;
-            this.btnOut.Size = new System.Drawing.Size(148, 66);
+            this.btnOut.Size = new System.Drawing.Size(111, 54);
             this.btnOut.TabIndex = 31;
             this.btnOut.Text = "Log Out";
             this.btnOut.UseTransparentBackground = true;
@@ -197,103 +193,68 @@
             this.btnStaff.HoverState.FillColor = System.Drawing.Color.White;
             this.btnStaff.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnStaff.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnStaff.Location = new System.Drawing.Point(83, 193);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnStaff.Location = new System.Drawing.Point(62, 157);
+            this.btnStaff.Margin = new System.Windows.Forms.Padding(2);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.PressedColor = System.Drawing.Color.Empty;
-            this.btnStaff.Size = new System.Drawing.Size(148, 42);
+            this.btnStaff.Size = new System.Drawing.Size(111, 34);
             this.btnStaff.TabIndex = 39;
             this.btnStaff.Text = "Staff";
             this.btnStaff.UseTransparentBackground = true;
             // 
-            // btnThemThuoc
+            // btnXemDuLieuThuoc
             // 
-            this.btnThemThuoc.BackColor = System.Drawing.Color.Transparent;
-            this.btnThemThuoc.BorderColor = System.Drawing.Color.Empty;
-            this.btnThemThuoc.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnThemThuoc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThemThuoc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThemThuoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThemThuoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThemThuoc.FillColor = System.Drawing.Color.Empty;
-            this.btnThemThuoc.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemThuoc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnThemThuoc.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnThemThuoc.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnThemThuoc.Image = ((System.Drawing.Image)(resources.GetObject("btnThemThuoc.Image")));
-            this.btnThemThuoc.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnThemThuoc.Location = new System.Drawing.Point(47, 432);
-            this.btnThemThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThemThuoc.Name = "btnThemThuoc";
-            this.btnThemThuoc.PressedColor = System.Drawing.Color.Empty;
-            this.btnThemThuoc.Size = new System.Drawing.Size(220, 41);
-            this.btnThemThuoc.TabIndex = 38;
-            this.btnThemThuoc.Text = "Look up products";
-            this.btnThemThuoc.UseTransparentBackground = true;
-            this.btnThemThuoc.Click += new System.EventHandler(this.btnThemThuoc_Click);
+            this.btnXemDuLieuThuoc.BackColor = System.Drawing.Color.Transparent;
+            this.btnXemDuLieuThuoc.BorderColor = System.Drawing.Color.Empty;
+            this.btnXemDuLieuThuoc.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnXemDuLieuThuoc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemDuLieuThuoc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemDuLieuThuoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXemDuLieuThuoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXemDuLieuThuoc.FillColor = System.Drawing.Color.Empty;
+            this.btnXemDuLieuThuoc.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXemDuLieuThuoc.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnXemDuLieuThuoc.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnXemDuLieuThuoc.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnXemDuLieuThuoc.Image = ((System.Drawing.Image)(resources.GetObject("btnXemDuLieuThuoc.Image")));
+            this.btnXemDuLieuThuoc.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnXemDuLieuThuoc.Location = new System.Drawing.Point(35, 351);
+            this.btnXemDuLieuThuoc.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXemDuLieuThuoc.Name = "btnXemDuLieuThuoc";
+            this.btnXemDuLieuThuoc.PressedColor = System.Drawing.Color.Empty;
+            this.btnXemDuLieuThuoc.Size = new System.Drawing.Size(165, 33);
+            this.btnXemDuLieuThuoc.TabIndex = 38;
+            this.btnXemDuLieuThuoc.Text = "Look up products";
+            this.btnXemDuLieuThuoc.UseTransparentBackground = true;
+            this.btnXemDuLieuThuoc.Click += new System.EventHandler(this.btnXemDuLieuThuoc_Click);
             // 
-            // uc_proNv1
+            // panel1
             // 
-            this.uc_proNv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.uc_proNv1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_proNv1.Location = new System.Drawing.Point(293, 0);
-            this.uc_proNv1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.uc_proNv1.Name = "uc_proNv1";
-            this.uc_proNv1.Size = new System.Drawing.Size(1440, 698);
-            this.uc_proNv1.TabIndex = 46;
-            // 
-            // uc_XemThuoc1
-            // 
-            this.uc_XemThuoc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
-            this.uc_XemThuoc1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_XemThuoc1.Location = new System.Drawing.Point(293, 0);
-            this.uc_XemThuoc1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.uc_XemThuoc1.Name = "uc_XemThuoc1";
-            this.uc_XemThuoc1.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
-            this.uc_XemThuoc1.Size = new System.Drawing.Size(1440, 698);
-            this.uc_XemThuoc1.TabIndex = 45;
-            // 
-            // uc_BaoCaoDonHang1
-            // 
-            this.uc_BaoCaoDonHang1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
-            this.uc_BaoCaoDonHang1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_BaoCaoDonHang1.Location = new System.Drawing.Point(293, 0);
-            this.uc_BaoCaoDonHang1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.uc_BaoCaoDonHang1.Name = "uc_BaoCaoDonHang1";
-            this.uc_BaoCaoDonHang1.Size = new System.Drawing.Size(1440, 698);
-            this.uc_BaoCaoDonHang1.TabIndex = 44;
-            // 
-            // uc_BanThuoc1
-            // 
-            this.uc_BanThuoc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
-            this.uc_BanThuoc1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_BanThuoc1.Location = new System.Drawing.Point(293, 0);
-            this.uc_BanThuoc1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.uc_BanThuoc1.Name = "uc_BanThuoc1";
-            this.uc_BanThuoc1.Size = new System.Drawing.Size(1440, 698);
-            this.uc_BanThuoc1.TabIndex = 42;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(220, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1080, 567);
+            this.panel1.TabIndex = 48;
             // 
             // FormNV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1733, 698);
-            this.Controls.Add(this.uc_proNv1);
-            this.Controls.Add(this.uc_XemThuoc1);
-            this.Controls.Add(this.uc_BaoCaoDonHang1);
-            this.Controls.Add(this.uc_BanThuoc1);
+            this.ClientSize = new System.Drawing.Size(1300, 567);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnStaff);
-            this.Controls.Add(this.btnThemThuoc);
+            this.Controls.Add(this.btnXemDuLieuThuoc);
             this.Controls.Add(this.guna2Button7);
             this.Controls.Add(this.btnKiemTraDonHang);
             this.Controls.Add(this.btnOder);
-            this.Controls.Add(this.btnPerson);
+            this.Controls.Add(this.btnProfilde);
             this.Controls.Add(this.btnOut);
             this.Controls.Add(this.splitter1);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormNV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FromAdmin";
@@ -307,13 +268,10 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Button btnKiemTraDonHang;
         private Guna.UI2.WinForms.Guna2Button btnOder;
-        private Guna.UI2.WinForms.Guna2Button btnPerson;
+        private Guna.UI2.WinForms.Guna2Button btnProfilde;
         private Guna.UI2.WinForms.Guna2Button btnOut;
         private Guna.UI2.WinForms.Guna2Button btnStaff;
-        private Guna.UI2.WinForms.Guna2Button btnThemThuoc;
-        private User.uc_BanThuoc uc_BanThuoc1;
-        private User.uc_BaoCaoDonHang uc_BaoCaoDonHang1;
-        private User.uc_XemThuoc uc_XemThuoc1;
-        private User.uc_proNv uc_proNv1;
+        private Guna.UI2.WinForms.Guna2Button btnXemDuLieuThuoc;
+        private System.Windows.Forms.Panel panel1;
     }
 }

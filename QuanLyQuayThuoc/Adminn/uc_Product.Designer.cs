@@ -630,7 +630,6 @@
             // 
             // dSThuocBindingSource
             // 
-            this.dSThuocBindingSource.DataSource = typeof(QuanLyQuayThuoc.Adminn.DSThuoc);
             // 
             // maThuocDataGridViewTextBoxColumn
             // 
