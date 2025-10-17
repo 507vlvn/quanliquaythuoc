@@ -19,64 +19,50 @@ namespace QuanLyQuayThuoc.Adminn
 
         private void uc_User_Load(object sender, EventArgs e)
         {
-            
             try
             {
                 var listPerson = db.People.ToList();
                 var listRole = db.Roles.ToList();
-
                 FillDgvNguoiDung(listPerson);
                 FillCbbChucVu(listRole);
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
             }
         }
-
         private void FillCbbChucVu(List<Role> listRole)
         {
             cbChucVu.DataSource = listRole;
             cbChucVu.DisplayMember = "Role1";
             cbChucVu.ValueMember = "RoleID";
         }
-
         private void FillDgvNguoiDung(List<Person> listPerson)
         {
             if (dgvNguoiDung.Columns.Count == 0)
             {
                 dgvNguoiDung.Columns.Add("UserID", "Mã Người Dùng");
-               
                 dgvNguoiDung.Columns.Add("PasswordHash", "Mật Khẩu");
                 dgvNguoiDung.Columns.Add("FullName", "Họ Tên");
-                
                 dgvNguoiDung.Columns.Add("Role", "Chức Vụ");
-               
             }
             dgvNguoiDung.Rows.Clear();
             foreach (var item in listPerson)
             {
                 int index = dgvNguoiDung.Rows.Add();
                 dgvNguoiDung.Rows[index].Cells[0].Value = item.UserID;  
-               
                 dgvNguoiDung.Rows[index].Cells[1].Value = item.PasswordHash;
                 dgvNguoiDung.Rows[index].Cells[2].Value = item.FullName;
-               
                 dgvNguoiDung.Rows[index].Cells[3].Value = item.Role.Role1;
             }
         }
-    
         private void btnAdd_Click(object sender, EventArgs e)
         {
             try
             {
-               
                 string fullName = txtTenND.Text;
                 string passwordHash = txtMatKhau.Text;
                 int roleId = (int)cbChucVu.SelectedValue;
-             
-                
                 Person newUser = new Person
                 { 
                     UserID = txtMaND.Text,

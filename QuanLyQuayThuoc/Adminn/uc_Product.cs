@@ -18,13 +18,7 @@ namespace QuanLyQuayThuoc.Adminn
         public uc_Product()
         {
             InitializeComponent();
-           
-
-
         }
-        
-        
-   
         private void LoadData()
         {
             List<Thuoc> listThuoc = db.Thuocs.ToList();
@@ -41,9 +35,6 @@ namespace QuanLyQuayThuoc.Adminn
            t.So_Luong_ton,t.Gia_ban,t.Ngay_san_xuat,t.Ngay_het_han      
        })
        .ToList();
-            
-           
-
             dgvdsthuoc.Columns["Ma_san_pham"].HeaderText = "Mã thuốc";
             dgvdsthuoc.Columns["Ten_san_pham"].HeaderText = "Tên thuốc";
             dgvdsthuoc.Columns["Thanh_phan"].HeaderText = "Thành Phần";
@@ -57,9 +48,6 @@ namespace QuanLyQuayThuoc.Adminn
             dgvdsthuoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvdsthuoc.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
-        
-
-
         private void uc_Product_Load(object sender, EventArgs e)
         {
            
