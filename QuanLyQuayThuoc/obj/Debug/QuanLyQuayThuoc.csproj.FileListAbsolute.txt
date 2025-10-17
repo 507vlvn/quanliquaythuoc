@@ -60,7 +60,6 @@ C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\bin\Debug\LiveCharts.WinFo
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.AssemblyReference.cache
-C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe.config
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.admin2.resources
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_ThongKeDoanhThu.resources
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_User.resources
@@ -127,3 +126,4 @@ C:\Doan\QuanLyQuayThuoc\obj\Debug\QuanLyQu.BA465F03.Up2Date
 C:\Doan\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe
 C:\Doan\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.pdb
 C:\Doan\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_Product.resources
+C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe.config

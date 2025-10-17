@@ -100,12 +100,12 @@
     <Compile Include="Adminn\uc_User.Designer.cs">
       <DependentUpon>uc_User.cs</DependentUpon>
     </Compile>
-    <Compile Include="SQL\ChiTietHoaDon.cs" />
-    <Compile Include="SQL\HoaDon.cs" />
-    <Compile Include="SQL\ModelSQL.cs" />
-    <Compile Include="SQL\Person.cs" />
-    <Compile Include="SQL\Role.cs" />
-    <Compile Include="SQL\Thuoc.cs" />
+    <Compile Include="sql\ChiTietHoaDon.cs" />
+    <Compile Include="sql\HoaDon.cs" />
+    <Compile Include="sql\ModelSQL.cs" />
+    <Compile Include="sql\Person.cs" />
+    <Compile Include="sql\Role.cs" />
+    <Compile Include="sql\Thuoc.cs" />
     <Compile Include="uc_con\uc_banChay.cs">
       <SubType>UserControl</SubType>
     </Compile>

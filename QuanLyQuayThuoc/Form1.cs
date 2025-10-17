@@ -1,4 +1,4 @@
-﻿using QuanLyQuayThuoc.SQL;
+﻿using QuanLyQuayThuoc.sql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using NotifyIconEx;
+using QuanLyQuayThuoc.sql;
 
 namespace QuanLyQuayThuoc
 {
@@ -46,19 +47,9 @@ namespace QuanLyQuayThuoc
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             var selectedRole = cbChucVu.Text;
-            int userId;
+           
 
-            if (!int.TryParse(txtName.Text, out userId))
-            {
-                notifyIcon1.BalloonTipIcon = ToolTipIcon.Error;
-                notifyIcon1.BalloonTipTitle = "Thông báo";
-                notifyIcon1.BalloonTipText = "Mã người dùng phải là số!";
-                notifyIcon1.ShowBalloonTip(1000);
-                
-                return;
-            }
-
-            var user = db.People.FirstOrDefault(p =>p.UserID == userId &&
+            var user = db.People.FirstOrDefault(p =>p.UserID == txtName.Text &&
                     p.PasswordHash == txtMK.Text &&
                     p.Role.Role1 == selectedRole);
 

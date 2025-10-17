@@ -1,4 +1,5 @@
-﻿using QuanLyQuayThuoc.SQL;
+﻿using QuanLyQuayThuoc.sql;
+
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -18,6 +19,7 @@ namespace QuanLyQuayThuoc.Adminn
 
         private void uc_User_Load(object sender, EventArgs e)
         {
+            
             try
             {
                 var listPerson = db.People.ToList();
@@ -45,18 +47,23 @@ namespace QuanLyQuayThuoc.Adminn
             if (dgvNguoiDung.Columns.Count == 0)
             {
                 dgvNguoiDung.Columns.Add("UserID", "Mã Người Dùng");
-                dgvNguoiDung.Columns.Add("FullName", "Họ Tên");
-                dgvNguoiDung.Columns.Add("Role", "Chức Vụ");
+               
                 dgvNguoiDung.Columns.Add("PasswordHash", "Mật Khẩu");
+                dgvNguoiDung.Columns.Add("FullName", "Họ Tên");
+                
+                dgvNguoiDung.Columns.Add("Role", "Chức Vụ");
+               
             }
             dgvNguoiDung.Rows.Clear();
             foreach (var item in listPerson)
             {
                 int index = dgvNguoiDung.Rows.Add();
-                dgvNguoiDung.Rows[index].Cells[0].Value = item.UserID;
-                dgvNguoiDung.Rows[index].Cells[1].Value = item.FullName;
-                dgvNguoiDung.Rows[index].Cells[2].Value = item.Role.Role1;
-                dgvNguoiDung.Rows[index].Cells[3].Value = item.PasswordHash;
+                dgvNguoiDung.Rows[index].Cells[0].Value = item.UserID;  
+               
+                dgvNguoiDung.Rows[index].Cells[1].Value = item.PasswordHash;
+                dgvNguoiDung.Rows[index].Cells[2].Value = item.FullName;
+               
+                dgvNguoiDung.Rows[index].Cells[3].Value = item.Role.Role1;
             }
         }
     
@@ -64,25 +71,15 @@ namespace QuanLyQuayThuoc.Adminn
         {
             try
             {
-                int userId;
-                if (!int.TryParse(txtMaND.Text, out userId))
-                {
-                    MessageBox.Show("Mã Người Dùng phải là số nguyên.");
-                    return;
-                }
+               
                 string fullName = txtTenND.Text;
                 string passwordHash = txtMatKhau.Text;
                 int roleId = (int)cbChucVu.SelectedValue;
-                // Kiểm tra nếu UserID đã tồn tại
-                var existingUser = db.People.Find(userId);
-                if (existingUser != null)
-                {
-                    MessageBox.Show("Mã Người Dùng đã tồn tại. Vui lòng chọn mã khác.");
-                    return;
-                }
+             
+                
                 Person newUser = new Person
-                {
-                    UserID = userId,
+                { 
+                    UserID = txtMaND.Text,
                     FullName = fullName,
                     PasswordHash = passwordHash,
                     RoleID = roleId
@@ -99,6 +96,8 @@ namespace QuanLyQuayThuoc.Adminn
                 MessageBox.Show("Lỗi khi thêm Người Dùng: " + ex.Message);
             }
         }
+
+        
     }
 }
     

@@ -1,4 +1,4 @@
-namespace QuanLyQuayThuoc.SQL
+namespace QuanLyQuayThuoc.sql
 {
     using System;
     using System.Collections.Generic;
@@ -16,16 +16,18 @@ namespace QuanLyQuayThuoc.SQL
         }
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int UserID { get; set; }
+        [StringLength(50)]
+        public string UserID { get; set; }
 
-        [StringLength(100)]
+        [Required]
+        [StringLength(20)]
         public string PasswordHash { get; set; }
 
-        [StringLength(100)]
+        [Required]
+        [StringLength(20)]
         public string FullName { get; set; }
 
-        public int? RoleID { get; set; }
+        public int RoleID { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HoaDon> HoaDons { get; set; }

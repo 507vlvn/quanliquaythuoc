@@ -1,4 +1,4 @@
-namespace QuanLyQuayThuoc.SQL
+namespace QuanLyQuayThuoc.sql
 {
     using System;
     using System.Collections.Generic;

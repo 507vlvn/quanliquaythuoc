@@ -1,4 +1,5 @@
-﻿using QuanLyQuayThuoc.SQL;
+﻿using QuanLyQuayThuoc.sql;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

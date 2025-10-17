@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 
-namespace QuanLyQuayThuoc.SQL
+namespace QuanLyQuayThuoc.sql
 {
     public partial class ModelSQL : DbContext
     {
@@ -23,6 +23,21 @@ namespace QuanLyQuayThuoc.SQL
             modelBuilder.Entity<ChiTietHoaDon>()
                 .Property(e => e.Thanh_tien)
                 .HasPrecision(29, 2);
+
+            modelBuilder.Entity<HoaDon>()
+                .HasMany(e => e.ChiTietHoaDons)
+                .WithRequired(e => e.HoaDon)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Role>()
+                .HasMany(e => e.People)
+                .WithRequired(e => e.Role)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Thuoc>()
+                .HasMany(e => e.ChiTietHoaDons)
+                .WithRequired(e => e.Thuoc)
+                .WillCascadeOnDelete(false);
         }
     }
 }

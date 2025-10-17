@@ -1,4 +1,4 @@
-namespace QuanLyQuayThuoc.SQL
+namespace QuanLyQuayThuoc.sql
 {
     using System;
     using System.Collections.Generic;
@@ -40,17 +40,17 @@ namespace QuanLyQuayThuoc.SQL
         [StringLength(100)]
         public string Nha_san_xuat { get; set; }
 
-        [Column("So Luong")]
-        public int? So_Luong { get; set; }
+        [Column("So Luong ton")]
+        public int So_Luong_ton { get; set; }
 
         [Column("Gia ban")]
-        public decimal? Gia_ban { get; set; }
+        public decimal Gia_ban { get; set; }
 
         [Column("Ngay san xuat", TypeName = "date")]
-        public DateTime? Ngay_san_xuat { get; set; }
+        public DateTime Ngay_san_xuat { get; set; }
 
         [Column("Ngay het han", TypeName = "date")]
-        public DateTime? Ngay_het_han { get; set; }
+        public DateTime Ngay_het_han { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; }

@@ -1,4 +1,4 @@
-namespace QuanLyQuayThuoc.SQL
+namespace QuanLyQuayThuoc.sql
 {
     using System;
     using System.Collections.Generic;
@@ -27,7 +27,8 @@ namespace QuanLyQuayThuoc.SQL
         [StringLength(20)]
         public string So_Dien_Thoai { get; set; }
 
-        public int? UserID { get; set; }
+        [StringLength(50)]
+        public string UserID { get; set; }
 
         [Column("Tong Tien")]
         public decimal? Tong_Tien { get; set; }
