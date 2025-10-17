@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using NotifyIconEx;
 
 namespace QuanLyQuayThuoc
 {
@@ -18,6 +19,11 @@ namespace QuanLyQuayThuoc
         public Form1()
         {
             InitializeComponent();
+            notifyIcon1.Icon = SystemIcons.WinLogo;
+            this.MaximizeBox = false; // Không cho phóng to
+            this.MinimizeBox = false; // Không cho thu nhỏ
+            this.FormBorderStyle = FormBorderStyle.FixedSingle; // Không cho thay đổi kích thước
+        
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -44,7 +50,11 @@ namespace QuanLyQuayThuoc
 
             if (!int.TryParse(txtName.Text, out userId))
             {
-                MessageBox.Show("Mã người dùng phải là số!");
+                notifyIcon1.BalloonTipIcon = ToolTipIcon.Error;
+                notifyIcon1.BalloonTipTitle = "Thông báo";
+                notifyIcon1.BalloonTipText = "Mã người dùng phải là số!";
+                notifyIcon1.ShowBalloonTip(1000);
+                
                 return;
             }
 
@@ -56,7 +66,12 @@ namespace QuanLyQuayThuoc
             {
                 if (user.Role.Role1 == "Admin")
                 {
-                    MessageBox.Show("Đăng nhập thành công với vai trò Quản trị viên");
+
+                    notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+                    notifyIcon1.BalloonTipTitle = "Thông báo";
+                    notifyIcon1.BalloonTipText = "Đăng nhập thành công với vai trò Quản trị viên";
+                    notifyIcon1.ShowBalloonTip(1000);
+                    
                     this.Hide();
                     admin2 ad = new admin2();
                     ad.ShowDialog();
@@ -64,7 +79,11 @@ namespace QuanLyQuayThuoc
                 }
                 else
                 {
-                    MessageBox.Show("Đăng nhập thành công với vai trò " + user.Role.Role1);
+                    notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+                    notifyIcon1.BalloonTipTitle = "Thông báo";
+                    notifyIcon1.BalloonTipText = "Đăng nhập thành công với vai trò " + user.Role.Role1;
+                    notifyIcon1.ShowBalloonTip(1000);
+                   
                     this.Hide();
                     FormNV nv = new FormNV();
                     nv.ShowDialog();
