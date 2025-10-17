@@ -66,19 +66,11 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.guna2TextBox8 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgvDsthuoc = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dSThuocBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.maThuocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenThuocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaySXDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hSDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sLDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoaDonsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvQLSP = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDsthuoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSThuocBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvQLSP)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -568,11 +560,10 @@
             this.guna2TextBox9.Size = new System.Drawing.Size(172, 22);
             this.guna2TextBox9.TabIndex = 26;
             // 
-            // dgvDsthuoc
+            // dgvQLSP
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvDsthuoc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDsthuoc.AutoGenerateColumns = false;
+            this.dgvQLSP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -580,18 +571,8 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDsthuoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvDsthuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDsthuoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maThuocDataGridViewTextBoxColumn,
-            this.tenThuocDataGridViewTextBoxColumn,
-            this.loaiDataGridViewTextBoxColumn,
-            this.ngaySXDataGridViewTextBoxColumn,
-            this.hSDDataGridViewTextBoxColumn,
-            this.sLDataGridViewTextBoxColumn,
-            this.donGiaDataGridViewTextBoxColumn,
-            this.hoaDonsDataGridViewTextBoxColumn});
-            this.dgvDsthuoc.DataSource = this.dSThuocBindingSource;
+            this.dgvQLSP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvQLSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -599,92 +580,41 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDsthuoc.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvDsthuoc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvDsthuoc.Location = new System.Drawing.Point(25, 284);
-            this.dgvDsthuoc.Name = "dgvDsthuoc";
-            this.dgvDsthuoc.RowHeadersVisible = false;
-            this.dgvDsthuoc.Size = new System.Drawing.Size(1022, 270);
-            this.dgvDsthuoc.TabIndex = 27;
-            this.dgvDsthuoc.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvDsthuoc.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvDsthuoc.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvDsthuoc.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvDsthuoc.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvDsthuoc.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvDsthuoc.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvDsthuoc.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgvDsthuoc.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvDsthuoc.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvDsthuoc.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvDsthuoc.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDsthuoc.ThemeStyle.HeaderStyle.Height = 15;
-            this.dgvDsthuoc.ThemeStyle.ReadOnly = false;
-            this.dgvDsthuoc.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvDsthuoc.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvDsthuoc.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvDsthuoc.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvDsthuoc.ThemeStyle.RowsStyle.Height = 22;
-            this.dgvDsthuoc.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvDsthuoc.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // dSThuocBindingSource
-            // 
-            // 
-            // maThuocDataGridViewTextBoxColumn
-            // 
-            this.maThuocDataGridViewTextBoxColumn.DataPropertyName = "MaThuoc";
-            this.maThuocDataGridViewTextBoxColumn.HeaderText = "MaThuoc";
-            this.maThuocDataGridViewTextBoxColumn.Name = "maThuocDataGridViewTextBoxColumn";
-            // 
-            // tenThuocDataGridViewTextBoxColumn
-            // 
-            this.tenThuocDataGridViewTextBoxColumn.DataPropertyName = "TenThuoc";
-            this.tenThuocDataGridViewTextBoxColumn.HeaderText = "TenThuoc";
-            this.tenThuocDataGridViewTextBoxColumn.Name = "tenThuocDataGridViewTextBoxColumn";
-            // 
-            // loaiDataGridViewTextBoxColumn
-            // 
-            this.loaiDataGridViewTextBoxColumn.DataPropertyName = "Loai";
-            this.loaiDataGridViewTextBoxColumn.HeaderText = "Loai";
-            this.loaiDataGridViewTextBoxColumn.Name = "loaiDataGridViewTextBoxColumn";
-            // 
-            // ngaySXDataGridViewTextBoxColumn
-            // 
-            this.ngaySXDataGridViewTextBoxColumn.DataPropertyName = "NgaySX";
-            this.ngaySXDataGridViewTextBoxColumn.HeaderText = "NgaySX";
-            this.ngaySXDataGridViewTextBoxColumn.Name = "ngaySXDataGridViewTextBoxColumn";
-            // 
-            // hSDDataGridViewTextBoxColumn
-            // 
-            this.hSDDataGridViewTextBoxColumn.DataPropertyName = "HSD";
-            this.hSDDataGridViewTextBoxColumn.HeaderText = "HSD";
-            this.hSDDataGridViewTextBoxColumn.Name = "hSDDataGridViewTextBoxColumn";
-            // 
-            // sLDataGridViewTextBoxColumn
-            // 
-            this.sLDataGridViewTextBoxColumn.DataPropertyName = "SL";
-            this.sLDataGridViewTextBoxColumn.HeaderText = "SL";
-            this.sLDataGridViewTextBoxColumn.Name = "sLDataGridViewTextBoxColumn";
-            // 
-            // donGiaDataGridViewTextBoxColumn
-            // 
-            this.donGiaDataGridViewTextBoxColumn.DataPropertyName = "DonGia";
-            this.donGiaDataGridViewTextBoxColumn.HeaderText = "DonGia";
-            this.donGiaDataGridViewTextBoxColumn.Name = "donGiaDataGridViewTextBoxColumn";
-            // 
-            // hoaDonsDataGridViewTextBoxColumn
-            // 
-            this.hoaDonsDataGridViewTextBoxColumn.DataPropertyName = "HoaDons";
-            this.hoaDonsDataGridViewTextBoxColumn.HeaderText = "HoaDons";
-            this.hoaDonsDataGridViewTextBoxColumn.Name = "hoaDonsDataGridViewTextBoxColumn";
+            this.dgvQLSP.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvQLSP.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvQLSP.Location = new System.Drawing.Point(30, 308);
+            this.dgvQLSP.Name = "dgvQLSP";
+            this.dgvQLSP.RowHeadersVisible = false;
+            this.dgvQLSP.Size = new System.Drawing.Size(1004, 211);
+            this.dgvQLSP.TabIndex = 27;
+            this.dgvQLSP.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvQLSP.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvQLSP.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvQLSP.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvQLSP.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvQLSP.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvQLSP.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvQLSP.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvQLSP.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvQLSP.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvQLSP.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvQLSP.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvQLSP.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgvQLSP.ThemeStyle.ReadOnly = false;
+            this.dgvQLSP.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvQLSP.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvQLSP.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvQLSP.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvQLSP.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvQLSP.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvQLSP.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // uc_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
-            this.Controls.Add(this.dgvDsthuoc);
+            this.Controls.Add(this.dgvQLSP);
             this.Controls.Add(this.guna2TextBox9);
             this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2TextBox8);
@@ -722,8 +652,8 @@
             this.Load += new System.EventHandler(this.uc_Product_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDsthuoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSThuocBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvQLSP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -764,7 +694,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2DataGridView dgvDsthuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn maThuocDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenThuocDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiDataGridViewTextBoxColumn;
@@ -774,5 +703,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn donGiaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hoaDonsDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource dSThuocBindingSource;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvQLSP;
     }
 }
