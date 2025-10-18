@@ -71,6 +71,7 @@ namespace QuanLyQuayThuoc
                         this.Hide();
                         admin2 ad = new admin2();
                         ad.ShowDialog();
+                        this.Close();
 
                     }
                     else
@@ -83,6 +84,7 @@ namespace QuanLyQuayThuoc
                         this.Hide();
                         FormNV nv = new FormNV();
                         nv.ShowDialog();
+                        this.Close();   
                     }
                 }
                 else
