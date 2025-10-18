@@ -23,6 +23,9 @@ namespace QuanLyQuayThuoc.User
         {
             List<ChiTietHoaDon> listChiTietHoaDon = db.ChiTietHoaDons.ToList();
             dgvQuanLiHoaDon.DataSource = listChiTietHoaDon;
+            AnCotKhoaNgoai();
+
+
             dgvQuanLiHoaDon.DataSource = db.ChiTietHoaDons.Select(cthd => new
             {
                 cthd.Ma_Chi_Tiet_HD,
@@ -57,8 +60,19 @@ namespace QuanLyQuayThuoc.User
                 cthd.Thanh_tien.ToString().ToLower().Contains(keyword)||
                 cthd.Ma_Hoa_Don.ToString().ToLower().Contains(keyword)
                 ).ToList();
-           dgvQuanLiHoaDon.DataSource = result;
+           
+            dgvQuanLiHoaDon.DataSource = result;
+            AnCotKhoaNgoai();
         }
-     }
- }
+        private void AnCotKhoaNgoai()
+        {
+            if (dgvQuanLiHoaDon.Columns.Contains("HoaDon"))
+                dgvQuanLiHoaDon.Columns["HoaDon"].Visible = false;
+
+            if (dgvQuanLiHoaDon.Columns.Contains("Thuoc"))
+                dgvQuanLiHoaDon.Columns["Thuoc"].Visible = false;
+        }
+
+    }
+}
 
