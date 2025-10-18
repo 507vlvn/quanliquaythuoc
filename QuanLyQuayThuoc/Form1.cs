@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using NotifyIconEx;
-using QuanLyQuayThuoc.sql;
 
 namespace QuanLyQuayThuoc
 {
@@ -24,13 +23,12 @@ namespace QuanLyQuayThuoc
             this.MaximizeBox = false; // Không cho phóng to
             this.MinimizeBox = false; // Không cho thu nhỏ
             this.FormBorderStyle = FormBorderStyle.FixedSingle; // Không cho thay đổi kích thước
-        
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-           List<Role> listRole = db.Roles.ToList();
-            fillcombobox(listRole);
-            clear();    
+
+            clear();
 
         }
         private void btnExit_Click(object sender, EventArgs e)
@@ -38,64 +36,77 @@ namespace QuanLyQuayThuoc
             Application.Exit();
 
         }
-        private void fillcombobox(List<Role> listRole)
-        {
-            cbChucVu.DataSource = listRole;
-            cbChucVu.DisplayMember = "Role1";
-            cbChucVu.ValueMember = "RoleID";
-        }
+
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            var selectedRole = cbChucVu.Text;
-           
+            errorProvider1.Clear();
 
-            var user = db.People.FirstOrDefault(p =>p.UserID == txtName.Text &&
-                    p.PasswordHash == txtMK.Text &&
-                    p.Role.Role1 == selectedRole);
-
-            if (user != null)
+            if (string.IsNullOrEmpty(txtName.Text))
             {
-                if (user.Role.Role1 == "Admin")
-                {
+                errorProvider1.SetError(txtName, "Vui lòng nhập tên đăng nhập");
+            }
+            else if (string.IsNullOrEmpty(txtMK.Text))
 
-                    notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                    notifyIcon1.BalloonTipTitle = "Thông báo";
-                    notifyIcon1.BalloonTipText = "Đăng nhập thành công với vai trò Quản trị viên";
-                    notifyIcon1.ShowBalloonTip(1000);
-                    
-                    this.Hide();
-                    admin2 ad = new admin2();
-                    ad.ShowDialog();
-                    
-                }
-                else
-                {
-                    notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                    notifyIcon1.BalloonTipTitle = "Thông báo";
-                    notifyIcon1.BalloonTipText = "Đăng nhập thành công với vai trò " + user.Role.Role1;
-                    notifyIcon1.ShowBalloonTip(1000);
-                   
-                    this.Hide();
-                    FormNV nv = new FormNV();
-                    nv.ShowDialog();
-                }
+            {
+                errorProvider1.SetError(txtMK, "Vui lòng nhập mật khẩu");
+
             }
             else
             {
-                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+
+                var user = db.People.FirstOrDefault(p => p.UserID == txtName.Text &&
+                            p.PasswordHash == txtMK.Text);
+
+                if (user != null)
+                {
+
+                    if (user.Role.Role1 == "Admin")
+                    {
+
+                        notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+                        notifyIcon1.BalloonTipTitle = "Thông báo";
+                        notifyIcon1.BalloonTipText = "Đăng nhập thành công với vai trò Quản trị viên";
+                        notifyIcon1.ShowBalloonTip(1000);
+
+                        this.Hide();
+                        admin2 ad = new admin2();
+                        ad.ShowDialog();
+
+                    }
+                    else
+                    {
+                        notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+                        notifyIcon1.BalloonTipTitle = "Thông báo";
+                        notifyIcon1.BalloonTipText = "Đăng nhập thành công với vai trò " + user.Role.Role1;
+                        notifyIcon1.ShowBalloonTip(1000);
+
+                        this.Hide();
+                        FormNV nv = new FormNV();
+                        nv.ShowDialog();
+                    }
+                }
+                else
+                {
+                    errorProvider1.SetError(txtMK, "Tên đăng nhập hoặc mật khẩu không đúng");
+                    errorProvider1.SetError(txtName, "Tên đăng nhập hoặc mật khẩu không đúng");
+                    notifyIcon1.BalloonTipIcon = ToolTipIcon.Error;
+                    notifyIcon1.BalloonTipTitle = "Thông báo";
+                    notifyIcon1.BalloonTipText = "sai ten dang nhap hoac mk";
+                    notifyIcon1.ShowBalloonTip(1000);
+                }
             }
         }
 
 
         private void btnReload_Click(object sender, EventArgs e)
         {
-            cbChucVu.SelectedIndex = -1;
+
             txtName.Clear();
             txtMK.Clear();
         }
         private void clear()
         {
-            cbChucVu.SelectedIndex = -1;
+
             txtName.Clear();
             txtMK.Clear();
         }
@@ -122,12 +133,12 @@ namespace QuanLyQuayThuoc
 
         private void btnhienMk_Click(object sender, EventArgs e)
         {
-            if(btnanmk.Visible == false)
+            if (btnanmk.Visible == false)
             {
                 btnhienMk.Visible = false;
                 btnanmk.Visible = true;
             }
-            if(txtMK.UseSystemPasswordChar == true)
+            if (txtMK.UseSystemPasswordChar == true)
             {
                 txtMK.UseSystemPasswordChar = false;
             }
@@ -142,11 +153,11 @@ namespace QuanLyQuayThuoc
 
         }
 
-      
+
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
-  
+
 
         }
     }
