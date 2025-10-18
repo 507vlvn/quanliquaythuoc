@@ -14,7 +14,10 @@ namespace QuanLyQuayThuoc
 
         private void admin2_Load(object sender, EventArgs e)
         {
-
+            dateTimePicker1.Value = DateTime.Now;
+            uc_Dashbord db = new uc_Dashbord();
+            db.Dock = DockStyle.Fill;  // Cho vừa khít panel
+            panel1.Controls.Add(db);
         }
 
         private void btnDashbord_Click(object sender, EventArgs e)
@@ -74,6 +77,11 @@ namespace QuanLyQuayThuoc
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }

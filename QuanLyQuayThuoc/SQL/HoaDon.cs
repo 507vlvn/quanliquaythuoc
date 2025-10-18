@@ -24,18 +24,14 @@ namespace QuanLyQuayThuoc.sql
         public DateTime Ngay_ban { get; set; }
 
         [Column("So Dien Thoai")]
+        [Required]
         [StringLength(20)]
         public string So_Dien_Thoai { get; set; }
 
-        [StringLength(50)]
-        public string UserID { get; set; }
-
         [Column("Tong Tien")]
-        public decimal? Tong_Tien { get; set; }
+        public decimal Tong_Tien { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; }
-
-        public virtual Person Person { get; set; }
     }
 }

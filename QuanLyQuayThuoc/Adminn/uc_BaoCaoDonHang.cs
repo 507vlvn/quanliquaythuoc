@@ -23,28 +23,17 @@ namespace QuanLyQuayThuoc.User
 
         private void LoadData()
         {
-            var list = db.ChiTietHoaDons
+            var list = db.HoaDons
                 .Select(cthd => new
                 {
-                    cthd.Ma_Chi_Tiet_HD,
-                    cthd.Ma_san_pham,
-                    cthd.So_luong,
-                    cthd.So_Ngay_Uong,
-                    cthd.Gia_ban,
-                    cthd.Thanh_tien,
-                    cthd.Ma_Hoa_Don
+            
+                    cthd.Ngay_ban,
+                    
                 })
                 .ToList();
 
             dgvQuanLiHoaDon.DataSource = list;
 
-            dgvQuanLiHoaDon.Columns["Ma_Chi_Tiet_HD"].HeaderText = "Mã Chi Tiết HĐ";
-            dgvQuanLiHoaDon.Columns["Ma_san_pham"].HeaderText = "Mã Sản Phẩm";
-            dgvQuanLiHoaDon.Columns["So_luong"].HeaderText = "Số Lượng";
-            dgvQuanLiHoaDon.Columns["So_Ngay_Uong"].HeaderText = "Số Ngày Uống";
-            dgvQuanLiHoaDon.Columns["Gia_ban"].HeaderText = "Giá Bán";
-            dgvQuanLiHoaDon.Columns["Thanh_tien"].HeaderText = "Thành Tiền";
-            dgvQuanLiHoaDon.Columns["Ma_Hoa_Don"].HeaderText = "Mã Hóa Đơn";
 
             dgvQuanLiHoaDon.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvQuanLiHoaDon.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -65,8 +54,7 @@ namespace QuanLyQuayThuoc.User
                     cthd.Ma_san_pham,
                     cthd.So_luong,
                     cthd.So_Ngay_Uong,
-                    cthd.Gia_ban,
-                    cthd.Thanh_tien,
+                   
                     cthd.Ma_Hoa_Don
                 })
                 .ToList();

@@ -20,15 +20,6 @@ namespace QuanLyQuayThuoc.sql
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ChiTietHoaDon>()
-                .Property(e => e.Thanh_tien)
-                .HasPrecision(29, 2);
-
-            modelBuilder.Entity<HoaDon>()
-                .HasMany(e => e.ChiTietHoaDons)
-                .WithRequired(e => e.HoaDon)
-                .WillCascadeOnDelete(false);
-
             modelBuilder.Entity<Role>()
                 .HasMany(e => e.People)
                 .WithRequired(e => e.Role)

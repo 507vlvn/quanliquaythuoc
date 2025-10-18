@@ -46,23 +46,23 @@ namespace QuanLyQuayThuoc
                 errorProvider1.SetError(txtName, "Vui lòng nhập tên đăng nhập");
             }
             else if (string.IsNullOrEmpty(txtMK.Text))
-
             {
                 errorProvider1.SetError(txtMK, "Vui lòng nhập mật khẩu");
-
             }
             else
             {
-
                 var user = db.People.FirstOrDefault(p => p.UserID == txtName.Text &&
                             p.PasswordHash == txtMK.Text);
 
                 if (user != null)
                 {
+                    // LƯU THÔNG TIN USER ĐĂNG NHẬP
+                    CurrentUser.UserID = user.UserID;
+                    CurrentUser.FullName = user.FullName;
+                    CurrentUser.Role = user.Role.Role1;
 
                     if (user.Role.Role1 == "Admin")
                     {
-
                         notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
                         notifyIcon1.BalloonTipTitle = "Thông báo";
                         notifyIcon1.BalloonTipText = "Đăng nhập thành công với vai trò Quản trị viên";
@@ -72,7 +72,6 @@ namespace QuanLyQuayThuoc
                         admin2 ad = new admin2();
                         ad.ShowDialog();
                         this.Close();
-
                     }
                     else
                     {
@@ -84,7 +83,7 @@ namespace QuanLyQuayThuoc
                         this.Hide();
                         FormNV nv = new FormNV();
                         nv.ShowDialog();
-                        this.Close();   
+                        this.Close();
                     }
                 }
                 else
