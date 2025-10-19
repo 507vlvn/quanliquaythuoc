@@ -75,15 +75,5 @@ namespace QuanLyQuayThuoc
             form1.ShowDialog();
             this.Close();
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }    
 }

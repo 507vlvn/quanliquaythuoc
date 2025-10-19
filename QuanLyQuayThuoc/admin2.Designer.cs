@@ -344,7 +344,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1053, 567);
             this.panel1.TabIndex = 34;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // dateTimePicker1
             // 
@@ -355,7 +354,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(83, 20);
             this.dateTimePicker1.TabIndex = 36;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // admin2
             // 

@@ -43,6 +43,7 @@ namespace QuanLyQuayThuoc.User
             }).ToList();
             dgvdsThuoc.Columns["Ten_san_pham"].HeaderText = "Tên Sản Phẩm";
             dgvdsThuoc.Columns["Ma_san_pham"].HeaderText = "Mã Sản Phẩm";
+            dgvdsThuoc.Columns["Thanh_phan"].HeaderText = "Thành Phần";
             dgvdsThuoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         // Hàm tạo mã chi tiết hóa đơn tự động - Tìm số nhỏ nhất còn trống
@@ -214,7 +215,7 @@ namespace QuanLyQuayThuoc.User
                 dgvchitiethoadon.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 dgvchitiethoadon.ReadOnly = true;
 
-                labelTongCong.Text = db.ChiTietHoaDons
+                labtongcong.Text = db.ChiTietHoaDons
                     .Where(p => p.Ma_Hoa_Don == labMHD.Text)
                     .Sum(p => p.Thanh_Tien).GetValueOrDefault().ToString("N0");
             }
@@ -280,7 +281,7 @@ namespace QuanLyQuayThuoc.User
                 loadgridviewchitiethoadon();
             }
         }
-
+        
         private void bntTaoHoaDon_Click(object sender, EventArgs e)
         {
 
@@ -309,7 +310,8 @@ namespace QuanLyQuayThuoc.User
 
                 return;
             }
-            else if (txtSDT.Text.Length < 10)
+            //note: sửa điều kiện kiểm tra độ dài số điện thoại
+            else if (txtSDT.Text.Length < 10 && txtSDT.Text.Length >=10)
             {
                 MessageBox.Show("Số điện thoại khách hàng không hợp lệ !", "Thông báo",
                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -332,6 +334,7 @@ namespace QuanLyQuayThuoc.User
                 loadgridviewchitiethoadon();
                 clearInputFields();
                 dgvdsThuoc.Enabled = true;
+                txtSDT.Enabled = false;
             }
         }
 
@@ -342,7 +345,7 @@ namespace QuanLyQuayThuoc.User
             txtDonGia.Clear();
             txtSoVien.Clear();
             txtSoNgayUong.Clear();
-            txtSDT.Clear();
+
             txtChiDinh.Clear();
             txtThanhPhan.Clear();
             txtTon.Clear();
@@ -358,7 +361,7 @@ namespace QuanLyQuayThuoc.User
                                 "Thông báo",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
-                bntTaoHoaDon.Focus();
+              
                 return;
             }
             else
@@ -372,18 +375,21 @@ namespace QuanLyQuayThuoc.User
             }
             else
             {
-                hoaDon.Tong_Tien = decimal.Parse(labelTongCong.Text);
+                hoaDon.Tong_Tien = decimal.Parse(labtongcong.Text);
                 db.SaveChanges();
                 MessageBox.Show($"Hoàn thành hóa đơn {labMHD.Text} thành công!\n",
                                 "Thông báo",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
                 db.SaveChanges();
-                labelTongCong.Text = "0";
+                labtongcong.Text = "0";
                 labMHD.Text = "0";
                 loadgridviewchitiethoadon();
                 clearInputFields();
                 dgvdsThuoc.Enabled = false;
+                txtSDT.Enabled = true;
+                txtSDT.Clear();
+               
             }
 
         }
@@ -423,10 +429,13 @@ namespace QuanLyQuayThuoc.User
 
                     // Reset giao diện
                     labMHD.Text = string.Empty;
-                    labelTongCong.Text = "0đ";
+                    labtongcong.Text = "0đ";
                     clearInputFields();
                     loadgridviewchitiethoadon();
                     labMHD.Text = "0";
+                    txtSDT.Enabled = true;
+                    txtSDT.Clear();
+                    dgvdsThuoc.Enabled = false;
                 }
             }
         }
