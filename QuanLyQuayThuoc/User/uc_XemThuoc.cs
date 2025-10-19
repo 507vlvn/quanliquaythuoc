@@ -96,7 +96,7 @@ namespace QuanLyQuayThuoc.User
                     .ToList();
 
                 dgvDsThuoc.DataSource = result;
-               
+
                 dgvDsThuoc.Columns["Ma_san_pham"].HeaderText = "Mã thuốc";
                 dgvDsThuoc.Columns["Ten_san_pham"].HeaderText = "Tên thuốc";
                 dgvDsThuoc.Columns["Thanh_phan"].HeaderText = "Thành Phần";
