@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Web.Security;
 using System.Windows.Documents;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace QuanLyQuayThuoc.User
 {
@@ -26,8 +27,11 @@ namespace QuanLyQuayThuoc.User
         {
             loatdatadsthuoc();
             fllcbbUser();
+            loadgridviewchitiethoadon();
 
+            dgvdsThuoc.Enabled = false;
         }
+
         private void loatdatadsthuoc()
         {
 
@@ -194,9 +198,18 @@ namespace QuanLyQuayThuoc.User
                         cthd.Gia_Ban,
                         cthd.Thanh_Tien,
                         cthd.UserID
+
                     }).ToList();
 
                 dgvchitiethoadon.DataSource = list;
+                dgvchitiethoadon.Columns["Ma_Hoa_Don"].HeaderText = "Mã Hóa Đơn";
+                dgvchitiethoadon.Columns["Ma_Chi_Tiet_HD"].HeaderText = "Mã Chi Tiết HĐ";
+                dgvchitiethoadon.Columns["Ma_san_pham"].HeaderText = "Mã Sản Phẩm";
+                dgvchitiethoadon.Columns["So_luong"].HeaderText = "Số Lượng";
+                dgvchitiethoadon.Columns["So_Ngay_Uong"].HeaderText = "Số Ngày Uống";
+                dgvchitiethoadon.Columns["Gia_Ban"].HeaderText = "Giá Bán";
+                dgvchitiethoadon.Columns["Thanh_Tien"].HeaderText = "Thành Tiền";
+
                 dgvchitiethoadon.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dgvchitiethoadon.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 dgvchitiethoadon.ReadOnly = true;
@@ -219,6 +232,8 @@ namespace QuanLyQuayThuoc.User
             txtTon.Text = db.Thuocs.Where(p => p.Ma_san_pham == a).Select(p => p.So_Luong_ton).FirstOrDefault().ToString();
             txtChiDinh.Text = db.Thuocs.Where(p => p.Ma_san_pham == a).Select(p => p.Cong_dung).FirstOrDefault().ToString();
             txtDonGia.Text = db.Thuocs.Where(p => p.Ma_san_pham == a).Select(p => p.Gia_ban).FirstOrDefault().ToString();
+            txtSoNgayUong.Clear();
+            txtSoVien.Clear();
         }
         private void btnaddbill_Click(object sender, EventArgs e)
         {
@@ -283,12 +298,22 @@ namespace QuanLyQuayThuoc.User
                 MessageBox.Show("Vui lòng đăng nhập để tạo hóa đơn!", "Thông báo",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-            }else
-            if (string.IsNullOrWhiteSpace(txtSDT.Text))
+            }
+            else
+
+
+            if (txtSDT.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập số điện thoại Khách Hàng!", "Thông báo",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtSDT.Focus();
+
+                return;
+            }
+            else if (txtSDT.Text.Length < 10)
+            {
+                MessageBox.Show("Số điện thoại khách hàng không hợp lệ !", "Thông báo",
+                              MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                 return;
             }
 
@@ -305,16 +330,22 @@ namespace QuanLyQuayThuoc.User
                 db.HoaDons.Add(hd);
                 db.SaveChanges();
                 loadgridviewchitiethoadon();
+                clearInputFields();
+                dgvdsThuoc.Enabled = true;
             }
         }
+
         private void clearInputFields()
         {
-            txtmasanpham.Text = string.Empty;
-            txttenthuoc.Text = string.Empty;
-            txtDonGia.Text = string.Empty;
-            txtSoVien.Text = string.Empty;
-            txtSoNgayUong.Text = string.Empty;
-            txtSDT.Text = string.Empty;
+            txtmasanpham.Clear();
+            txttenthuoc.Clear();
+            txtDonGia.Clear();
+            txtSoVien.Clear();
+            txtSoNgayUong.Clear();
+            txtSDT.Clear();
+            txtChiDinh.Clear();
+            txtThanhPhan.Clear();
+            txtTon.Clear();
         }
 
         private void buttonHoanThanh_Click(object sender, EventArgs e)
@@ -352,15 +383,14 @@ namespace QuanLyQuayThuoc.User
                 labMHD.Text = "0";
                 loadgridviewchitiethoadon();
                 clearInputFields();
-
+                dgvdsThuoc.Enabled = false;
             }
-
 
         }
 
         private void buttonHuyHoaDon_Click(object sender, EventArgs e)
         {
-            if (labMHD.Text=="0")
+            if (labMHD.Text == "0")
             {
                 MessageBox.Show("Không có hóa đơn nào để hủy!", "Thông báo",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -396,13 +426,48 @@ namespace QuanLyQuayThuoc.User
                     labelTongCong.Text = "0đ";
                     clearInputFields();
                     loadgridviewchitiethoadon();
+                    labMHD.Text = "0";
                 }
             }
         }
 
-   
+        private void txtseach_TextChanged(object sender, EventArgs e)
+        {
+            String seach = txtseach.Text;
+            dgvdsThuoc.DataSource = db.Thuocs.Where(p => p.Ten_san_pham.Contains(seach) || p.Ma_san_pham.Contains(seach))
+                .Select(p => new
+                {
+                    p.Ma_san_pham,
+                    p.Ten_san_pham,
+                    p.Thanh_phan,
+                }).ToList();
+        }
+
+        private void btndeleteCT_Click(object sender, EventArgs e)
+        {
+            var selectedRow = dgvchitiethoadon.CurrentRow;
+            if (selectedRow != null)
+            {
+                string maChiTietHD = selectedRow.Cells["Ma_Chi_Tiet_HD"].Value.ToString();
+                var chiTietToDelete = db.ChiTietHoaDons.FirstOrDefault(ct => ct.Ma_Chi_Tiet_HD == maChiTietHD);
+                if (chiTietToDelete != null)
+                {
+                    DialogResult rd = MessageBox.Show($"Bạn có chắc chắn muốn xóa chi tiết hóa đơn {maChiTietHD}?",
+                                                  "Xác nhận xóa",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+                    if (rd == DialogResult.Yes)
+                    {
+                        db.ChiTietHoaDons.Remove(chiTietToDelete);
+                        db.SaveChanges();
+                        loadgridviewchitiethoadon();
+                    }
+                }
+            }
+        }
     }
 }
+
 
 
 
