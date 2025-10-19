@@ -21,6 +21,12 @@ namespace QuanLyQuayThuoc.User
         {
             LoadData();
             ConfigureDataGridView();
+            fllcbbUser();
+            if (CurrentUser.Role != "Admin")
+            {
+                //btndelete.Enabled = false; // Vô hiệu hóa nút xóa nếu không phải Admin
+                btndelete.Visible = false;
+            }
         }
 
         private void ConfigureDataGridView()
@@ -38,7 +44,27 @@ namespace QuanLyQuayThuoc.User
                 dgvQuanLiHoaDon.Columns["Tong_Tien"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             }
         }
+        private void fllcbbUser()
+        {
+            if (!string.IsNullOrEmpty(CurrentUser.UserID))
+            {
+                var currentUser = db.People
+                    .Where(p => p.UserID == CurrentUser.UserID)
+                    .Select(p => new
+                    {
+                        p.UserID,
+                        p.FullName
+                    })
+                    .FirstOrDefault();
 
+                if (currentUser != null)
+                {
+                    LabUs.Text = "User: " + currentUser.FullName;
+
+                }
+            }
+        }
+        
         private void LoadData()
         {
             try
@@ -366,6 +392,11 @@ namespace QuanLyQuayThuoc.User
 
                 MessageBox.Show($"Lỗi khi tính tổng số đơn hàng: ", "Lỗi",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void LabUs_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
