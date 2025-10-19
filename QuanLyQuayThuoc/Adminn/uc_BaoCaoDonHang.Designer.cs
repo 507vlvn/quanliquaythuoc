@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_BaoCaoDonHang));
             this.dgvQuanLiHoaDon = new System.Windows.Forms.DataGridView();
             this.labelTitle = new System.Windows.Forms.Label();
@@ -50,14 +50,14 @@
             this.dgvQuanLiHoaDon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvQuanLiHoaDon.BackgroundColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvQuanLiHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvQuanLiHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvQuanLiHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvQuanLiHoaDon.Location = new System.Drawing.Point(22, 89);
             this.dgvQuanLiHoaDon.Margin = new System.Windows.Forms.Padding(2);
@@ -90,7 +90,7 @@
             this.btndelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btndelete.FillColor = System.Drawing.Color.White;
             this.btndelete.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.ForeColor = System.Drawing.Color.Black;
+            this.btndelete.ForeColor = System.Drawing.Color.SeaGreen;
             this.btndelete.Image = ((System.Drawing.Image)(resources.GetObject("btndelete.Image")));
             this.btndelete.ImageSize = new System.Drawing.Size(30, 30);
             this.btndelete.Location = new System.Drawing.Point(22, 495);
@@ -128,14 +128,14 @@
             this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button6.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button6.ForeColor = System.Drawing.Color.SeaGreen;
             this.guna2Button6.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.Image")));
             this.guna2Button6.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button6.Location = new System.Drawing.Point(966, 17);
+            this.guna2Button6.Location = new System.Drawing.Point(945, 17);
             this.guna2Button6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(98, 37);
+            this.guna2Button6.Size = new System.Drawing.Size(119, 37);
             this.guna2Button6.TabIndex = 14;
             this.guna2Button6.Text = "Search:";
             // 
@@ -143,6 +143,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(737, 517);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 22);
@@ -153,6 +154,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SeaGreen;
             this.label2.Location = new System.Drawing.Point(271, 517);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 22);
@@ -163,6 +165,7 @@
             // 
             this.lbTongHoaDon.AutoSize = true;
             this.lbTongHoaDon.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongHoaDon.ForeColor = System.Drawing.Color.SeaGreen;
             this.lbTongHoaDon.Location = new System.Drawing.Point(414, 517);
             this.lbTongHoaDon.Name = "lbTongHoaDon";
             this.lbTongHoaDon.Size = new System.Drawing.Size(20, 22);
@@ -173,6 +176,7 @@
             // 
             this.lbTongDoanhThu.AutoSize = true;
             this.lbTongDoanhThu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongDoanhThu.ForeColor = System.Drawing.Color.SeaGreen;
             this.lbTongDoanhThu.Location = new System.Drawing.Point(893, 517);
             this.lbTongDoanhThu.Name = "lbTongDoanhThu";
             this.lbTongDoanhThu.Size = new System.Drawing.Size(20, 22);
@@ -182,11 +186,12 @@
             // LabUs
             // 
             this.LabUs.AutoSize = true;
-            this.LabUs.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabUs.Location = new System.Drawing.Point(235, 22);
+            this.LabUs.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabUs.ForeColor = System.Drawing.Color.SeaGreen;
+            this.LabUs.Location = new System.Drawing.Point(203, 17);
             this.LabUs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabUs.Name = "LabUs";
-            this.LabUs.Size = new System.Drawing.Size(47, 19);
+            this.LabUs.Size = new System.Drawing.Size(63, 24);
             this.LabUs.TabIndex = 18;
             this.LabUs.Text = "User :";
             this.LabUs.Click += new System.EventHandler(this.LabUs_Click);

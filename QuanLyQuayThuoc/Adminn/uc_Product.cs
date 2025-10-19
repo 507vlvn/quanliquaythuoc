@@ -60,7 +60,7 @@ namespace QuanLyQuayThuoc.Adminn
 
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btnThem_Click(object sender, EventArgs e)
         {
 
             string tenSanPham = txtmasp.Text.Trim();
@@ -196,7 +196,7 @@ namespace QuanLyQuayThuoc.Adminn
                 MessageBox.Show("Lỗi khi sửa Thuốc: " + ex, "Lỗi cơ sở dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             txtmasp.Enabled = true;
-            guna2Button2.Enabled = true;
+            btnThem.Enabled = true;
             txtSLTon.Enabled = true;
             clear();
             txtSLTon.Enabled = false;
@@ -225,7 +225,7 @@ namespace QuanLyQuayThuoc.Adminn
                     db.SaveChanges();
                     clear();
                     LoadData();
-                    guna2Button2.Enabled = true;
+                    btnThem.Enabled = true;
                 }
                
 
@@ -247,7 +247,7 @@ namespace QuanLyQuayThuoc.Adminn
             dateTimePicker2.Text = index.Cells["Ngay_het_han"].Value.ToString();
             txtmasp.Enabled = false;
             txtSLTon.Enabled = false;
-            guna2Button2.Enabled = false;
+            btnThem.Enabled = false;
         }
         private void clear()
         {
@@ -292,7 +292,12 @@ namespace QuanLyQuayThuoc.Adminn
             txtSLTon.Enabled = true;
             clear();
             txtSLTon.Enabled = false;
-            guna2Button2.Enabled = true;
+            btnThem.Enabled = true;
+        }
+
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
