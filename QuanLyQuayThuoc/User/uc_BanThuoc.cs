@@ -400,7 +400,10 @@ namespace QuanLyQuayThuoc.User
             }
         }
 
-   
+        private void panelContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

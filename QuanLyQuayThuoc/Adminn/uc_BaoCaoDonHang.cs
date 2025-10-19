@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using System.Windows.Ink;
 
 namespace QuanLyQuayThuoc.User
 {
@@ -85,6 +86,8 @@ namespace QuanLyQuayThuoc.User
                 // Tính tổng doanh thu
                 decimal tongDoanhThu = list.Sum(x => x.Tong_Tien);
                 int tongSoDonHang = list.Count;
+                HienThiTongDoanhThu();
+                HienThiTongSoDonHang();
 
                 // Hiển thị thống kê (nếu có label)
                 // lblTongDoanhThu.Text = $"Tổng doanh thu: {tongDoanhThu:N0} VNĐ";
@@ -197,7 +200,6 @@ namespace QuanLyQuayThuoc.User
                     }
 
                     db.SaveChanges();
-
                     if (failCount > 0)
                     {
                         MessageBox.Show(
@@ -332,9 +334,38 @@ namespace QuanLyQuayThuoc.User
             }
         }
 
-        private void txtTongDoanhThu_TextChanged(object sender, EventArgs e)
+        private void HienThiTongDoanhThu()
         {
+            try
+            {
+                decimal tongDoanhThu = db.HoaDons
+                    .Where(hd => hd.Tong_Tien != null)
+                    .Sum(hd => (decimal?)hd.Tong_Tien) ?? 0;
+                
+                lbTongDoanhThu.Text = $"{tongDoanhThu:N0} VNĐ";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tính tổng doanh thu: {ex.Message}", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
+        private void HienThiTongSoDonHang()
+        {
+            try
+            {
+                int tonghoadon= db.HoaDons
+                .Select(hd => hd.Ma_hoa_don)
+                .Distinct()
+                .Count();
+                lbTongHoaDon.Text = tonghoadon.ToString("N0");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show($"Lỗi khi tính tổng số đơn hàng: ", "Lỗi",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
