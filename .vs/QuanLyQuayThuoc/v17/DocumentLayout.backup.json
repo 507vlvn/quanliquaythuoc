@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\quanliquaythuoc\\",
   "Documents": [
     {
@@ -44,6 +45,10 @@
 >>>>>>> 1dca733126e0ac6b4b25fcf1d7a900e04d0350e2
     }
   ],
+=======
+  "WorkspaceRootPath": "C:\\Doan\\",
+  "Documents": [],
+>>>>>>> 1d4fce72fb6881b02d7a9d76dfb4b2669e62b0b9
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -51,6 +56,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 7,
           "Children": [
             {
@@ -198,6 +204,13 @@
               "WhenOpened": "2025-10-19T09:20:12.561Z",
 >>>>>>> 1dca733126e0ac6b4b25fcf1d7a900e04d0350e2
               "EditorCaption": " [Design]"
+=======
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+>>>>>>> 1d4fce72fb6881b02d7a9d76dfb4b2669e62b0b9
             }
           ]
         }
