@@ -65,6 +65,7 @@
             this.dgvQuanLiHoaDon.RowTemplate.Height = 28;
             this.dgvQuanLiHoaDon.Size = new System.Drawing.Size(1042, 402);
             this.dgvQuanLiHoaDon.TabIndex = 10;
+            this.dgvQuanLiHoaDon.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQuanLiHoaDon_CellDoubleClick_1);
             // 
             // labelTitle
             // 
@@ -139,6 +140,7 @@
             this.txtTongDoanhThu.Name = "txtTongDoanhThu";
             this.txtTongDoanhThu.Size = new System.Drawing.Size(171, 31);
             this.txtTongDoanhThu.TabIndex = 15;
+            this.txtTongDoanhThu.TextChanged += new System.EventHandler(this.txtTongDoanhThu_TextChanged);
             // 
             // label1
             // 
