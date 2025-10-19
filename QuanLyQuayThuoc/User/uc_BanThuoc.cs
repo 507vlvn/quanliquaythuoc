@@ -431,6 +431,7 @@ namespace QuanLyQuayThuoc.User
             }
         }
 
+<<<<<<< HEAD
         private void txtseach_TextChanged(object sender, EventArgs e)
         {
             String seach = txtseach.Text;
@@ -464,6 +465,11 @@ namespace QuanLyQuayThuoc.User
                     }
                 }
             }
+=======
+        private void panelContent_Paint(object sender, PaintEventArgs e)
+        {
+
+>>>>>>> 804ebb5783eac6432ccd066d9145914d1f204629
         }
     }
 }

@@ -83,7 +83,44 @@ namespace QuanLyQuayThuoc.Adminn
             }
         }
 
-        
+        private void dgvNguoiDung_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+          
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            
+            
+                string userID = dgvNguoiDung.CurrentRow.Cells["UserID"].Value.ToString();
+                if (!string.IsNullOrEmpty(userID))
+                {
+                    var confirm = MessageBox.Show($"Bạn có chắc muốn xóa người dùng không '{userID} không ?'", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (confirm == DialogResult.Yes)
+                    {
+                        try
+                        {
+                            var user = db.People.FirstOrDefault(p => p.UserID == userID);
+                            if (user != null)
+                            {
+                                db.People.Remove(user);
+                                db.SaveChanges();
+                                List<Person> listPerson = db.People.ToList();
+                                FillDgvNguoiDung(listPerson);
+
+                            }
+
+                        }
+                        catch (Exception)
+                        {
+
+                            throw;
+                        }
+
+                    
+                }
+            }
+        }
     }
 }
     
