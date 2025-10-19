@@ -23,7 +23,7 @@ namespace QuanLyQuayThuoc.Adminn
 
         private void LoadData()
         {
-            // Tải dữ liệu thuốc và chọn các cột cần hiển thị
+            
             dgvdsthuoc.DataSource = db.Thuocs
                 .Select(t => new
                 {
@@ -55,6 +55,9 @@ namespace QuanLyQuayThuoc.Adminn
         private void uc_Product_Load(object sender, EventArgs e)
         {
             LoadData();
+            txtSLTon.Enabled = false;
+        
+
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -76,14 +79,13 @@ namespace QuanLyQuayThuoc.Adminn
             var existingDrug = db.Thuocs.FirstOrDefault(t => t.Ma_san_pham == maSanPham);
             if (existingDrug != null)
             {
-
-                MessageBox.Show($"Mã sản phẩm '{maSanPham}' đã tồn tại. Vui lòng nhập mã khác.", "Lỗi Trùng Mã Sản Phẩm", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Mã sản phẩm '{maSanPham}' đã tồn tại. Vui lòng sử dụng mã khác.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             // Kiểm tra Số Lượng Tồn (int)
+
             int soLuongTon;
-            if (!int.TryParse(txtSoLuong.Text.Trim(), out soLuongTon))
+            if (!int.TryParse(txtSoLuongNhap.Text.Trim(), out soLuongTon))
             {
                 MessageBox.Show("Số Lượng Tồn phải là một số nguyên hợp lệ.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -94,18 +96,20 @@ namespace QuanLyQuayThuoc.Adminn
                 MessageBox.Show("Giá Bán phải là một số hợp lệ.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             try
             {
+
                 Thuoc newthuoc = new Thuoc
                 {
                     Ma_san_pham = maSanPham,
-                    Ten_san_pham = tenSanPham,                   
+                    Ten_san_pham = tenSanPham,
                     Thanh_phan = thanhphan,
                     Cong_dung = congDung,
                     Tac_dung_phu = tacDungPhu,
                     Nha_san_xuat = nhaSanXuat,
                     Gia_ban = giaBan,
-
+                    So_Luong_ton = int.Parse(txtSoLuongNhap.Text),
                     Ngay_san_xuat = dateTimePicker1.Value,
                     Ngay_het_han = dateTimePicker2.Value
                 };
@@ -116,15 +120,8 @@ namespace QuanLyQuayThuoc.Adminn
                 LoadData();
 
                 MessageBox.Show("Thêm Thuốc thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtmasp.Clear();
-                txtsp.Clear();
-                txtthanhphan.Clear();
-                txtDonGia.Clear();
-                txttdp.Clear();
-                txtnsx.Clear();
-                txtSoLuong.Clear();
-                txtgia.Clear();
             }
+
             catch (Exception ex)
             {
 
@@ -138,6 +135,7 @@ namespace QuanLyQuayThuoc.Adminn
 
                 MessageBox.Show("Lỗi khi thêm Thuốc: " + errorMessage, "Lỗi cơ sở dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            clear();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -148,7 +146,7 @@ namespace QuanLyQuayThuoc.Adminn
             string congDung = txtDonGia.Text.Trim();
             string tacDungPhu = txttdp.Text.Trim();
             string nhaSanXuat = txtnsx.Text.Trim();
-            string slt= txtSoLuong.Text.Trim();
+           
             if (string.IsNullOrEmpty(maSanPham) || string.IsNullOrEmpty(tenSanPham) ||
                 string.IsNullOrEmpty(thanhphan) || string.IsNullOrEmpty(congDung) ||
                 string.IsNullOrEmpty(tacDungPhu) || string.IsNullOrEmpty(nhaSanXuat))
@@ -157,44 +155,34 @@ namespace QuanLyQuayThuoc.Adminn
                 return;
             }
 
-            // Kiểm tra Số Lượng Tồn (int)
-            int soLuongTon;
-            if (!int.TryParse(txtSoLuong.Text.Trim(), out soLuongTon))
-            {
-                MessageBox.Show("Số Lượng Tồn phải là một số nguyên hợp lệ.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
             decimal giaBan;
             if (!decimal.TryParse(txtgia.Text.Trim(), out giaBan))
             {
                 MessageBox.Show("Giá Bán phải là một số hợp lệ.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-            }
+            }else
+            if (txtSoLuongNhap.Text == "")
+            { txtSoLuongNhap.Text = "0"; }
             try
             {
-                Thuoc thuoc = db.Thuocs.SingleOrDefault(t => t.Ma_san_pham == maSanPham);
+                    Thuoc thuoc = db.Thuocs.SingleOrDefault(t => t.Ma_san_pham == maSanPham);
+                
                 if (thuoc != null)
                 {
+
                     thuoc.Ten_san_pham = tenSanPham;
                     thuoc.Thanh_phan = thanhphan;
                     thuoc.Cong_dung = congDung;
                     thuoc.Tac_dung_phu = tacDungPhu;
                     thuoc.Nha_san_xuat = nhaSanXuat;
                     thuoc.Gia_ban = giaBan;
-                    thuoc.So_Luong_ton= soLuongTon;
+                    thuoc.So_Luong_ton = int.Parse(txtSoLuongNhap.Text) + int.Parse(txtSLTon.Text);
                     thuoc.Ngay_san_xuat = dateTimePicker1.Value;
                     thuoc.Ngay_het_han = dateTimePicker2.Value;
                     db.SaveChanges();
                     LoadData();
                     MessageBox.Show("Sửa Thuốc thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtmasp.Clear();
-                    txtsp.Clear();
-                    txtthanhphan.Clear();
-                    txtDonGia.Clear();
-                    txttdp.Clear();
-                    txtnsx.Clear();
-                    txtSoLuong.Clear();
-                    txtgia.Clear();
+
                 }
                 else
                 {
@@ -204,22 +192,23 @@ namespace QuanLyQuayThuoc.Adminn
             }
             catch (Exception ex)
             {
-                string errorMessage = ex.Message;
-                Exception inner = ex;
-                while (inner.InnerException != null)
-                {
-                    inner = inner.InnerException;
-                }
-                errorMessage += "\nChi tiết lỗi SQL Server: " + inner.Message;
-                MessageBox.Show("Lỗi khi sửa Thuốc: " + errorMessage, "Lỗi cơ sở dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               
+                MessageBox.Show("Lỗi khi sửa Thuốc: " + ex, "Lỗi cơ sở dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            txtmasp.Enabled = true;
+            guna2Button2.Enabled = true;
+            txtSLTon.Enabled = true;
+            clear();
+            txtSLTon.Enabled = false;
+
+
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            
+
             var selectedRows = dgvdsthuoc.CurrentRow;
-           
+
             if (selectedRows != null)
             {
 
@@ -227,36 +216,84 @@ namespace QuanLyQuayThuoc.Adminn
                 var xoa = db.Thuocs.FirstOrDefault(p => p.Ma_san_pham == masp);
                 if (xoa != null)
                 {
-
+                    DialogResult rd = MessageBox.Show("Bạn có chắc chắn muốn xóa thuốc này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (rd == DialogResult.No)
+                    {
+                        return;
+                    }
                     db.Thuocs.Remove(xoa);
                     db.SaveChanges();
+                    clear();
                     LoadData();
+                    guna2Button2.Enabled = true;
                 }
-                else
-                {
-                }
-            }
-           
+               
 
+            }
         }
 
         private void dgvdsthuoc_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var index = dgvdsthuoc.CurrentRow;
-               txtmasp.Text= index.Cells["Ma_san_pham"].Value.ToString();      
-               txtsp.Text= index.Cells["Ten_san_pham"].Value.ToString();      
-               txtthanhphan.Text= index.Cells["Thanh_phan"].Value.ToString();      
-               txtDonGia.Text= index.Cells["Cong_dung"].Value.ToString();      
-               txttdp.Text= index.Cells["Tac_dung_phu"].Value.ToString();      
-               txtnsx.Text= index.Cells["Nha_san_xuat"].Value.ToString();      
-               txtSoLuong.Text= index.Cells["So_luong_ton"].Value.ToString();      
-               txtgia.Text= index.Cells["Gia_ban"].Value.ToString();      
-               dateTimePicker1.Text= index.Cells["Ngay_san_xuat"].Value.ToString();      
-               dateTimePicker2.Text= index.Cells["Ngay_het_han"].Value.ToString();      
+            txtmasp.Text = index.Cells["Ma_san_pham"].Value.ToString();
+            txtsp.Text = index.Cells["Ten_san_pham"].Value.ToString();
+            txtthanhphan.Text = index.Cells["Thanh_phan"].Value.ToString();
+            txtDonGia.Text = index.Cells["Cong_dung"].Value.ToString();
+            txttdp.Text = index.Cells["Tac_dung_phu"].Value.ToString();
+            txtnsx.Text = index.Cells["Nha_san_xuat"].Value.ToString();
+            txtSLTon.Text = index.Cells["So_luong_ton"].Value.ToString();
+            txtgia.Text = index.Cells["Gia_ban"].Value.ToString();
+            dateTimePicker1.Text = index.Cells["Ngay_san_xuat"].Value.ToString();
+            dateTimePicker2.Text = index.Cells["Ngay_het_han"].Value.ToString();
+            txtmasp.Enabled = false;
+            txtSLTon.Enabled = false;
+            guna2Button2.Enabled = false;
+        }
+        private void clear()
+        {
+            txtmasp.Clear();
+            txtsp.Clear();
+            txtthanhphan.Clear();
+            txtDonGia.Clear();
+            txttdp.Clear();
+            txtnsx.Clear();
+            txtSLTon.Clear();
+            txtSoLuongNhap.Clear();
+            txtgia.Clear();
+        }
 
+        private void txtseach_TextChanged(object sender, EventArgs e)
+        {
+            var keyword = txtseach.Text.Trim().ToLower();
+            var filteredData = db.Thuocs
+                .Where(t => t.Ma_san_pham.ToLower().Contains(keyword) ||
+                            t.Ten_san_pham.ToLower().Contains(keyword)) 
+                           
+                .Select(t => new
+                {
+                    t.Ma_san_pham,
+                    t.Ten_san_pham,
+                    t.Thanh_phan,
+                    t.Cong_dung,
+                    t.Tac_dung_phu,
+                    t.Nha_san_xuat,
+                    t.So_Luong_ton,
+                    t.Gia_ban,
+                    t.Ngay_san_xuat,
+                    t.Ngay_het_han
+                })
+                .ToList();
+            dgvdsthuoc.DataSource = filteredData;
+        }
 
-
-            
+        private void btnrefech_Click(object sender, EventArgs e)
+        {
+            txtmasp.Enabled = true;
+            txtSLTon.Enabled = true;
+            clear();
+            txtSLTon.Enabled = false;
+            guna2Button2.Enabled = true;
         }
     }
+
 }
