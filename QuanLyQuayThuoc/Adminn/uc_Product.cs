@@ -294,6 +294,16 @@ namespace QuanLyQuayThuoc.Adminn
             txtSLTon.Enabled = false;
             guna2Button2.Enabled = true;
         }
+
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GroupBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
