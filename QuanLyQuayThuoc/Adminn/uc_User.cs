@@ -121,6 +121,16 @@ namespace QuanLyQuayThuoc.Adminn
                 }
             }
         }
+
+        private void txtseach_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = txtseach.Text.ToLower();
+            var filteredList = db.People
+                .Where(p => p.UserID.ToLower().Contains(searchText) ||
+                            p.FullName.ToLower().Contains(searchText) ||
+                            p.Role.Role1.ToLower().Contains(searchText))
+                .ToList();
+        }
     }
 }
     

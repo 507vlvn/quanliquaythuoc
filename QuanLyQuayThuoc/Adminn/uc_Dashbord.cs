@@ -26,7 +26,7 @@ namespace QuanLyQuayThuoc.Adminn
             {
                
                 decimal tongDoanhThu = db.HoaDons
-                    .Where(hd => hd.Tong_Tien != null)
+                    .Where(hd => hd.Tong_Tien != 0)
                     .Sum(hd => (decimal?)hd.Tong_Tien) ?? 0;
 
                 btnDoanhThu.Text = $"Doanh Thu: {tongDoanhThu:N0} VNĐ";
@@ -76,7 +76,11 @@ namespace QuanLyQuayThuoc.Adminn
             TongNhanVien();
 
         }
-        
+
+        private void btnTongNhanVien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
  } 
 
