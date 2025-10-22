@@ -42,7 +42,7 @@
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemThuoc = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.NgayThangNam = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.SuspendLayout();
             // 
             // btnLogOut
@@ -133,7 +133,7 @@
             this.btnPerson.Image = ((System.Drawing.Image)(resources.GetObject("btnPerson.Image")));
             this.btnPerson.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPerson.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnPerson.Location = new System.Drawing.Point(0, 214);
+            this.btnPerson.Location = new System.Drawing.Point(0, 263);
             this.btnPerson.Margin = new System.Windows.Forms.Padding(2);
             this.btnPerson.Name = "btnPerson";
             this.btnPerson.PressedColor = System.Drawing.Color.Empty;
@@ -161,7 +161,7 @@
             this.btnDashbord.Image = ((System.Drawing.Image)(resources.GetObject("btnDashbord.Image")));
             this.btnDashbord.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDashbord.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDashbord.Location = new System.Drawing.Point(0, 169);
+            this.btnDashbord.Location = new System.Drawing.Point(0, 218);
             this.btnDashbord.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashbord.Name = "btnDashbord";
             this.btnDashbord.PressedColor = System.Drawing.Color.Empty;
@@ -187,7 +187,7 @@
             this.guna2Button3.HoverState.FillColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.Black;
             this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(58, 131);
+            this.guna2Button3.Location = new System.Drawing.Point(69, 180);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.PressedColor = System.Drawing.Color.Empty;
@@ -213,7 +213,7 @@
             this.btnthongke.Image = ((System.Drawing.Image)(resources.GetObject("btnthongke.Image")));
             this.btnthongke.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnthongke.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnthongke.Location = new System.Drawing.Point(0, 259);
+            this.btnthongke.Location = new System.Drawing.Point(0, 308);
             this.btnthongke.Margin = new System.Windows.Forms.Padding(2);
             this.btnthongke.Name = "btnthongke";
             this.btnthongke.PressedColor = System.Drawing.Color.Empty;
@@ -241,7 +241,7 @@
             this.btnOder.Image = ((System.Drawing.Image)(resources.GetObject("btnOder.Image")));
             this.btnOder.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnOder.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnOder.Location = new System.Drawing.Point(0, 304);
+            this.btnOder.Location = new System.Drawing.Point(0, 353);
             this.btnOder.Margin = new System.Windows.Forms.Padding(2);
             this.btnOder.Name = "btnOder";
             this.btnOder.PressedColor = System.Drawing.Color.Empty;
@@ -269,7 +269,7 @@
             this.btnKiemTraDonHang.Image = ((System.Drawing.Image)(resources.GetObject("btnKiemTraDonHang.Image")));
             this.btnKiemTraDonHang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKiemTraDonHang.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnKiemTraDonHang.Location = new System.Drawing.Point(0, 349);
+            this.btnKiemTraDonHang.Location = new System.Drawing.Point(0, 398);
             this.btnKiemTraDonHang.Margin = new System.Windows.Forms.Padding(2);
             this.btnKiemTraDonHang.Name = "btnKiemTraDonHang";
             this.btnKiemTraDonHang.PressedColor = System.Drawing.Color.Empty;
@@ -299,7 +299,7 @@
             this.guna2Button7.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.Image")));
             this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button7.ImageSize = new System.Drawing.Size(120, 120);
-            this.guna2Button7.Location = new System.Drawing.Point(48, 0);
+            this.guna2Button7.Location = new System.Drawing.Point(48, 30);
             this.guna2Button7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.PressedColor = System.Drawing.Color.Empty;
@@ -326,7 +326,7 @@
             this.btnThemThuoc.Image = ((System.Drawing.Image)(resources.GetObject("btnThemThuoc.Image")));
             this.btnThemThuoc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnThemThuoc.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnThemThuoc.Location = new System.Drawing.Point(0, 394);
+            this.btnThemThuoc.Location = new System.Drawing.Point(0, 443);
             this.btnThemThuoc.Margin = new System.Windows.Forms.Padding(2);
             this.btnThemThuoc.Name = "btnThemThuoc";
             this.btnThemThuoc.PressedColor = System.Drawing.Color.Empty;
@@ -345,22 +345,32 @@
             this.panel1.Size = new System.Drawing.Size(1053, 567);
             this.panel1.TabIndex = 34;
             // 
-            // dateTimePicker1
+            // NgayThangNam
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 12);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(83, 20);
-            this.dateTimePicker1.TabIndex = 36;
+            this.NgayThangNam.AutoRoundedCorners = true;
+            this.NgayThangNam.BackColor = System.Drawing.Color.Transparent;
+            this.NgayThangNam.BorderThickness = 2;
+            this.NgayThangNam.Checked = true;
+            this.NgayThangNam.CustomFormat = "yyyy-MM-dd";
+            this.NgayThangNam.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
+            this.NgayThangNam.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.NgayThangNam.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.NgayThangNam.Location = new System.Drawing.Point(0, 8);
+            this.NgayThangNam.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.NgayThangNam.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.NgayThangNam.Name = "NgayThangNam";
+            this.NgayThangNam.Size = new System.Drawing.Size(143, 36);
+            this.NgayThangNam.TabIndex = 38;
+            this.NgayThangNam.UseTransparentBackground = true;
+            this.NgayThangNam.Value = new System.DateTime(2025, 10, 22, 15, 23, 52, 363);
+            this.NgayThangNam.ValueChanged += new System.EventHandler(this.NgayThangNam_ValueChanged);
             // 
             // admin2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1300, 567);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.NgayThangNam);
             this.Controls.Add(this.guna2Button7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnThemThuoc);
@@ -399,6 +409,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Button btnThemThuoc;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker NgayThangNam;
     }
 }

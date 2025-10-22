@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_BanThuoc));
             this.labelChonThuoc = new System.Windows.Forms.Label();
             this.labelSoNgayUong = new System.Windows.Forms.Label();
@@ -47,6 +47,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.labtongcong = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.labMHD = new System.Windows.Forms.Label();
             this.LabUs = new System.Windows.Forms.Label();
@@ -64,11 +66,8 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.btnxoaCT = new Guna.UI2.WinForms.Guna2Button();
             this.btnHuyhoadon = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTaoDH = new Guna.UI2.WinForms.Guna2Button();
             this.btnHoanThanhBH = new Guna.UI2.WinForms.Guna2Button();
             this.btnaddbill = new Guna.UI2.WinForms.Guna2Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.labtongcong = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvchitiethoadon)).BeginInit();
             this.panelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdsThuoc)).BeginInit();
@@ -100,9 +99,9 @@
             // 
             this.txtSoNgayUong.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtSoNgayUong.Location = new System.Drawing.Point(822, 78);
-            this.txtSoNgayUong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSoNgayUong.Margin = new System.Windows.Forms.Padding(2);
             this.txtSoNgayUong.Name = "txtSoNgayUong";
-            this.txtSoNgayUong.Size = new System.Drawing.Size(97, 29);
+            this.txtSoNgayUong.Size = new System.Drawing.Size(52, 29);
             this.txtSoNgayUong.TabIndex = 5;
             // 
             // labelTongCong
@@ -199,33 +198,33 @@
             this.panelContent.Controls.Add(this.dgvchitiethoadon);
             this.panelContent.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelContent.Location = new System.Drawing.Point(14, 55);
-            this.panelContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelContent.Margin = new System.Windows.Forms.Padding(2);
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(1050, 454);
             this.panelContent.TabIndex = 3;
             // 
             // dgvdsThuoc
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvdsThuoc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdsThuoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvdsThuoc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdsThuoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvdsThuoc.ColumnHeadersHeight = 35;
             this.dgvdsThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdsThuoc.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdsThuoc.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvdsThuoc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvdsThuoc.Location = new System.Drawing.Point(3, 68);
             this.dgvdsThuoc.Name = "dgvdsThuoc";
@@ -321,6 +320,28 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Số Viên/Ngày";
             // 
+            // labtongcong
+            // 
+            this.labtongcong.AutoSize = true;
+            this.labtongcong.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labtongcong.Location = new System.Drawing.Point(893, 422);
+            this.labtongcong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labtongcong.Name = "labtongcong";
+            this.labtongcong.Size = new System.Drawing.Size(17, 19);
+            this.labtongcong.TabIndex = 4;
+            this.labtongcong.Text = "0";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(792, 424);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(82, 19);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Tổng Cộng";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -393,7 +414,7 @@
             // 
             this.txtseach.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtseach.Location = new System.Drawing.Point(12, 34);
-            this.txtseach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtseach.Margin = new System.Windows.Forms.Padding(2);
             this.txtseach.Name = "txtseach";
             this.txtseach.Size = new System.Drawing.Size(217, 29);
             this.txtseach.TabIndex = 3;
@@ -403,9 +424,9 @@
             // 
             this.txtSoVien.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtSoVien.Location = new System.Drawing.Point(822, 23);
-            this.txtSoVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSoVien.Margin = new System.Windows.Forms.Padding(2);
             this.txtSoVien.Name = "txtSoVien";
-            this.txtSoVien.Size = new System.Drawing.Size(97, 29);
+            this.txtSoVien.Size = new System.Drawing.Size(52, 29);
             this.txtSoVien.TabIndex = 5;
             // 
             // txtTon
@@ -413,7 +434,7 @@
             this.txtTon.Enabled = false;
             this.txtTon.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtTon.Location = new System.Drawing.Point(562, 93);
-            this.txtTon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTon.Margin = new System.Windows.Forms.Padding(2);
             this.txtTon.Name = "txtTon";
             this.txtTon.Size = new System.Drawing.Size(59, 29);
             this.txtTon.TabIndex = 5;
@@ -423,7 +444,7 @@
             this.txtChiDinh.Enabled = false;
             this.txtChiDinh.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtChiDinh.Location = new System.Drawing.Point(394, 93);
-            this.txtChiDinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtChiDinh.Margin = new System.Windows.Forms.Padding(2);
             this.txtChiDinh.Name = "txtChiDinh";
             this.txtChiDinh.Size = new System.Drawing.Size(139, 29);
             this.txtChiDinh.TabIndex = 5;
@@ -433,7 +454,7 @@
             this.txtThanhPhan.Enabled = false;
             this.txtThanhPhan.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtThanhPhan.Location = new System.Drawing.Point(394, 24);
-            this.txtThanhPhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtThanhPhan.Margin = new System.Windows.Forms.Padding(2);
             this.txtThanhPhan.Name = "txtThanhPhan";
             this.txtThanhPhan.Size = new System.Drawing.Size(139, 29);
             this.txtThanhPhan.TabIndex = 5;
@@ -443,7 +464,7 @@
             this.txttenthuoc.Enabled = false;
             this.txttenthuoc.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txttenthuoc.Location = new System.Drawing.Point(238, 93);
-            this.txttenthuoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttenthuoc.Margin = new System.Windows.Forms.Padding(2);
             this.txttenthuoc.Name = "txttenthuoc";
             this.txttenthuoc.Size = new System.Drawing.Size(139, 29);
             this.txttenthuoc.TabIndex = 5;
@@ -453,7 +474,7 @@
             this.txtmasanpham.Enabled = false;
             this.txtmasanpham.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtmasanpham.Location = new System.Drawing.Point(238, 24);
-            this.txtmasanpham.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtmasanpham.Margin = new System.Windows.Forms.Padding(2);
             this.txtmasanpham.Name = "txtmasanpham";
             this.txtmasanpham.Size = new System.Drawing.Size(139, 29);
             this.txtmasanpham.TabIndex = 5;
@@ -463,7 +484,7 @@
             this.txtDonGia.Enabled = false;
             this.txtDonGia.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtDonGia.Location = new System.Drawing.Point(562, 24);
-            this.txtDonGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDonGia.Margin = new System.Windows.Forms.Padding(2);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(139, 29);
             this.txtDonGia.TabIndex = 5;
@@ -472,7 +493,7 @@
             // 
             this.txtSDT.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtSDT.Location = new System.Drawing.Point(340, 417);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(2);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(193, 29);
             this.txtSDT.TabIndex = 5;
@@ -480,19 +501,20 @@
             // btnxoaCT
             // 
             this.btnxoaCT.AutoRoundedCorners = true;
+            this.btnxoaCT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
             this.btnxoaCT.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnxoaCT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnxoaCT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnxoaCT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnxoaCT.FillColor = System.Drawing.Color.Black;
+            this.btnxoaCT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
             this.btnxoaCT.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnxoaCT.ForeColor = System.Drawing.Color.White;
             this.btnxoaCT.Image = ((System.Drawing.Image)(resources.GetObject("btnxoaCT.Image")));
-            this.btnxoaCT.Location = new System.Drawing.Point(213, 511);
+            this.btnxoaCT.Location = new System.Drawing.Point(439, 510);
             this.btnxoaCT.Name = "btnxoaCT";
             this.btnxoaCT.Size = new System.Drawing.Size(206, 53);
             this.btnxoaCT.TabIndex = 14;
-            this.btnxoaCT.Text = "Xoa Chi Tiết Đơn Hàng";
+            this.btnxoaCT.Text = "Xoa Thuốc Đã Thêm";
             this.btnxoaCT.Click += new System.EventHandler(this.btnxoaCT_Click);
             // 
             // btnHuyhoadon
@@ -512,24 +534,6 @@
             this.btnHuyhoadon.TabIndex = 18;
             this.btnHuyhoadon.Text = "Hủy Hóa Đơn";
             this.btnHuyhoadon.Click += new System.EventHandler(this.buttonHuyHoaDon_Click);
-            // 
-            // btnTaoDH
-            // 
-            this.btnTaoDH.AutoRoundedCorners = true;
-            this.btnTaoDH.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTaoDH.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTaoDH.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTaoDH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTaoDH.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.btnTaoDH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTaoDH.ForeColor = System.Drawing.Color.White;
-            this.btnTaoDH.Image = ((System.Drawing.Image)(resources.GetObject("btnTaoDH.Image")));
-            this.btnTaoDH.Location = new System.Drawing.Point(456, 512);
-            this.btnTaoDH.Name = "btnTaoDH";
-            this.btnTaoDH.Size = new System.Drawing.Size(180, 52);
-            this.btnTaoDH.TabIndex = 18;
-            this.btnTaoDH.Text = "Tạo Đơn Hàng";
-            this.btnTaoDH.Click += new System.EventHandler(this.bntTaoHoaDon_Click);
             // 
             // btnHoanThanhBH
             // 
@@ -567,28 +571,6 @@
             this.btnaddbill.Text = "Thêm Hóa Đơn";
             this.btnaddbill.Click += new System.EventHandler(this.btnaddbill_Click);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(792, 424);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 19);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "Tổng Cộng";
-            // 
-            // labtongcong
-            // 
-            this.labtongcong.AutoSize = true;
-            this.labtongcong.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labtongcong.Location = new System.Drawing.Point(893, 422);
-            this.labtongcong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labtongcong.Name = "labtongcong";
-            this.labtongcong.Size = new System.Drawing.Size(17, 19);
-            this.labtongcong.TabIndex = 4;
-            this.labtongcong.Text = "0";
-            // 
             // uc_BanThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -596,12 +578,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
             this.Controls.Add(this.btnaddbill);
             this.Controls.Add(this.btnHoanThanhBH);
-            this.Controls.Add(this.btnTaoDH);
             this.Controls.Add(this.btnHuyhoadon);
             this.Controls.Add(this.btnxoaCT);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.panelContent);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "uc_BanThuoc";
             this.Size = new System.Drawing.Size(1079, 567);
             this.Load += new System.EventHandler(this.uc_BanThuoc_Load);
@@ -650,7 +631,6 @@
         private Guna.UI2.WinForms.Guna2Button btnHuyhoadon;
         private Guna.UI2.WinForms.Guna2Button btnHoanThanhBH;
         private Guna.UI2.WinForms.Guna2Button btnaddbill;
-        private Guna.UI2.WinForms.Guna2Button btnTaoDH;
         private System.Windows.Forms.Label labtongcong;
         private System.Windows.Forms.Label label11;
     }

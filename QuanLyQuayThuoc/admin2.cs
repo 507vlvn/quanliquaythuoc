@@ -14,7 +14,7 @@ namespace QuanLyQuayThuoc
 
         private void admin2_Load(object sender, EventArgs e)
         {
-            dateTimePicker1.Value = DateTime.Now;
+            NgayThangNam.Value = DateTime.Now;
             uc_Dashbord db = new uc_Dashbord();
             db.Dock = DockStyle.Fill;  // Cho vừa khít panel
             panel1.Controls.Add(db);
@@ -74,6 +74,11 @@ namespace QuanLyQuayThuoc
             Form1 form1 = new Form1();
             form1.ShowDialog();
             this.Close();
+        }
+
+        private void NgayThangNam_ValueChanged(object sender, EventArgs e)
+        {
+            
         }
     }    
 }
