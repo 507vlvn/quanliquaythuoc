@@ -61,7 +61,7 @@ namespace QuanLyQuayThuoc.Adminn
                     .Where(nv => nv.Role.Role1.ToLower() == "Staff" || nv.Role.Role1.ToLower() == "Admin")
                     .Count();
 
-                btnTongNhanVien.Text = $"Tổng Nhân Viên: {tongNhanVien}";
+                btnTNV.Text = $"Tổng Nhân Viên: {tongNhanVien}";
             }
             catch (Exception ex)
             {
