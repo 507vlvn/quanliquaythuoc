@@ -68,5 +68,10 @@ namespace QuanLyQuayThuoc
             panel1 .Controls.Clear();
             panel1.Controls.Add(profi);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

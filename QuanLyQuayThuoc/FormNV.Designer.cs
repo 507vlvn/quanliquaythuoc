@@ -91,7 +91,7 @@
             this.btnKiemTraDonHang.Image = ((System.Drawing.Image)(resources.GetObject("btnKiemTraDonHang.Image")));
             this.btnKiemTraDonHang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKiemTraDonHang.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnKiemTraDonHang.Location = new System.Drawing.Point(0, 237);
+            this.btnKiemTraDonHang.Location = new System.Drawing.Point(0, 263);
             this.btnKiemTraDonHang.Margin = new System.Windows.Forms.Padding(2);
             this.btnKiemTraDonHang.Name = "btnKiemTraDonHang";
             this.btnKiemTraDonHang.PressedColor = System.Drawing.Color.Empty;
@@ -148,7 +148,7 @@
             this.btnProfilde.Image = ((System.Drawing.Image)(resources.GetObject("btnProfilde.Image")));
             this.btnProfilde.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnProfilde.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnProfilde.Location = new System.Drawing.Point(0, 311);
+            this.btnProfilde.Location = new System.Drawing.Point(0, 368);
             this.btnProfilde.Margin = new System.Windows.Forms.Padding(2);
             this.btnProfilde.Name = "btnProfilde";
             this.btnProfilde.PressedColor = System.Drawing.Color.Empty;
@@ -226,7 +226,7 @@
             this.btnXemDuLieuThuoc.Image = ((System.Drawing.Image)(resources.GetObject("btnXemDuLieuThuoc.Image")));
             this.btnXemDuLieuThuoc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnXemDuLieuThuoc.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnXemDuLieuThuoc.Location = new System.Drawing.Point(0, 274);
+            this.btnXemDuLieuThuoc.Location = new System.Drawing.Point(0, 321);
             this.btnXemDuLieuThuoc.Margin = new System.Windows.Forms.Padding(2);
             this.btnXemDuLieuThuoc.Name = "btnXemDuLieuThuoc";
             this.btnXemDuLieuThuoc.PressedColor = System.Drawing.Color.Empty;
@@ -244,6 +244,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1080, 567);
             this.panel1.TabIndex = 48;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // FormNV
             // 
