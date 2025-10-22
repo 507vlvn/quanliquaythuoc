@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_Dashbord));
             this.btnTongHoaDon = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnTongNhanVien = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDoanhThu = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.uc_ChartTron1 = new QuanLyQuayThuoc.uc_con.uc_ChartTron();
             this.uc_ChartNgang1 = new QuanLyQuayThuoc.uc_con.uc_ChartNgang();
             this.uc_danhsachdonhang1 = new QuanLyQuayThuoc.Adminn.uc_danhsachdonhang();
+            this.btnTNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // btnTongHoaDon
@@ -66,36 +66,6 @@
             this.btnTongHoaDon.TabIndex = 13;
             this.btnTongHoaDon.TabStop = false;
             this.btnTongHoaDon.Tag = "";
-            // 
-            // btnTongNhanVien
-            // 
-            this.btnTongNhanVien.AutoRoundedCorners = true;
-            this.btnTongNhanVien.BorderColor = System.Drawing.Color.Transparent;
-            this.btnTongNhanVien.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btnTongNhanVien.DefaultText = "Nhân Viên";
-            this.btnTongNhanVien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.btnTongNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.btnTongNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btnTongNhanVien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btnTongNhanVien.Enabled = false;
-            this.btnTongNhanVien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(51)))));
-            this.btnTongNhanVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnTongNhanVien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTongNhanVien.ForeColor = System.Drawing.Color.Black;
-            this.btnTongNhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnTongNhanVien.IconLeft = ((System.Drawing.Image)(resources.GetObject("btnTongNhanVien.IconLeft")));
-            this.btnTongNhanVien.Location = new System.Drawing.Point(555, 21);
-            this.btnTongNhanVien.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnTongNhanVien.Name = "btnTongNhanVien";
-            this.btnTongNhanVien.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnTongNhanVien.PlaceholderText = "";
-            this.btnTongNhanVien.ReadOnly = true;
-            this.btnTongNhanVien.SelectedText = "";
-            this.btnTongNhanVien.Size = new System.Drawing.Size(144, 51);
-            this.btnTongNhanVien.TabIndex = 21;
-            this.btnTongNhanVien.TabStop = false;
-            this.btnTongNhanVien.Tag = "";
-            this.btnTongNhanVien.TextChanged += new System.EventHandler(this.btnTongNhanVien_TextChanged);
             // 
             // btnDoanhThu
             // 
@@ -158,7 +128,7 @@
             // uc_ChartTron1
             // 
             this.uc_ChartTron1.Location = new System.Drawing.Point(746, 79);
-            this.uc_ChartTron1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uc_ChartTron1.Margin = new System.Windows.Forms.Padding(4);
             this.uc_ChartTron1.Name = "uc_ChartTron1";
             this.uc_ChartTron1.Size = new System.Drawing.Size(329, 326);
             this.uc_ChartTron1.TabIndex = 20;
@@ -166,7 +136,7 @@
             // uc_ChartNgang1
             // 
             this.uc_ChartNgang1.Location = new System.Drawing.Point(0, 79);
-            this.uc_ChartNgang1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uc_ChartNgang1.Margin = new System.Windows.Forms.Padding(4);
             this.uc_ChartNgang1.Name = "uc_ChartNgang1";
             this.uc_ChartNgang1.Size = new System.Drawing.Size(739, 326);
             this.uc_ChartNgang1.TabIndex = 19;
@@ -174,10 +144,39 @@
             // uc_danhsachdonhang1
             // 
             this.uc_danhsachdonhang1.Location = new System.Drawing.Point(0, 413);
-            this.uc_danhsachdonhang1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uc_danhsachdonhang1.Margin = new System.Windows.Forms.Padding(4);
             this.uc_danhsachdonhang1.Name = "uc_danhsachdonhang1";
             this.uc_danhsachdonhang1.Size = new System.Drawing.Size(739, 130);
             this.uc_danhsachdonhang1.TabIndex = 15;
+            // 
+            // btnTNV
+            // 
+            this.btnTNV.AutoRoundedCorners = true;
+            this.btnTNV.BorderColor = System.Drawing.Color.Transparent;
+            this.btnTNV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnTNV.DefaultText = "Nhân Viên:";
+            this.btnTNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.btnTNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.btnTNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btnTNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btnTNV.Enabled = false;
+            this.btnTNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(51)))));
+            this.btnTNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnTNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTNV.ForeColor = System.Drawing.Color.Black;
+            this.btnTNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnTNV.IconLeft = ((System.Drawing.Image)(resources.GetObject("btnTNV.IconLeft")));
+            this.btnTNV.Location = new System.Drawing.Point(520, 21);
+            this.btnTNV.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnTNV.Name = "btnTNV";
+            this.btnTNV.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnTNV.PlaceholderText = "";
+            this.btnTNV.ReadOnly = true;
+            this.btnTNV.SelectedText = "";
+            this.btnTNV.Size = new System.Drawing.Size(177, 51);
+            this.btnTNV.TabIndex = 22;
+            this.btnTNV.TabStop = false;
+            this.btnTNV.Tag = "";
             // 
             // uc_Dashbord
             // 
@@ -185,13 +184,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
             this.Controls.Add(this.guna2TextBox4);
+            this.Controls.Add(this.btnTNV);
             this.Controls.Add(this.btnDoanhThu);
-            this.Controls.Add(this.btnTongNhanVien);
             this.Controls.Add(this.uc_ChartTron1);
             this.Controls.Add(this.uc_ChartNgang1);
             this.Controls.Add(this.uc_danhsachdonhang1);
             this.Controls.Add(this.btnTongHoaDon);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "uc_Dashbord";
             this.Size = new System.Drawing.Size(1079, 567);
             this.Load += new System.EventHandler(this.uc_Dashbord_Load);
@@ -204,8 +203,8 @@
         private uc_danhsachdonhang uc_danhsachdonhang1;
         private uc_con.uc_ChartNgang uc_ChartNgang1;
         private uc_con.uc_ChartTron uc_ChartTron1;
-        private Guna.UI2.WinForms.Guna2TextBox btnTongNhanVien;
         private Guna.UI2.WinForms.Guna2TextBox btnDoanhThu;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox btnTNV;
     }
 }

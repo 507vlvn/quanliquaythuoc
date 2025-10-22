@@ -12,6 +12,10 @@ namespace QuanLyQuayThuoc.User
 {
     public partial class uc_proNv : UserControl
     {
+        public void loaddata() {
+        
+        }
+
         public uc_proNv()
         {
             InitializeComponent();
