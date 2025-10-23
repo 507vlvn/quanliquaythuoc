@@ -20,10 +20,14 @@ namespace QuanLyQuayThuoc.sql
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Role>()
-                .HasMany(e => e.People)
-                .WithRequired(e => e.Role)
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<ChiTietHoaDon>()
+                .Property(e => e.Thanh_Tien)
+                .HasPrecision(29, 2);
+
+            modelBuilder.Entity<Person>()
+                .Property(e => e.Sex)
+                .IsFixedLength()
+                .IsUnicode(false);
 
             modelBuilder.Entity<Thuoc>()
                 .HasMany(e => e.ChiTietHoaDons)
