@@ -37,9 +37,10 @@
             this.dateStart = new System.Windows.Forms.DateTimePicker();
             this.dateEnd = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dgvdsthongke = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txttongtien = new System.Windows.Forms.TextBox();
             this.uc_ChartTron1 = new QuanLyQuayThuoc.uc_con.uc_ChartTron();
             this.uc_ChartNgang1 = new QuanLyQuayThuoc.uc_con.uc_ChartNgang();
             this.groupBox1.SuspendLayout();
@@ -50,19 +51,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(539, -2);
+            this.label1.Location = new System.Drawing.Point(242, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(269, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thống Kê Doanh Thu";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(69, 59);
+            this.label2.Location = new System.Drawing.Point(73, 14);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 25);
             this.label2.TabIndex = 1;
@@ -72,7 +74,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(693, 57);
+            this.label3.Location = new System.Drawing.Point(526, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 25);
             this.label3.TabIndex = 2;
@@ -83,10 +86,10 @@
             this.dateStart.CustomFormat = "yyyy-MM-dd";
             this.dateStart.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateStart.Location = new System.Drawing.Point(166, 57);
-            this.dateStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateStart.Location = new System.Drawing.Point(55, 48);
+            this.dateStart.Margin = new System.Windows.Forms.Padding(2);
             this.dateStart.Name = "dateStart";
-            this.dateStart.Size = new System.Drawing.Size(169, 29);
+            this.dateStart.Size = new System.Drawing.Size(128, 29);
             this.dateStart.TabIndex = 3;
             this.dateStart.ValueChanged += new System.EventHandler(this.dateStart_ValueChanged);
             // 
@@ -95,28 +98,46 @@
             this.dateEnd.CustomFormat = "yyyy-MM-dd";
             this.dateEnd.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateEnd.Location = new System.Drawing.Point(803, 57);
-            this.dateEnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateEnd.Location = new System.Drawing.Point(508, 54);
+            this.dateEnd.Margin = new System.Windows.Forms.Padding(2);
             this.dateEnd.Name = "dateEnd";
-            this.dateEnd.Size = new System.Drawing.Size(168, 29);
+            this.dateEnd.Size = new System.Drawing.Size(127, 29);
             this.dateEnd.TabIndex = 4;
             this.dateEnd.ValueChanged += new System.EventHandler(this.dateEnd_ValueChanged);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
+            this.groupBox1.Controls.Add(this.guna2ComboBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.dateEnd);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.dateStart);
-            this.groupBox1.Location = new System.Drawing.Point(3, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1436, 100);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(1077, 81);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thời Gian";
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(768, 45);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(294, 36);
+            this.guna2ComboBox1.TabIndex = 14;
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // dgvdsthongke
             // 
@@ -141,13 +162,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdsthongke.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdsthongke.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvdsthongke.Location = new System.Drawing.Point(21, 590);
-            this.dgvdsthongke.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvdsthongke.Location = new System.Drawing.Point(19, 418);
+            this.dgvdsthongke.Margin = new System.Windows.Forms.Padding(2);
             this.dgvdsthongke.Name = "dgvdsthongke";
             this.dgvdsthongke.RowHeadersVisible = false;
             this.dgvdsthongke.RowHeadersWidth = 51;
             this.dgvdsthongke.RowTemplate.Height = 24;
-            this.dgvdsthongke.Size = new System.Drawing.Size(1418, 154);
+            this.dgvdsthongke.Size = new System.Drawing.Size(1045, 125);
             this.dgvdsthongke.TabIndex = 7;
             this.dgvdsthongke.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvdsthongke.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -170,56 +191,57 @@
             this.dgvdsthongke.ThemeStyle.RowsStyle.Height = 24;
             this.dgvdsthongke.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvdsthongke.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvdsthongke.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdsthongke_CellContentDoubleClick);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1067, 666);
+            this.label4.Location = new System.Drawing.Point(817, 545);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 22);
             this.label4.TabIndex = 8;
             this.label4.Text = "Tổng Tiền:";
             // 
-            // textBox1
+            // txttongtien
             // 
-            this.textBox1.Location = new System.Drawing.Point(1228, 668);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 22);
-            this.textBox1.TabIndex = 9;
+            this.txttongtien.Location = new System.Drawing.Point(921, 545);
+            this.txttongtien.Margin = new System.Windows.Forms.Padding(2);
+            this.txttongtien.Name = "txttongtien";
+            this.txttongtien.ReadOnly = true;
+            this.txttongtien.Size = new System.Drawing.Size(153, 20);
+            this.txttongtien.TabIndex = 9;
             // 
             // uc_ChartTron1
             // 
-            this.uc_ChartTron1.Location = new System.Drawing.Point(1027, 108);
-            this.uc_ChartTron1.Margin = new System.Windows.Forms.Padding(4);
+            this.uc_ChartTron1.Location = new System.Drawing.Point(770, 88);
+            this.uc_ChartTron1.Margin = new System.Windows.Forms.Padding(0);
             this.uc_ChartTron1.Name = "uc_ChartTron1";
-            this.uc_ChartTron1.Size = new System.Drawing.Size(392, 402);
+            this.uc_ChartTron1.Size = new System.Drawing.Size(294, 327);
             this.uc_ChartTron1.TabIndex = 13;
             // 
             // uc_ChartNgang1
             // 
-            this.uc_ChartNgang1.Location = new System.Drawing.Point(25, 108);
-            this.uc_ChartNgang1.Margin = new System.Windows.Forms.Padding(4);
+            this.uc_ChartNgang1.Location = new System.Drawing.Point(19, 88);
             this.uc_ChartNgang1.Name = "uc_ChartNgang1";
-            this.uc_ChartNgang1.Size = new System.Drawing.Size(985, 401);
+            this.uc_ChartNgang1.Size = new System.Drawing.Size(739, 326);
             this.uc_ChartNgang1.TabIndex = 12;
             // 
             // uc_ThongKeDoanhThu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
             this.Controls.Add(this.uc_ChartTron1);
             this.Controls.Add(this.uc_ChartNgang1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txttongtien);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvdsthongke);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "uc_ThongKeDoanhThu";
-            this.Size = new System.Drawing.Size(1439, 698);
+            this.Size = new System.Drawing.Size(1079, 567);
             this.Load += new System.EventHandler(this.uc_ThongKeDoanhThu_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -238,9 +260,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvdsthongke;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txttongtien;
         private System.Windows.Forms.DateTimePicker dateEnd;
         private uc_con.uc_ChartNgang uc_ChartNgang1;
         private uc_con.uc_ChartTron uc_ChartTron1;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
     }
 }

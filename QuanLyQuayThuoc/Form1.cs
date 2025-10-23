@@ -150,17 +150,7 @@ namespace QuanLyQuayThuoc
             }
         }
 
-        private void txtMK_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-
-        }
+  
     }
 }
+

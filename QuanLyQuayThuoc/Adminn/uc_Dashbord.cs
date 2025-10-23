@@ -53,6 +53,27 @@ namespace QuanLyQuayThuoc.Adminn
                     "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void checkHSD()
+        {
+            try
+            {
+                var today = DateTime.Now.Date;
+                var futureDate = today.AddDays(30);
+
+                var expiringMedicines = db.Thuocs
+                    .Where(med => med.Ngay_het_han >= today && med.Ngay_het_han <= futureDate)
+                    .ToList();
+
+                btnHSD.Text = $"Thuốc sắp hết hạn: {expiringMedicines.Count}";
+                btnHSD.FillColor = Color.OrangeRed;
+                btnHSD.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi kiểm tra hạn sử dụng thuốc: {ex.Message}",
+                    "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }   
         private void TongNhanVien()
         {
             try
@@ -74,6 +95,9 @@ namespace QuanLyQuayThuoc.Adminn
             HienThiTongDoanhThu();
             TongSoHoaDon();
             TongNhanVien();
+            uc_ChartNgang1.Refresh();
+            uc_ChartTron1.Refresh();
+            checkHSD();
 
         }
 
@@ -89,7 +113,7 @@ namespace QuanLyQuayThuoc.Adminn
         {
             try
             {
-                uc_ChartNgang1?.RefreshChart();
+       
                 uc_ChartTron1?.RefreshChart();
             }
             catch (Exception ex)
@@ -97,6 +121,24 @@ namespace QuanLyQuayThuoc.Adminn
                 // Silently handle any refresh errors
                 System.Diagnostics.Debug.WriteLine($"Error refreshing charts: {ex.Message}");
             }
+        }
+
+        private void btnHSD_DoubleClick(object sender, EventArgs e)
+        {
+            uc_Product uc_Product = new uc_Product();
+            Panel parentPanel = this.Parent as Panel;
+
+
+
+
+            parentPanel.Controls.Clear();
+            parentPanel.Controls.Add(uc_Product);
+
+        }
+
+        private void btnHSD_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
  } 

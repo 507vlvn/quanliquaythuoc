@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_Dashbord));
             this.btnTongHoaDon = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDoanhThu = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnHSD = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnTNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.uc_ChartTron1 = new QuanLyQuayThuoc.uc_con.uc_ChartTron();
             this.uc_ChartNgang1 = new QuanLyQuayThuoc.uc_con.uc_ChartNgang();
             this.uc_danhsachdonhang1 = new QuanLyQuayThuoc.Adminn.uc_danhsachdonhang();
-            this.btnTNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // btnTongHoaDon
@@ -55,14 +55,14 @@
             this.btnTongHoaDon.ForeColor = System.Drawing.Color.Black;
             this.btnTongHoaDon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnTongHoaDon.IconLeft = ((System.Drawing.Image)(resources.GetObject("btnTongHoaDon.IconLeft")));
-            this.btnTongHoaDon.Location = new System.Drawing.Point(17, 26);
-            this.btnTongHoaDon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTongHoaDon.Location = new System.Drawing.Point(13, 21);
+            this.btnTongHoaDon.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnTongHoaDon.Name = "btnTongHoaDon";
             this.btnTongHoaDon.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnTongHoaDon.PlaceholderText = "";
             this.btnTongHoaDon.ReadOnly = true;
             this.btnTongHoaDon.SelectedText = "";
-            this.btnTongHoaDon.Size = new System.Drawing.Size(248, 63);
+            this.btnTongHoaDon.Size = new System.Drawing.Size(186, 51);
             this.btnTongHoaDon.TabIndex = 13;
             this.btnTongHoaDon.TabStop = false;
             this.btnTongHoaDon.Tag = "";
@@ -84,70 +84,49 @@
             this.btnDoanhThu.ForeColor = System.Drawing.Color.Black;
             this.btnDoanhThu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnDoanhThu.IconLeft = ((System.Drawing.Image)(resources.GetObject("btnDoanhThu.IconLeft")));
-            this.btnDoanhThu.Location = new System.Drawing.Point(368, 26);
-            this.btnDoanhThu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDoanhThu.Location = new System.Drawing.Point(276, 21);
+            this.btnDoanhThu.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDoanhThu.Name = "btnDoanhThu";
             this.btnDoanhThu.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnDoanhThu.PlaceholderText = "";
             this.btnDoanhThu.ReadOnly = true;
             this.btnDoanhThu.SelectedText = "";
-            this.btnDoanhThu.Size = new System.Drawing.Size(236, 63);
+            this.btnDoanhThu.Size = new System.Drawing.Size(177, 51);
             this.btnDoanhThu.TabIndex = 22;
             this.btnDoanhThu.TabStop = false;
             this.btnDoanhThu.Tag = "";
             // 
-            // guna2TextBox4
+            // btnHSD
             // 
-            this.guna2TextBox4.AutoRoundedCorners = true;
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "Thuốc Sắp Hết Hạn\r\n :";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.Enabled = false;
-            this.guna2TextBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(51)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox4.IconLeft")));
-            this.guna2TextBox4.Location = new System.Drawing.Point(1041, 26);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.ReadOnly = true;
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(285, 63);
-            this.guna2TextBox4.TabIndex = 23;
-            this.guna2TextBox4.TabStop = false;
-            this.guna2TextBox4.Tag = "";
-            // 
-            // uc_ChartTron1
-            // 
-            this.uc_ChartTron1.Location = new System.Drawing.Point(995, 97);
-            this.uc_ChartTron1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.uc_ChartTron1.Name = "uc_ChartTron1";
-            this.uc_ChartTron1.Size = new System.Drawing.Size(439, 401);
-            this.uc_ChartTron1.TabIndex = 20;
-            // 
-            // uc_ChartNgang1
-            // 
-            this.uc_ChartNgang1.Location = new System.Drawing.Point(0, 97);
-            this.uc_ChartNgang1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.uc_ChartNgang1.Name = "uc_ChartNgang1";
-            this.uc_ChartNgang1.Size = new System.Drawing.Size(985, 401);
-            this.uc_ChartNgang1.TabIndex = 19;
-            // 
-            // uc_danhsachdonhang1
-            // 
-            this.uc_danhsachdonhang1.Location = new System.Drawing.Point(0, 508);
-            this.uc_danhsachdonhang1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.uc_danhsachdonhang1.Name = "uc_danhsachdonhang1";
-            this.uc_danhsachdonhang1.Size = new System.Drawing.Size(1434, 185);
-            this.uc_danhsachdonhang1.TabIndex = 15;
+            this.btnHSD.AutoRoundedCorners = true;
+            this.btnHSD.BorderColor = System.Drawing.Color.Transparent;
+            this.btnHSD.CausesValidation = false;
+            this.btnHSD.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnHSD.DefaultText = "Thuốc Sắp Hết Hạn\r\n :";
+            this.btnHSD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.btnHSD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.btnHSD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btnHSD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btnHSD.Enabled = false;
+            this.btnHSD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(51)))));
+            this.btnHSD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnHSD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHSD.ForeColor = System.Drawing.Color.Black;
+            this.btnHSD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnHSD.IconLeft = ((System.Drawing.Image)(resources.GetObject("btnHSD.IconLeft")));
+            this.btnHSD.Location = new System.Drawing.Point(781, 21);
+            this.btnHSD.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnHSD.Name = "btnHSD";
+            this.btnHSD.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnHSD.PlaceholderText = "";
+            this.btnHSD.ReadOnly = true;
+            this.btnHSD.SelectedText = "";
+            this.btnHSD.Size = new System.Drawing.Size(214, 51);
+            this.btnHSD.TabIndex = 23;
+            this.btnHSD.TabStop = false;
+            this.btnHSD.Tag = "";
+            this.btnHSD.TextChanged += new System.EventHandler(this.btnHSD_TextChanged);
+            this.btnHSD.DoubleClick += new System.EventHandler(this.btnHSD_DoubleClick);
             // 
             // btnTNV
             // 
@@ -166,33 +145,56 @@
             this.btnTNV.ForeColor = System.Drawing.Color.Black;
             this.btnTNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnTNV.IconLeft = ((System.Drawing.Image)(resources.GetObject("btnTNV.IconLeft")));
-            this.btnTNV.Location = new System.Drawing.Point(693, 26);
-            this.btnTNV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTNV.Location = new System.Drawing.Point(520, 21);
+            this.btnTNV.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnTNV.Name = "btnTNV";
             this.btnTNV.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnTNV.PlaceholderText = "";
             this.btnTNV.ReadOnly = true;
             this.btnTNV.SelectedText = "";
-            this.btnTNV.Size = new System.Drawing.Size(236, 63);
+            this.btnTNV.Size = new System.Drawing.Size(177, 51);
             this.btnTNV.TabIndex = 22;
             this.btnTNV.TabStop = false;
             this.btnTNV.Tag = "";
             // 
+            // uc_ChartTron1
+            // 
+            this.uc_ChartTron1.Location = new System.Drawing.Point(746, 79);
+            this.uc_ChartTron1.Margin = new System.Windows.Forms.Padding(0);
+            this.uc_ChartTron1.Name = "uc_ChartTron1";
+            this.uc_ChartTron1.Size = new System.Drawing.Size(329, 326);
+            this.uc_ChartTron1.TabIndex = 20;
+            // 
+            // uc_ChartNgang1
+            // 
+            this.uc_ChartNgang1.Location = new System.Drawing.Point(0, 79);
+            this.uc_ChartNgang1.Margin = new System.Windows.Forms.Padding(0);
+            this.uc_ChartNgang1.Name = "uc_ChartNgang1";
+            this.uc_ChartNgang1.Size = new System.Drawing.Size(739, 326);
+            this.uc_ChartNgang1.TabIndex = 19;
+            // 
+            // uc_danhsachdonhang1
+            // 
+            this.uc_danhsachdonhang1.Location = new System.Drawing.Point(0, 408);
+            this.uc_danhsachdonhang1.Name = "uc_danhsachdonhang1";
+            this.uc_danhsachdonhang1.Size = new System.Drawing.Size(739, 156);
+            this.uc_danhsachdonhang1.TabIndex = 24;
+            // 
             // uc_Dashbord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
-            this.Controls.Add(this.guna2TextBox4);
+            this.Controls.Add(this.uc_danhsachdonhang1);
+            this.Controls.Add(this.btnHSD);
             this.Controls.Add(this.btnTNV);
             this.Controls.Add(this.btnDoanhThu);
             this.Controls.Add(this.uc_ChartTron1);
             this.Controls.Add(this.uc_ChartNgang1);
-            this.Controls.Add(this.uc_danhsachdonhang1);
             this.Controls.Add(this.btnTongHoaDon);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "uc_Dashbord";
-            this.Size = new System.Drawing.Size(1439, 698);
+            this.Size = new System.Drawing.Size(1079, 567);
             this.Load += new System.EventHandler(this.uc_Dashbord_Load);
             this.ResumeLayout(false);
 
@@ -200,11 +202,11 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2TextBox btnTongHoaDon;
-        private uc_danhsachdonhang uc_danhsachdonhang1;
         private uc_con.uc_ChartNgang uc_ChartNgang1;
         private uc_con.uc_ChartTron uc_ChartTron1;
         private Guna.UI2.WinForms.Guna2TextBox btnDoanhThu;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox btnHSD;
         private Guna.UI2.WinForms.Guna2TextBox btnTNV;
+        private uc_danhsachdonhang uc_danhsachdonhang1;
     }
 }

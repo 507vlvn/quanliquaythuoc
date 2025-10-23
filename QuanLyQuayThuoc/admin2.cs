@@ -1,4 +1,5 @@
 ﻿using QuanLyQuayThuoc.Adminn;
+using QuanLyQuayThuoc.uc_con;
 using QuanLyQuayThuoc.User;
 using System;
 using System.Windows.Forms;
@@ -16,22 +17,26 @@ namespace QuanLyQuayThuoc
         {
             NgayThangNam.Value = DateTime.Now;
             uc_Dashbord db = new uc_Dashbord();
-            db.Dock = DockStyle.Fill;  // Cho vừa khít panel
+            //db.Dock = DockStyle.Fill;  // Cho vừa khít panel
             panel1.Controls.Add(db);
+            
         }
 
         private void btnDashbord_Click(object sender, EventArgs e)
         {
+
             uc_Dashbord db  = new uc_Dashbord();
             db.Dock = DockStyle.Fill;  // Cho vừa khít panel
             panel1.Controls.Clear();   // Xóa các control cũ (nếu có)
-            panel1.Controls.Add(db);   // Thêm usercontrol mới vào panel
+            panel1.Controls.Add(db);
+            db.RefreshAllCharts();
+
         }
 
         private void btnPerson_Click(object sender, EventArgs e)
         {
             uc_User user = new uc_User();
-            user.Dock = DockStyle.Fill;
+            //user.Dock = DockStyle.Fill;
             panel1.Controls.Clear();
             panel1.Controls.Add(user);
         }
@@ -39,7 +44,7 @@ namespace QuanLyQuayThuoc
         private void btnthongke_Click(object sender, EventArgs e)
         {
             uc_ThongKeDoanhThu thongke = new uc_ThongKeDoanhThu();
-            thongke.Dock = DockStyle.Fill;
+            //thongke.Dock = DockStyle.Fill;
             panel1.Controls.Clear();
             panel1.Controls.Add(thongke);
             
@@ -48,7 +53,7 @@ namespace QuanLyQuayThuoc
         private void btnOder_Click(object sender, EventArgs e)
         {
             uc_BanThuoc banThuoc = new uc_BanThuoc();
-            banThuoc.Dock = DockStyle.Fill;
+            //banThuoc.Dock = DockStyle.Fill;
             panel1.Controls.Clear();
             panel1 .Controls.Add(banThuoc);
         }
@@ -56,7 +61,7 @@ namespace QuanLyQuayThuoc
         private void btnKiemTraDonHang_Click(object sender, EventArgs e)
         {
            uc_BaoCaoDonHang baocao = new uc_BaoCaoDonHang();
-            baocao.Dock = DockStyle.Fill;
+            //baocao.Dock = DockStyle.Fill;
             panel1.Controls.Clear();
             panel1.Controls.Add(baocao);
         }
@@ -64,7 +69,7 @@ namespace QuanLyQuayThuoc
         private void btnThemThuoc_Click(object sender, EventArgs e)
         {
             uc_Product themthuoc = new uc_Product();
-            themthuoc.Dock = DockStyle.Fill;
+            //themthuoc.Dock = DockStyle.Fill;
             panel1.Controls.Clear();
             panel1.Controls .Add(themthuoc);
         }

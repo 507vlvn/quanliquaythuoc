@@ -43,22 +43,24 @@ namespace QuanLyQuayThuoc.Adminn
             {
                 p.UserID,
                 p.FullName,
+                p.PasswordHash,
                 p.Sex,
                 p.DateOfBirth,
                 p.PhoneNumber,
                 p.Address,
                 RoleName = p.Role != null ? p.Role.Role1 : "",
-                p.PasswordHash,
+                
             }).ToList();
             dgvNguoiDung.DataSource = list;
             dgvNguoiDung.Columns["UserID"].HeaderText = "Tên Đăng Nhập";
             dgvNguoiDung.Columns["FullName"].HeaderText = "Tên Người Dùng";
+            dgvNguoiDung.Columns["PasswordHash"].HeaderText = "Mật Khẩu";
             dgvNguoiDung.Columns["Sex"].HeaderText = "Giới Tính";
             dgvNguoiDung.Columns["DateOfBirth"].HeaderText = "Ngày Sinh";
             dgvNguoiDung.Columns["PhoneNumber"].HeaderText = "Số Điện Thoại";
             dgvNguoiDung.Columns["Address"].HeaderText = "Địa Chỉ";
             dgvNguoiDung.Columns["RoleName"].HeaderText = "Chức Vụ";
-            dgvNguoiDung.Columns["PasswordHash"].HeaderText = "Mật Khẩu";
+            
             dgvNguoiDung.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }
@@ -154,19 +156,25 @@ namespace QuanLyQuayThuoc.Adminn
                     try
                     {
                         var user = db.People.FirstOrDefault(p => p.UserID == userID);
+                        var cthdList = db.ChiTietHoaDons.Where(ct => ct.UserID == userID).ToList();
                         if (user != null)
                         {
                             db.People.Remove(user);
+                            foreach (var cthd in cthdList)
+                            {
+                                cthd.UserID = null;
+                            }
                             db.SaveChanges();
                             List<Person> listPerson = db.People.ToList();
                             FillDgvNguoiDung(listPerson);
-
+                    
                         }
 
                     }
                     catch (Exception)
                     {
-
+                        MessageBox.Show("Lỗi khi xóa người dùng. Người dùng đã có bán", "Lỗi",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                         throw;
                     }
                 }
@@ -182,6 +190,7 @@ namespace QuanLyQuayThuoc.Adminn
                             p.Role.Role1.ToLower().Contains(searchText))
                 .ToList();
         }
+
 
         private void btmFix_Click(object sender, EventArgs e)
         {
@@ -211,23 +220,42 @@ namespace QuanLyQuayThuoc.Adminn
         private void dgvNguoiDung_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             txtMaND.Text = dgvNguoiDung.CurrentRow.Cells["UserID"].Value.ToString();
-            txtTenND.Text = dgvNguoiDung.CurrentRow.Cells["FullName"].Value.ToString();
-            txtMatKhau.Text = dgvNguoiDung.CurrentRow.Cells["PasswordHash"].Value.ToString();
-            txtDiaChi.Text = dgvNguoiDung.CurrentRow.Cells["Address"].Value.ToString();
-            txtSDT.Text = dgvNguoiDung.CurrentRow.Cells["PhoneNumber"].Value.ToString();
-            string sexx = dgvNguoiDung.CurrentRow.Cells["Sex"].Value.ToString();
-        if (sexx == "N?   ")
+            //txtTenND.Text = dgvNguoiDung.CurrentRow.Cells["FullName"].Value.ToString();
+            if (dgvNguoiDung.CurrentRow.Cells["PasswordHash"].Value != null)
+                txtTenND.Text = dgvNguoiDung.CurrentRow.Cells["FullName"].Value.ToString();
+            else txtTenND.Text = null;
+            if (dgvNguoiDung.CurrentRow.Cells["PasswordHash"].Value != null)
+                txtMatKhau.Text = dgvNguoiDung.CurrentRow.Cells["PasswordHash"].Value.ToString();
+            if (dgvNguoiDung.CurrentRow.Cells["Address"].Value != null)
+                txtDiaChi.Text = dgvNguoiDung.CurrentRow.Cells["Address"].Value.ToString();
+            else txtDiaChi.Text = null;
+          
+            if (dgvNguoiDung.CurrentRow.Cells["PhoneNumber"].Value != null)
+                txtSDT.Text = dgvNguoiDung.CurrentRow.Cells["PhoneNumber"].Value.ToString();
+            else txtSDT.Text = null;
+            if (dgvNguoiDung.CurrentRow.Cells["Sex"].Value != null)
             {
-                rdNu.Checked = true;
+                string sexx = dgvNguoiDung.CurrentRow.Cells["Sex"].Value.ToString();
+                if (sexx == "N?   ")
+                {
+                    rdNu.Checked = true;
+                }
+                else
+                {
+
+                    rdNam.Checked = true;
+                }
             }
             else
             {
-               
-                rdNam.Checked = true;
+                rdNam.Checked = false;
+                rdNu.Checked = false;
             }
-            dtpNgaySinh.Text = dgvNguoiDung.CurrentRow.Cells["DateOfBirth"].Value.ToString();
-            cbChucVu.Text = dgvNguoiDung.CurrentRow.Cells["RoleName"].Value.ToString();
-
+            if (dgvNguoiDung.CurrentRow.Cells["DateOfBirth"].Value != null)
+                dtpNgaySinh.Text = dgvNguoiDung.CurrentRow.Cells["DateOfBirth"].Value.ToString();
+            else dtpNgaySinh.Value = DateTime.Now;
+                cbChucVu.Text = dgvNguoiDung.CurrentRow.Cells["RoleName"].Value.ToString();
+       
         }
     }
 }
