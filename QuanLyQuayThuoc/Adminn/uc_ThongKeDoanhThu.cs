@@ -19,11 +19,17 @@ namespace QuanLyQuayThuoc.Adminn
         {
             ModelSQL db = new ModelSQL();
             InitializeComponent();
+          
+          
+      
+
+            uc_ChartNgang1.LoadRevenueChartByDateRange(dateStart.Value, dateEnd.Value);
         }
 
         private void uc_ThongKeDoanhThu_Load(object sender, EventArgs e)
         {
             hienthi();
+            dateStart.Value = DateTime.Now.Date.AddDays(-30);
         }
         private void hienthi()
         {
@@ -39,6 +45,31 @@ namespace QuanLyQuayThuoc.Adminn
             dgvdsthongke.Columns["Ngay_ban"].HeaderText = "Ngày bán";
             dgvdsthongke.Columns["Tong_Tien"].HeaderText = "Tổng tiền";
             dgvdsthongke.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dateStart_ValueChanged(object sender, EventArgs e)
+        {
+
+            uc_ChartNgang1.LoadRevenueChartByDateRange(dateStart.Value, dateEnd.Value);
+            uc_ChartNgang1.Refresh();
+        }
+
+        private void dateEnd_ValueChanged(object sender, EventArgs e)
+        {
+            
+            uc_ChartNgang1.LoadRevenueChartByDateRange(dateStart.Value, dateEnd.Value);
+            uc_ChartNgang1.Refresh();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

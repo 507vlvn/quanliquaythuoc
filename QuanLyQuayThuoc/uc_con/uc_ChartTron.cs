@@ -21,6 +21,7 @@ namespace QuanLyQuayThuoc.uc_con
         public uc_ChartTron()
         {
             InitializeComponent();
+            InitializeChart();
         }
 
         private void uc_ChartTron_Load(object sender, EventArgs e)
@@ -31,6 +32,24 @@ namespace QuanLyQuayThuoc.uc_con
         /// <summary>
         /// Tải biểu đồ Top 5 sản phẩm bán chạy nhất
         /// </summary>
+        private void InitializeChart()
+        {
+
+            cartesianChart1.Background = System.Windows.Media.Brushes.White;
+        }
+
+
+        private void ResetChartBackground()
+        {
+            try
+            {
+
+                cartesianChart1.Background = System.Windows.Media.Brushes.White;
+                cartesianChart1.Update(true, true);
+            }
+            catch { }
+        }
+
         private void LoadTopProductsChart()
         {
             try
@@ -201,6 +220,7 @@ namespace QuanLyQuayThuoc.uc_con
                 };
 
                 cartesianChart1.LegendLocation = LegendLocation.Top;
+                ResetChartBackground();
                 guna2HtmlLabel2.Text = $"Doanh Thu Năm {nam}";
             }
             catch (Exception ex)
@@ -269,6 +289,7 @@ namespace QuanLyQuayThuoc.uc_con
                 };
 
                 cartesianChart1.LegendLocation = LegendLocation.Top;
+                ResetChartBackground();
                 guna2HtmlLabel2.Text = $"Số Hóa Đơn Năm {nam}";
             }
             catch (Exception ex)

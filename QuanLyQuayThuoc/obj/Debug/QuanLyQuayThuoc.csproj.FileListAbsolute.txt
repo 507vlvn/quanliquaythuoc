@@ -213,3 +213,70 @@ C:\Users\az012\OneDrive\Desktop\hau\QuanLyQuayThuoc\obj\Debug\QuanLyQu.BA465F03.
 C:\Users\az012\OneDrive\Desktop\hau\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe
 C:\Users\az012\OneDrive\Desktop\hau\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.pdb
 C:\Doan\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe.config
+D:\doan2\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.exe.config
+D:\doan2\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.exe
+D:\doan2\QuanLyQuayThuoc\bin\Debug\QuanLyQuayThuoc.pdb
+D:\doan2\QuanLyQuayThuoc\bin\Debug\EntityFramework.dll
+D:\doan2\QuanLyQuayThuoc\bin\Debug\EntityFramework.SqlServer.dll
+D:\doan2\QuanLyQuayThuoc\bin\Debug\Guna.UI2.dll
+D:\doan2\QuanLyQuayThuoc\bin\Debug\LiveCharts.dll
+D:\doan2\QuanLyQuayThuoc\bin\Debug\LiveCharts.WinForms.dll
+D:\doan2\QuanLyQuayThuoc\bin\Debug\LiveCharts.Wpf.dll
+D:\doan2\QuanLyQuayThuoc\bin\Debug\NotifyIcon.dll
+D:\doan2\QuanLyQuayThuoc\bin\Debug\EntityFramework.xml
+D:\doan2\QuanLyQuayThuoc\bin\Debug\EntityFramework.SqlServer.xml
+D:\doan2\QuanLyQuayThuoc\bin\Debug\LiveCharts.pdb
+D:\doan2\QuanLyQuayThuoc\bin\Debug\LiveCharts.xml
+D:\doan2\QuanLyQuayThuoc\bin\Debug\LiveCharts.WinForms.pdb
+D:\doan2\QuanLyQuayThuoc\bin\Debug\LiveCharts.WinForms.xml
+D:\doan2\QuanLyQuayThuoc\bin\Debug\LiveCharts.Wpf.pdb
+D:\doan2\QuanLyQuayThuoc\bin\Debug\LiveCharts.Wpf.xml
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.AssemblyReference.cache
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.admin2.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_ThongKeDoanhThu.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_User.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_banChay.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.uc_con.uc_ChartNgang.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.uc_con.uc_ChartTron.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_danhsachdonhang.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_Product.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_Dashbord.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Form1.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.FormNV.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.formtinhluong.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Properties.Resources.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.uc_con.uc_DanhSachThuoc.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_BanThuoc.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_BaoCaoDonHang.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_proNv.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_XemThuoc.resources
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.GenerateResource.cache
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.CoreCompileInputs.cache
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQu.BA465F03.Up2Date
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.pdb
+D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe.config
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.AssemblyReference.cache
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe.config
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.admin2.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_ThongKeDoanhThu.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_User.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_banChay.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.uc_con.uc_ChartNgang.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.uc_con.uc_ChartTron.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_danhsachdonhang.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_Product.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_Dashbord.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Form1.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.FormNV.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.formtinhluong.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Properties.Resources.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.uc_con.uc_DanhSachThuoc.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_BanThuoc.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_BaoCaoDonHang.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_proNv.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.User.uc_XemThuoc.resources
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.GenerateResource.cache
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.CoreCompileInputs.cache
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe
+C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.pdb

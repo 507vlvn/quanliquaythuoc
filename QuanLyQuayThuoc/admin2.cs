@@ -42,6 +42,7 @@ namespace QuanLyQuayThuoc
             thongke.Dock = DockStyle.Fill;
             panel1.Controls.Clear();
             panel1.Controls.Add(thongke);
+            
         }
 
         private void btnOder_Click(object sender, EventArgs e)

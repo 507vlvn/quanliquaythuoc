@@ -61,7 +61,7 @@ namespace QuanLyQuayThuoc.Adminn
                     .Where(nv => nv.Role.Role1.ToLower() == "Staff" || nv.Role.Role1.ToLower() == "Admin")
                     .Count();
 
-                btnTongNhanVien.Text = $"Tổng Nhân Viên: {tongNhanVien}";
+                btnTNV.Text = $"Tổng Nhân Viên: {tongNhanVien}";
             }
             catch (Exception ex)
             {
@@ -80,6 +80,23 @@ namespace QuanLyQuayThuoc.Adminn
         private void btnTongNhanVien_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        /// <summary>
+        /// Refresh all charts in the dashboard
+        /// </summary>
+        public void RefreshAllCharts()
+        {
+            try
+            {
+                uc_ChartNgang1?.RefreshChart();
+                uc_ChartTron1?.RefreshChart();
+            }
+            catch (Exception ex)
+            {
+                // Silently handle any refresh errors
+                System.Diagnostics.Debug.WriteLine($"Error refreshing charts: {ex.Message}");
+            }
         }
     }
  } 
