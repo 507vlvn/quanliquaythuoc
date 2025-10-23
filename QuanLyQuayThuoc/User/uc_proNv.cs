@@ -33,12 +33,30 @@ namespace QuanLyQuayThuoc.User
                 {
                     p.UserID,
                     p.FullName,
+                    p.DateOfBirth,
+                    p.Address,
+                    p.PhoneNumber,
+                    p.Sex,
+                    p.Role.Role1,
+                    p.PasswordHash,
+
                 })
                 .FirstOrDefault();
             if(user != null)
             {
                 txtMaNV.Text = user.UserID.ToString();
                 txtTenNV.Text = user.FullName.ToString();
+                dtpNgaySinh.Value = user.DateOfBirth ?? DateTime.Now;
+                txtDiaChi.Text = user.Address.ToString();
+                txtSDT.Text = user.PhoneNumber.ToString();
+                if (user.Sex== "Nam")
+                {
+                    rdNam.Checked = true;
+                }
+                else
+                {
+                    rdNu.Checked = true;
+                }
             }
             else
             {
