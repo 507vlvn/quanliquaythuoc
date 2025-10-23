@@ -295,10 +295,7 @@ namespace QuanLyQuayThuoc.Adminn
             btnThem.Enabled = true;
         }
 
-        private void guna2GroupBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 
 }
