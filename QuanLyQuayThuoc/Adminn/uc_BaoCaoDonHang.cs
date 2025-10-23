@@ -365,7 +365,7 @@ namespace QuanLyQuayThuoc.User
             try
             {
                 decimal tongDoanhThu = db.HoaDons
-                    .Where(hd => hd.Tong_Tien != null)
+                    .Where(hd => hd.Tong_Tien != 0)
                     .Sum(hd => (decimal?)hd.Tong_Tien) ?? 0;
                 
                 lbTongDoanhThu.Text = $"{tongDoanhThu:N0} VNĐ";

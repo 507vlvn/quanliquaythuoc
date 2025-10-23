@@ -457,7 +457,6 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(1020, 318);
             this.guna2GroupBox1.TabIndex = 28;
             this.guna2GroupBox1.Text = "Danh Sách Thuốc";
-            this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
             // dgvdsthuoc
             // 

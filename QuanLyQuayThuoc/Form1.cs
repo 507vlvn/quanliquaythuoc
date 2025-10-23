@@ -23,11 +23,12 @@ namespace QuanLyQuayThuoc
             this.MaximizeBox = false; // Không cho phóng to
             this.MinimizeBox = false; // Không cho thu nhỏ
             this.FormBorderStyle = FormBorderStyle.FixedSingle; // Không cho thay đổi kích thước
+            this.FormBorderStyle = FormBorderStyle.None;
 
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+          
             clear();
 
         }

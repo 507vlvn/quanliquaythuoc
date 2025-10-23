@@ -20,6 +20,7 @@ namespace QuanLyQuayThuoc.User
         ModelSQL db = new ModelSQL();
         public uc_BanThuoc()
         {
+
             InitializeComponent();
         }
 
@@ -27,9 +28,18 @@ namespace QuanLyQuayThuoc.User
         {
             loatdatadsthuoc();
             fllcbbUser();
-            loadgridviewchitiethoadon();
 
-            dgvdsThuoc.Enabled = false;
+            if (!string.IsNullOrEmpty(CurrentBill.MaHoaDonHienTai) && CurrentBill.MaHoaDonHienTai != "0")
+            {
+                labMHD.Text = CurrentBill.MaHoaDonHienTai;
+                loadgridviewchitiethoadon();
+                txtSDT.Enabled = false;
+            }
+            else
+            {
+                labMHD.Text = "0";
+                loadgridviewchitiethoadon();
+            }
         }
 
         private void loatdatadsthuoc()
@@ -40,13 +50,14 @@ namespace QuanLyQuayThuoc.User
                 p.Ma_san_pham,
                 p.Ten_san_pham,
                 p.Thanh_phan,
+
             }).ToList();
             dgvdsThuoc.Columns["Ten_san_pham"].HeaderText = "Tên Sản Phẩm";
             dgvdsThuoc.Columns["Ma_san_pham"].HeaderText = "Mã Sản Phẩm";
             dgvdsThuoc.Columns["Thanh_phan"].HeaderText = "Thành Phần";
             dgvdsThuoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
-        // Hàm tạo mã chi tiết hóa đơn tự động - Tìm số nhỏ nhất còn trống
+
         private string TaoMaChiTietHD()
         {
             try
@@ -238,106 +249,81 @@ namespace QuanLyQuayThuoc.User
         }
         private void btnaddbill_Click(object sender, EventArgs e)
         {
-            var soLuongText = txtSoVien.Text;
-            var soNgayUongText = txtSoNgayUong.Text;
-            if (soLuongText == "" || soNgayUongText == "")
+            var soLuongText = txtSoVien.Text.Trim();
+            var soNgayUongText = txtSoNgayUong.Text.Trim();
+            var soDienThoai = txtSDT.Text.Trim();
+     
+            if(txtSDT.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại khách hàng!", "Thông báo",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrEmpty(soLuongText) || string.IsNullOrEmpty(soNgayUongText))
             {
                 MessageBox.Show("Vui lòng nhập số lượng và số ngày uống!", "Thông báo",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (txtmasanpham.Text == "")
+
+            if (!string.IsNullOrEmpty(soDienThoai))
             {
-                MessageBox.Show("Vui lòng chọn sản phẩm!", "Thông báo",
-                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                if (soDienThoai.Length < 10 || soDienThoai.Length > 11 || !soDienThoai.All(char.IsDigit))
+                {
+                    MessageBox.Show("Số điện thoại khách hàng không hợp lệ!", "Thông báo",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
             }
+            // Nếu chưa có hóa đơn nào thì tạo mới
             if (labMHD.Text == "0")
             {
-                MessageBox.Show("Vui lòng Tạo Hóa Đơn Trước !", "Thông báo",
-                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                labMHD.Text = TaoMaHoaDon();
+
+                var hd = new HoaDon
+                {
+                    Ma_hoa_don = labMHD.Text,
+                    Ngay_ban = DateTime.Now,
+                    So_Dien_Thoai = string.IsNullOrEmpty(soDienThoai) ? null : soDienThoai,
+                    Tong_Tien = 0
+                };
+
+                db.HoaDons.Add(hd);
+                db.SaveChanges();
+
+                CurrentBill.MaHoaDonHienTai = labMHD.Text;
+
+                dgvdsThuoc.Enabled = true;
+                txtSDT.Enabled = false;
             }
-            if (db.Thuocs.Where(p => p.Ma_san_pham == txtmasanpham.Text).Select(p => p.So_Luong_ton).FirstOrDefault() < int.Parse(soLuongText) * int.Parse(soNgayUongText))
+
+            int slTon = db.Thuocs.Where(p => p.Ma_san_pham == txtmasanpham.Text)
+                                 .Select(p => p.So_Luong_ton)
+                                 .FirstOrDefault();
+            int soLuongCan = int.Parse(soLuongText) * int.Parse(soNgayUongText);
+
+            if (slTon < soLuongCan)
             {
                 MessageBox.Show("Số lượng trong kho không đủ!", "Thông báo",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            else
+
+            var cthd = new ChiTietHoaDon
             {
-                var cthd = new ChiTietHoaDon
-                {
-                    Ma_Chi_Tiet_HD = TaoMaChiTietHD(),
-                    Ma_san_pham = txtmasanpham.Text,
-                    So_luong = int.Parse(soLuongText) * int.Parse(soNgayUongText),
-                    So_Ngay_Uong = int.Parse(txtSoNgayUong.Text),
-                    Ma_Hoa_Don = labMHD.Text,
-                    UserID = CurrentUser.UserID
-                };
-                dgvchitiethoadon.DataSource = cthd;
-                db.ChiTietHoaDons.Add(cthd);
-                db.SaveChanges();
-                loadgridviewchitiethoadon();
-            }
+                Ma_Chi_Tiet_HD = TaoMaChiTietHD(),
+                Ma_san_pham = txtmasanpham.Text,
+                So_luong = soLuongCan,
+                So_Ngay_Uong = int.Parse(txtSoNgayUong.Text),
+                Ma_Hoa_Don = labMHD.Text,
+                UserID = CurrentUser.UserID
+            };
+
+            db.ChiTietHoaDons.Add(cthd);
+            db.SaveChanges();
+            loadgridviewchitiethoadon();
+            clearInputFields();
         }
-        
-        private void bntTaoHoaDon_Click(object sender, EventArgs e)
-        {
-
-            if (labMHD.Text != "0")
-            {
-                MessageBox.Show("Đang có hóa đơn chưa hoàn thành. Vui lòng hoàn thành hoặc hủy hóa đơn trước khi tạo mới.",
-                                "Thông báo",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
-                return;
-            }
-            else
-            if (LabUs.Text == "User :")
-            {
-                MessageBox.Show("Vui lòng đăng nhập để tạo hóa đơn!", "Thông báo",
-                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            else
-
-
-            if (txtSDT.Text == "")
-            {
-                MessageBox.Show("Vui lòng nhập số điện thoại Khách Hàng!", "Thông báo",
-                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                return;
-            }
-            //note: sửa điều kiện kiểm tra độ dài số điện thoại
-            else if (txtSDT.Text.Length < 10 && txtSDT.Text.Length >=10)
-            {
-                MessageBox.Show("Số điện thoại khách hàng không hợp lệ !", "Thông báo",
-                              MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                return;
-            }
-
-            else
-            {
-                labMHD.Text = TaoMaHoaDon();
-                var hd = new HoaDon
-                {
-                    Ma_hoa_don = labMHD.Text,
-                    Ngay_ban = DateTime.Now,
-                    So_Dien_Thoai = txtSDT.Text,
-                    Tong_Tien = 0
-                };
-                db.HoaDons.Add(hd);
-                db.SaveChanges();
-                loadgridviewchitiethoadon();
-                clearInputFields();
-                dgvdsThuoc.Enabled = true;
-                txtSDT.Enabled = false;
-            }
-        }
-
         private void clearInputFields()
         {
             txtmasanpham.Clear();
@@ -345,7 +331,6 @@ namespace QuanLyQuayThuoc.User
             txtDonGia.Clear();
             txtSoVien.Clear();
             txtSoNgayUong.Clear();
-
             txtChiDinh.Clear();
             txtThanhPhan.Clear();
             txtTon.Clear();
@@ -353,15 +338,15 @@ namespace QuanLyQuayThuoc.User
 
         private void buttonHoanThanh_Click(object sender, EventArgs e)
         {
-
             var hoaDon = db.HoaDons.FirstOrDefault(hd => hd.Ma_hoa_don == labMHD.Text);
+
             if (labMHD.Text == "0")
             {
                 MessageBox.Show("Bạn Chưa Tạo Hóa Đơn Vui Lòng Tạo Hóa Đơn Trước.",
                                 "Thông báo",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
-              
+
                 return;
             }
             else
@@ -377,19 +362,19 @@ namespace QuanLyQuayThuoc.User
             {
                 hoaDon.Tong_Tien = decimal.Parse(labtongcong.Text);
                 db.SaveChanges();
-                MessageBox.Show($"Hoàn thành hóa đơn {labMHD.Text} thành công!\n",
+                MessageBox.Show($"Hóa đơn {labMHD.Text} đã được hoàn thành thành công!",
                                 "Thông báo",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
                 db.SaveChanges();
                 labtongcong.Text = "0";
                 labMHD.Text = "0";
+                CurrentBill.MaHoaDonHienTai = "0";
                 loadgridviewchitiethoadon();
                 clearInputFields();
-                dgvdsThuoc.Enabled = false;
                 txtSDT.Enabled = true;
                 txtSDT.Clear();
-               
+
             }
 
         }
@@ -410,14 +395,12 @@ namespace QuanLyQuayThuoc.User
 
             if (result == DialogResult.Yes)
             {
-                // Xóa các chi tiết hóa đơn trước
                 var chiTietList = db.ChiTietHoaDons.Where(ct => ct.Ma_Hoa_Don == labMHD.Text).ToList();
                 foreach (var chiTiet in chiTietList)
                 {
                     db.ChiTietHoaDons.Remove(chiTiet);
                 }
 
-                // Xóa hóa đơn
                 var hoaDon = db.HoaDons.FirstOrDefault(hd => hd.Ma_hoa_don == labMHD.Text);
                 if (hoaDon != null)
                 {
@@ -435,7 +418,7 @@ namespace QuanLyQuayThuoc.User
                     labMHD.Text = "0";
                     txtSDT.Enabled = true;
                     txtSDT.Clear();
-                    dgvdsThuoc.Enabled = false;
+                    CurrentBill.MaHoaDonHienTai = "0";
                 }
             }
         }
@@ -476,7 +459,8 @@ namespace QuanLyQuayThuoc.User
             }
 
         }
-    } }
+    }
+}
 
 
 

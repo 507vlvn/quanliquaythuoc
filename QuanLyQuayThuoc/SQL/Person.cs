@@ -19,19 +19,30 @@ namespace QuanLyQuayThuoc.sql
         [StringLength(50)]
         public string UserID { get; set; }
 
-        [Required]
         [StringLength(20)]
         public string PasswordHash { get; set; }
 
-        [Required]
         [StringLength(20)]
         public string FullName { get; set; }
 
-        public int RoleID { get; set; }
+        public int? RoleID { get; set; }
+
+        [StringLength(5)]
+        public string Sex { get; set; }
+
+        [StringLength(50)]
+        public string PhoneNumber { get; set; }
+
+        [StringLength(50)]
+        public string Address { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime? DateOfBirth { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime? Timekeeping { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; }
-
-        public virtual Role Role { get; set; }
     }
 }
