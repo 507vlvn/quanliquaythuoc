@@ -36,6 +36,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtseach = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtmasp = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -66,10 +67,9 @@
             this.txtSLTon = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtgia = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.chkSlThuioc = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dSThuocBindingSource)).BeginInit();
-            this.guna2Panel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdsthuoc)).BeginInit();
             this.SuspendLayout();
@@ -81,7 +81,7 @@
             this.panel1.Controls.Add(this.txtseach);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1079, 37);
             this.panel1.TabIndex = 0;
@@ -118,6 +118,18 @@
             this.txtseach.Size = new System.Drawing.Size(148, 31);
             this.txtseach.TabIndex = 3;
             this.txtseach.TextChanged += new System.EventHandler(this.txtseach_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label5.Location = new System.Drawing.Point(791, 10);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(99, 24);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Tìm Kiếm";
             // 
             // label3
             // 
@@ -246,7 +258,7 @@
             this.dateTimePicker1.CustomFormat = "dd-MM-yyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(534, 41);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(103, 20);
             this.dateTimePicker1.TabIndex = 19;
@@ -288,7 +300,7 @@
             this.dateTimePicker2.CustomFormat = "dd-MM-yyyy";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(534, 76);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(103, 20);
             this.dateTimePicker2.TabIndex = 24;
@@ -334,10 +346,9 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2GroupBox1);
             this.guna2Panel1.Location = new System.Drawing.Point(35, 213);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1041, 337);
+            this.guna2Panel1.Size = new System.Drawing.Size(1041, 323);
             this.guna2Panel1.TabIndex = 27;
             // 
             // guna2GroupBox1
@@ -348,12 +359,11 @@
             this.guna2GroupBox1.Controls.Add(this.btnrefech);
             this.guna2GroupBox1.Controls.Add(this.btnSua);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(38, 199);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(1041, 337);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(1041, 328);
             this.guna2GroupBox1.TabIndex = 28;
             this.guna2GroupBox1.Text = "Danh Sách Thuốc";
             // 
@@ -387,7 +397,7 @@
             this.dgvdsthuoc.ReadOnly = true;
             this.dgvdsthuoc.RowHeadersVisible = false;
             this.dgvdsthuoc.RowHeadersWidth = 51;
-            this.dgvdsthuoc.Size = new System.Drawing.Size(1041, 297);
+            this.dgvdsthuoc.Size = new System.Drawing.Size(1041, 288);
             this.dgvdsthuoc.TabIndex = 0;
             this.dgvdsthuoc.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvdsthuoc.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -411,7 +421,6 @@
             this.dgvdsthuoc.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvdsthuoc.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvdsthuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdsthuoc_CellClick);
-            this.dgvdsthuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdsthuoc_CellContentClick);
             // 
             // btnThem
             // 
@@ -427,7 +436,7 @@
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageSize = new System.Drawing.Size(30, 30);
             this.btnThem.Location = new System.Drawing.Point(561, -2);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.PressedColor = System.Drawing.Color.White;
             this.btnThem.Size = new System.Drawing.Size(112, 37);
@@ -448,7 +457,7 @@
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageSize = new System.Drawing.Size(30, 30);
             this.btnXoa.Location = new System.Drawing.Point(677, -2);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(112, 37);
             this.btnXoa.TabIndex = 7;
@@ -469,7 +478,7 @@
             this.btnrefech.Image = ((System.Drawing.Image)(resources.GetObject("btnrefech.Image")));
             this.btnrefech.ImageSize = new System.Drawing.Size(30, 30);
             this.btnrefech.Location = new System.Drawing.Point(910, -2);
-            this.btnrefech.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnrefech.Margin = new System.Windows.Forms.Padding(2);
             this.btnrefech.Name = "btnrefech";
             this.btnrefech.Size = new System.Drawing.Size(112, 37);
             this.btnrefech.TabIndex = 7;
@@ -489,7 +498,7 @@
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageSize = new System.Drawing.Size(30, 30);
             this.btnSua.Location = new System.Drawing.Point(793, -2);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(112, 37);
             this.btnSua.TabIndex = 8;
@@ -608,23 +617,25 @@
             this.txtgia.Size = new System.Drawing.Size(172, 22);
             this.txtgia.TabIndex = 8;
             // 
-            // label5
+            // chkSlThuioc
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label5.Location = new System.Drawing.Point(791, 10);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 24);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Tìm Kiếm";
+            this.chkSlThuioc.AutoSize = true;
+            this.chkSlThuioc.BackColor = System.Drawing.Color.Black;
+            this.chkSlThuioc.Location = new System.Drawing.Point(970, 542);
+            this.chkSlThuioc.Name = "chkSlThuioc";
+            this.chkSlThuioc.Size = new System.Drawing.Size(106, 17);
+            this.chkSlThuioc.TabIndex = 9;
+            this.chkSlThuioc.Text = "Số Lượng Thuốc";
+            this.chkSlThuioc.UseVisualStyleBackColor = false;
+            this.chkSlThuioc.CheckedChanged += new System.EventHandler(this.chkSlThuioc_CheckedChanged);
             // 
             // uc_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
+            this.Controls.Add(this.chkSlThuioc);
+            this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.txtSoLuongNhap);
             this.Controls.Add(this.txttdp);
             this.Controls.Add(this.dateTimePicker2);
@@ -657,7 +668,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dSThuocBindingSource)).EndInit();
-            this.guna2Panel1.ResumeLayout(false);
             this.guna2GroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdsthuoc)).EndInit();
             this.ResumeLayout(false);
@@ -701,5 +711,6 @@
         private Guna.UI2.WinForms.Guna2Button btnrefech;
         private Guna.UI2.WinForms.Guna2Button btnSua;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox chkSlThuioc;
     }
 }

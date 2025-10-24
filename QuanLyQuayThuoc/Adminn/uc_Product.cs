@@ -23,7 +23,7 @@ namespace QuanLyQuayThuoc.Adminn
 
         private void LoadData()
         {
-            
+
             dgvdsthuoc.DataSource = db.Thuocs
                 .Select(t => new
                 {
@@ -56,7 +56,7 @@ namespace QuanLyQuayThuoc.Adminn
         {
             LoadData();
             txtSLTon.Enabled = false;
-        
+
 
         }
 
@@ -137,7 +137,7 @@ namespace QuanLyQuayThuoc.Adminn
             string congDung = txtDonGia.Text.Trim();
             string tacDungPhu = txttdp.Text.Trim();
             string nhaSanXuat = txtnsx.Text.Trim();
-           
+
             if (string.IsNullOrEmpty(maSanPham) || string.IsNullOrEmpty(tenSanPham) ||
                 string.IsNullOrEmpty(thanhphan) || string.IsNullOrEmpty(congDung) ||
                 string.IsNullOrEmpty(tacDungPhu) || string.IsNullOrEmpty(nhaSanXuat))
@@ -151,13 +151,14 @@ namespace QuanLyQuayThuoc.Adminn
             {
                 MessageBox.Show("Giá Bán phải là một số hợp lệ.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-            }else
+            }
+            else
             if (txtSoLuongNhap.Text == "")
             { txtSoLuongNhap.Text = "0"; }
             try
             {
-                    Thuoc thuoc = db.Thuocs.SingleOrDefault(t => t.Ma_san_pham == maSanPham);
-                
+                Thuoc thuoc = db.Thuocs.SingleOrDefault(t => t.Ma_san_pham == maSanPham);
+
                 if (thuoc != null)
                 {
 
@@ -183,7 +184,7 @@ namespace QuanLyQuayThuoc.Adminn
             }
             catch (Exception ex)
             {
-               
+
                 MessageBox.Show("Lỗi khi sửa Thuốc: " + ex, "Lỗi cơ sở dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             txtmasp.Enabled = true;
@@ -198,7 +199,7 @@ namespace QuanLyQuayThuoc.Adminn
         private void btnXoa_Click(object sender, EventArgs e)
         {
             try
-            { 
+            {
                 if (dgvdsthuoc.CurrentRow == null)
                 {
                     MessageBox.Show("Vui lòng chọn thuốc cần xóa!", "Thông báo",
@@ -229,7 +230,7 @@ namespace QuanLyQuayThuoc.Adminn
                 if (isUsed)
                 {
                     MessageBox.Show(
-                       
+
                         "Hãy đánh dấu là 'Ngừng kinh doanh' thay vì xóa.",
                         "Không thể xóa",
                         MessageBoxButtons.OK,
@@ -237,7 +238,7 @@ namespace QuanLyQuayThuoc.Adminn
                     );
                     return;
 
-                  
+
                 }
 
                 DialogResult confirm = MessageBox.Show(
@@ -256,8 +257,8 @@ namespace QuanLyQuayThuoc.Adminn
                 MessageBox.Show("Xóa thuốc thành công!", "Thông báo",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                clear();     
-                LoadData(); 
+                clear();
+                LoadData();
                 btnThem.Enabled = true;
             }
             catch (Exception ex)
@@ -303,8 +304,8 @@ namespace QuanLyQuayThuoc.Adminn
             var keyword = txtseach.Text.Trim().ToLower();
             var filteredData = db.Thuocs
                 .Where(t => t.Ma_san_pham.ToLower().Contains(keyword) ||
-                            t.Ten_san_pham.ToLower().Contains(keyword)) 
-                           
+                            t.Ten_san_pham.ToLower().Contains(keyword))
+
                 .Select(t => new
                 {
                     t.Ma_san_pham,
@@ -330,11 +331,33 @@ namespace QuanLyQuayThuoc.Adminn
             txtSLTon.Enabled = false;
             btnThem.Enabled = true;
         }
-
-        private void dgvdsthuoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void chkSlThuioc_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (chkSlThuioc.Checked == true)
+            {
+                var expiredDrugs = db.Thuocs
+                    .Where(t => t.So_Luong_ton < 10)
+                    .Select(t => new
+                    {
+                        t.Ma_san_pham,
+                        t.Ten_san_pham,
+                        t.Thanh_phan,
+                        t.Cong_dung,
+                        t.Tac_dung_phu,
+                        t.Nha_san_xuat,
+                        t.So_Luong_ton,
+                        t.Gia_ban,
+                        t.Ngay_san_xuat,
+                        t.Ngay_het_han
+                    })
+                    .ToList();
+                dgvdsthuoc.DataSource = expiredDrugs;
+            }
+            else
+            {
+                LoadData();
+            }
         }
-    }
 
+    }
 }
