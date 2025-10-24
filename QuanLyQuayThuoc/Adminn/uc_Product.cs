@@ -25,8 +25,9 @@ namespace QuanLyQuayThuoc.Adminn
         {
 
             dgvdsthuoc.DataSource = db.Thuocs
-                .Select(t => new
-                {
+        .Where(t => t.So_Luong_ton > 0) 
+        .Select(t => new
+        {
                     t.Ma_san_pham,
                     t.Ten_san_pham,
                     t.Thanh_phan,

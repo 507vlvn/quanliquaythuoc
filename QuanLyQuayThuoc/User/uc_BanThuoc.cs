@@ -46,11 +46,13 @@ namespace QuanLyQuayThuoc.User
         private void loatdatadsthuoc()
         {
 
-            dgvdsThuoc.DataSource = db.Thuocs.Select(p => new
-            {
-                p.Ma_san_pham,
-                p.Ten_san_pham,
-                p.Thanh_phan,
+            dgvdsThuoc.DataSource = db.Thuocs
+       .Where(t => t.So_Luong_ton > 0) 
+       .Select(t => new
+       {
+                t.Ma_san_pham,
+               t.Ten_san_pham,
+                t.Thanh_phan,
 
             }).ToList();
             dgvdsThuoc.Columns["Ten_san_pham"].HeaderText = "Tên Sản Phẩm";
