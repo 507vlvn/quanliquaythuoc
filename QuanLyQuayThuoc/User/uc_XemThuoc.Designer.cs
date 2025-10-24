@@ -46,8 +46,7 @@
             this.labelTitle.BackColor = System.Drawing.Color.Transparent;
             this.labelTitle.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.Color.SeaGreen;
-            this.labelTitle.Location = new System.Drawing.Point(17, 9);
-            this.labelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTitle.Location = new System.Drawing.Point(23, 11);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(140, 24);
             this.labelTitle.TabIndex = 1;
@@ -64,20 +63,20 @@
             this.txtTimkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTimkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimkiem.Location = new System.Drawing.Point(20, 56);
-            this.txtTimkiem.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txtTimkiem.Location = new System.Drawing.Point(27, 69);
+            this.txtTimkiem.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.PlaceholderText = "";
             this.txtTimkiem.SelectedText = "";
-            this.txtTimkiem.Size = new System.Drawing.Size(844, 27);
+            this.txtTimkiem.Size = new System.Drawing.Size(1125, 33);
             this.txtTimkiem.TabIndex = 4;
             this.txtTimkiem.TextChanged += new System.EventHandler(this.txtTimkiem_TextChanged);
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(402, 22);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(536, 27);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(3, 2);
             this.guna2HtmlLabel1.TabIndex = 5;
@@ -94,10 +93,10 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.Black;
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
             this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(871, 50);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button3.Location = new System.Drawing.Point(1161, 62);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(98, 37);
+            this.guna2Button3.Size = new System.Drawing.Size(131, 46);
             this.guna2Button3.TabIndex = 13;
             this.guna2Button3.Text = "Search:";
             // 
@@ -125,11 +124,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvDsThuoc.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDsThuoc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvDsThuoc.Location = new System.Drawing.Point(22, 92);
+            this.dgvDsThuoc.Location = new System.Drawing.Point(29, 113);
+            this.dgvDsThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvDsThuoc.Name = "dgvDsThuoc";
             this.dgvDsThuoc.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvDsThuoc.RowHeadersVisible = false;
-            this.dgvDsThuoc.Size = new System.Drawing.Size(1039, 441);
+            this.dgvDsThuoc.Size = new System.Drawing.Size(1385, 543);
             this.dgvDsThuoc.TabIndex = 14;
             this.dgvDsThuoc.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDsThuoc.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -152,10 +152,11 @@
             this.dgvDsThuoc.ThemeStyle.RowsStyle.Height = 22;
             this.dgvDsThuoc.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDsThuoc.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvDsThuoc.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDsThuoc_CellContentDoubleClick);
             // 
             // uc_XemThuoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
             this.Controls.Add(this.dgvDsThuoc);
@@ -163,10 +164,10 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.txtTimkiem);
             this.Controls.Add(this.labelTitle);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "uc_XemThuoc";
-            this.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
-            this.Size = new System.Drawing.Size(1079, 567);
+            this.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.Size = new System.Drawing.Size(1439, 698);
             this.Load += new System.EventHandler(this.uc_XemThuoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDsThuoc)).EndInit();
             this.ResumeLayout(false);

@@ -206,31 +206,53 @@ namespace QuanLyQuayThuoc.Adminn
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-
             var selectedRows = dgvdsthuoc.CurrentRow;
 
             if (selectedRows != null)
             {
-
                 string masp = selectedRows.Cells["Ma_san_pham"].Value.ToString();
                 var xoa = db.Thuocs.FirstOrDefault(p => p.Ma_san_pham == masp);
+
                 if (xoa != null)
                 {
-                    DialogResult rd = MessageBox.Show("Bạn có chắc chắn muốn xóa thuốc này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    // Kiểm tra xem thuốc đã được sử dụng trong hóa đơn chưa
+                    var isUsedInInvoice = db.ChiTietHoaDons.Any(ct => ct.Ma_san_pham == masp);
+
+                    if (isUsedInInvoice)
+                    {
+                        MessageBox.Show(
+                            "Không thể xóa thuốc này vì đã được sử dụng trong hóa đơn!\n" +
+                            "Vui lòng kiểm tra lại.",
+                            "Không thể xóa",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    DialogResult rd = MessageBox.Show(
+                        "Bạn có chắc chắn muốn xóa thuốc này?",
+                        "Xác nhận xóa",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question);
+
                     if (rd == DialogResult.No)
                     {
                         return;
                     }
+
                     db.Thuocs.Remove(xoa);
                     db.SaveChanges();
+
+                    MessageBox.Show("Xóa thuốc thành công!", "Thông báo",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     clear();
                     LoadData();
                     btnThem.Enabled = true;
                 }
-               
-
             }
         }
+        
 
         private void dgvdsthuoc_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -295,7 +317,10 @@ namespace QuanLyQuayThuoc.Adminn
             btnThem.Enabled = true;
         }
 
-        
+        private void dgvdsthuoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
 }

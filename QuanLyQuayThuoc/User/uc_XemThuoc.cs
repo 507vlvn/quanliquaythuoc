@@ -127,5 +127,64 @@ namespace QuanLyQuayThuoc.User
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void dgvDsThuoc_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                try
+                {
+                    string maHoaDon = dgvDsThuoc.Rows[e.RowIndex].Cells["Ma_san_pham"].Value.ToString();
+                    XemChiTietHoaDon(maHoaDon);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi xem chi tiết: {ex.Message}", "Lỗi",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+        }
+
+
+        private void XemChiTietHoaDon(string masp)
+        {
+
+            var thuoc = db.Thuocs.FirstOrDefault(med => med.Ma_san_pham == masp);
+                if (thuoc == null)
+            {
+                MessageBox.Show("Không tìm thấy thuốc!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            var chiTiet = db.ChiTietHoaDons
+            .Where(ct => ct.Ma_san_pham == masp)
+            .Select(ct => new
+            {
+                Ma_San_Pham = ct.Ma_san_pham,
+                Ten_San_Pham = ct.Thuoc.Ten_san_pham,
+                So_Luong = ct.So_luong,
+                So_Ngay_Uong = ct.So_Ngay_Uong,
+                Gia_Ban = ct.Gia_Ban,
+                Thanh_Tien = ct.Thanh_Tien
+            }).ToList();
+
+            string thongTin = $"===== CHI TIẾT THUỐC =====\n\n";
+            thongTin += $"Mã thuốc: {thuoc.Ma_san_pham}\n";
+            thongTin += $"Tên thuốc: {thuoc.Ten_san_pham}\n";
+            thongTin += $"Thành phần: {thuoc.Thanh_phan}\n";
+            thongTin += $"Công dụng: {thuoc.Cong_dung}\n";
+            thongTin += $"Tác dụng phụ: {thuoc.Tac_dung_phu}\n";
+            thongTin += $"Nhà sản xuất: {thuoc.Nha_san_xuat}\n";
+            thongTin += $"Số lượng tồn: {thuoc.So_Luong_ton}\n";
+            thongTin += $"Giá bán: {thuoc.Gia_ban:N0} VNĐ\n";
+            thongTin += $"Ngày sản xuất: {thuoc.Ngay_san_xuat:dd/MM/yyyy}\n";
+            thongTin += $"Ngày hết hạn: {thuoc.Ngay_het_han:dd/MM/yyyy}\n\n";
+            MessageBox.Show(thongTin, "Chi tiết thuốc",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+        }
     }
 }

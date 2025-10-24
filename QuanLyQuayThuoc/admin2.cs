@@ -69,7 +69,7 @@ namespace QuanLyQuayThuoc
         private void btnThemThuoc_Click(object sender, EventArgs e)
         {
             uc_Product themthuoc = new uc_Product();
-            //themthuoc.Dock = DockStyle.Fill;
+            themthuoc.Dock = DockStyle.Fill;
             panel1.Controls.Clear();
             panel1.Controls .Add(themthuoc);
         }
