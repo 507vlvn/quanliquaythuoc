@@ -23,6 +23,11 @@ namespace QuanLyQuayThuoc.User
 
         private void uc_proNv_Load(object sender, EventArgs e)
         {
+            dgv.DataSource = db.People.Select(p => new
+            {
+                p.Timekeeping,
+            }).ToList();
+
             Loaddata();
         }
 
@@ -62,6 +67,7 @@ namespace QuanLyQuayThuoc.User
             {
                 MessageBox.Show("Không tìm thấy nhân viên nào trong cơ sở dữ liệu.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
     }
 }

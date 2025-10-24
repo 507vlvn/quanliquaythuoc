@@ -47,8 +47,8 @@ namespace QuanLyQuayThuoc.Adminn
             dgvdsthuoc.Columns["Nha_san_xuat"].HeaderText = "Nhà sản xuất";
             dgvdsthuoc.Columns["So_Luong_ton"].HeaderText = "Số Lượng Tồn";
             dgvdsthuoc.Columns["Gia_ban"].HeaderText = "Giá Bán";
-            dgvdsthuoc.Columns["Ngay_san_xuat"].HeaderText = "Ngày sản Xuất";
-            dgvdsthuoc.Columns["Ngay_het_han"].HeaderText = "Ngày hết hạn";
+            dgvdsthuoc.Columns["Ngay_san_xuat"].HeaderText = "NSX";
+            dgvdsthuoc.Columns["Ngay_het_han"].HeaderText = "NHH";
             dgvdsthuoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvdsthuoc.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
@@ -82,7 +82,6 @@ namespace QuanLyQuayThuoc.Adminn
                 MessageBox.Show($"Mã sản phẩm '{maSanPham}' đã tồn tại. Vui lòng sử dụng mã khác.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            // Kiểm tra Số Lượng Tồn (int)
 
             int soLuongTon;
             if (!int.TryParse(txtSoLuongNhap.Text.Trim(), out soLuongTon))
@@ -125,15 +124,7 @@ namespace QuanLyQuayThuoc.Adminn
             catch (Exception ex)
             {
 
-                string errorMessage = ex.Message;
-                Exception inner = ex;
-                while (inner.InnerException != null)
-                {
-                    inner = inner.InnerException;
-                }
-                errorMessage += "\nChi tiết lỗi SQL Server: " + inner.Message;
-
-                MessageBox.Show("Lỗi khi thêm Thuốc: " + errorMessage, "Lỗi cơ sở dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi khi thêm Thuốc: " + ex, "Lỗi cơ sở dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             clear();
         }
@@ -206,53 +197,76 @@ namespace QuanLyQuayThuoc.Adminn
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            var selectedRows = dgvdsthuoc.CurrentRow;
-
-            if (selectedRows != null)
-            {
-                string masp = selectedRows.Cells["Ma_san_pham"].Value.ToString();
-                var xoa = db.Thuocs.FirstOrDefault(p => p.Ma_san_pham == masp);
-
-                if (xoa != null)
+            try
+            { 
+                if (dgvdsthuoc.CurrentRow == null)
                 {
-                    // Kiểm tra xem thuốc đã được sử dụng trong hóa đơn chưa
-                    var isUsedInInvoice = db.ChiTietHoaDons.Any(ct => ct.Ma_san_pham == masp);
-
-                    if (isUsedInInvoice)
-                    {
-                        MessageBox.Show(
-                            "Không thể xóa thuốc này vì đã được sử dụng trong hóa đơn!\n" +
-                            "Vui lòng kiểm tra lại.",
-                            "Không thể xóa",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Warning);
-                        return;
-                    }
-
-                    DialogResult rd = MessageBox.Show(
-                        "Bạn có chắc chắn muốn xóa thuốc này?",
-                        "Xác nhận xóa",
-                        MessageBoxButtons.YesNo,
-                        MessageBoxIcon.Question);
-
-                    if (rd == DialogResult.No)
-                    {
-                        return;
-                    }
-
-                    db.Thuocs.Remove(xoa);
-                    db.SaveChanges();
-
-                    MessageBox.Show("Xóa thuốc thành công!", "Thông báo",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    clear();
-                    LoadData();
-                    btnThem.Enabled = true;
+                    MessageBox.Show("Vui lòng chọn thuốc cần xóa!", "Thông báo",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
+
+                string maSP = dgvdsthuoc.CurrentRow.Cells["Ma_san_pham"].Value?.ToString();
+
+                if (string.IsNullOrEmpty(maSP))
+                {
+                    MessageBox.Show("Không tìm thấy mã sản phẩm hợp lệ!", "Lỗi",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var thuoc = db.Thuocs.FirstOrDefault(t => t.Ma_san_pham == maSP);
+
+                if (thuoc == null)
+                {
+                    MessageBox.Show("Thuốc không tồn tại hoặc đã bị xóa!", "Lỗi",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                bool isUsed = db.ChiTietHoaDons.Any(ct => ct.Ma_san_pham == maSP);
+
+                if (isUsed)
+                {
+                    MessageBox.Show(
+                       
+                        "Hãy đánh dấu là 'Ngừng kinh doanh' thay vì xóa.",
+                        "Không thể xóa",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+                    return;
+
+                  
+                }
+
+                DialogResult confirm = MessageBox.Show(
+                    "Bạn có chắc chắn muốn xóa thuốc này không?",
+                    "Xác nhận xóa",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (confirm == DialogResult.No)
+                    return;
+
+                db.Thuocs.Remove(thuoc);
+                db.SaveChanges();
+
+                MessageBox.Show("Xóa thuốc thành công!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                clear();     
+                LoadData(); 
+                btnThem.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi xóa thuốc:\n" + ex.Message, "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
 
         private void dgvdsthuoc_CellClick(object sender, DataGridViewCellEventArgs e)
         {

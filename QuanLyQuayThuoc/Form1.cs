@@ -37,7 +37,6 @@ namespace QuanLyQuayThuoc
             Application.Exit();
 
         }
-
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             errorProvider1.Clear();
@@ -45,59 +44,58 @@ namespace QuanLyQuayThuoc
             if (string.IsNullOrEmpty(txtName.Text))
             {
                 errorProvider1.SetError(txtName, "Vui lòng nhập tên đăng nhập");
+                return;
             }
-            else if (string.IsNullOrEmpty(txtMK.Text))
+
+            if (string.IsNullOrEmpty(txtMK.Text))
             {
                 errorProvider1.SetError(txtMK, "Vui lòng nhập mật khẩu");
+                return;
             }
-            else
+
+            var user = db.People.FirstOrDefault(p => p.UserID == txtName.Text && p.PasswordHash == txtMK.Text);
+            var NgayThangNam = DateTime.Now;
+
+            if (user != null)
             {
-                var user = db.People.FirstOrDefault(p => p.UserID == txtName.Text &&
-                            p.PasswordHash == txtMK.Text);
+                // Cập nhật thông tin người dùng hiện tại
+                CurrentUser.UserID = user.UserID;
+                CurrentUser.FullName = user.FullName;
+                CurrentUser.Role = user.Role.Role1;
 
-                if (user != null)
+                // ✅ Cập nhật thời gian chấm công
+                user.Timekeeping = NgayThangNam;
+                db.SaveChanges();
+
+                // Thông báo
+                notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+                notifyIcon1.BalloonTipTitle = "Thông báo";
+                notifyIcon1.BalloonTipText = $"Đăng nhập thành công với vai trò {user.Role.Role1}";
+                notifyIcon1.ShowBalloonTip(1000);
+
+                // Mở form tương ứng
+                this.Hide();
+                if (user.Role.Role1 == "Admin")
                 {
-                    // LƯU THÔNG TIN USER ĐĂNG NHẬP
-                    CurrentUser.UserID = user.UserID;
-                    CurrentUser.FullName = user.FullName;
-                    CurrentUser.Role = user.Role.Role1;
-
-                    if (user.Role.Role1 == "Admin")
-                    {
-                        notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                        notifyIcon1.BalloonTipTitle = "Thông báo";
-                        notifyIcon1.BalloonTipText = "Đăng nhập thành công với vai trò Quản trị viên";
-                        notifyIcon1.ShowBalloonTip(1000);
-
-                        this.Hide();
-                        admin2 ad = new admin2();
-                        ad.ShowDialog();
-                        this.Close();
-                    }
-                    else
-                    {
-                        notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                        notifyIcon1.BalloonTipTitle = "Thông báo";
-                        notifyIcon1.BalloonTipText = "Đăng nhập thành công với vai trò " + user.Role.Role1;
-                        notifyIcon1.ShowBalloonTip(1000);
-
-                        this.Hide();
-                        FormNV nv = new FormNV();
-                        nv.ShowDialog();
-                        this.Close();
-                    }
+                    new admin2().ShowDialog();
                 }
                 else
                 {
-                    errorProvider1.SetError(txtMK, "Tên đăng nhập hoặc mật khẩu không đúng");
-                    errorProvider1.SetError(txtName, "Tên đăng nhập hoặc mật khẩu không đúng");
-                    notifyIcon1.BalloonTipIcon = ToolTipIcon.Error;
-                    notifyIcon1.BalloonTipTitle = "Thông báo";
-                    notifyIcon1.BalloonTipText = "sai ten dang nhap hoac mk";
-                    notifyIcon1.ShowBalloonTip(1000);
+                    new FormNV().ShowDialog();
                 }
+                this.Close();
+            }
+            else
+            {
+                errorProvider1.SetError(txtMK, "Tên đăng nhập hoặc mật khẩu không đúng");
+                errorProvider1.SetError(txtName, "Tên đăng nhập hoặc mật khẩu không đúng");
+                notifyIcon1.BalloonTipIcon = ToolTipIcon.Error;
+                notifyIcon1.BalloonTipTitle = "Thông báo";
+                notifyIcon1.BalloonTipText = "Sai tên đăng nhập hoặc mật khẩu";
+                notifyIcon1.ShowBalloonTip(1000);
             }
         }
+
 
 
         private void btnReload_Click(object sender, EventArgs e)

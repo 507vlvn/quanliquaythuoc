@@ -9,5 +9,6 @@ namespace QuanLyQuayThuoc
     internal class CurrentBill
     {
         public static string MaHoaDonHienTai { get; set; } = "0";
+        public static string SoDienThoaiHienTai { get; set; } = ""; 
     }
 }

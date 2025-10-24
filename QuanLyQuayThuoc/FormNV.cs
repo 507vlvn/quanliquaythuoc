@@ -29,8 +29,11 @@ namespace QuanLyQuayThuoc
 
         private void FormNV_Load(object sender, EventArgs e)
         {
-           
-           
+            uc_proNv profi = new uc_proNv();
+            profi.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(profi);
+
         }
 
         private void btnKiemTraDonHang_Click(object sender, EventArgs e)

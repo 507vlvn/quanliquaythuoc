@@ -46,6 +46,7 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2Button();
+            this.NgayThangNam = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -106,6 +107,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
+            this.panel2.Controls.Add(this.NgayThangNam);
             this.panel2.Controls.Add(this.guna2CirclePictureBox1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -118,7 +120,7 @@
             // 
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(40, 161);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(40, 310);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(234, 228);
@@ -131,7 +133,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(30, 9);
+            this.label4.Location = new System.Drawing.Point(30, 129);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(273, 110);
@@ -300,6 +302,26 @@
             this.btnSignIn.Text = "Đăng Nhập";
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
+            // NgayThangNam
+            // 
+            this.NgayThangNam.AutoRoundedCorners = true;
+            this.NgayThangNam.BackColor = System.Drawing.Color.Transparent;
+            this.NgayThangNam.BorderThickness = 2;
+            this.NgayThangNam.Checked = true;
+            this.NgayThangNam.CustomFormat = "yyyy-MM-dd";
+            this.NgayThangNam.Enabled = false;
+            this.NgayThangNam.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
+            this.NgayThangNam.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.NgayThangNam.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.NgayThangNam.Location = new System.Drawing.Point(12, 3);
+            this.NgayThangNam.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.NgayThangNam.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.NgayThangNam.Name = "NgayThangNam";
+            this.NgayThangNam.Size = new System.Drawing.Size(314, 36);
+            this.NgayThangNam.TabIndex = 39;
+            this.NgayThangNam.UseTransparentBackground = true;
+            this.NgayThangNam.Value = new System.DateTime(2025, 10, 22, 15, 23, 52, 363);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,6 +374,7 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private Guna.UI2.WinForms.Guna2Button btnSignIn;
+        private Guna.UI2.WinForms.Guna2DateTimePicker NgayThangNam;
     }
 }
 

@@ -32,6 +32,7 @@ namespace QuanLyQuayThuoc.User
             if (!string.IsNullOrEmpty(CurrentBill.MaHoaDonHienTai) && CurrentBill.MaHoaDonHienTai != "0")
             {
                 labMHD.Text = CurrentBill.MaHoaDonHienTai;
+                txtSDT.Text = CurrentBill.SoDienThoaiHienTai; 
                 loadgridviewchitiethoadon();
                 txtSDT.Enabled = false;
             }
@@ -275,7 +276,6 @@ namespace QuanLyQuayThuoc.User
                     return;
                 }
             }
-            // Nếu chưa có hóa đơn nào thì tạo mới
             if (labMHD.Text == "0")
             {
                 labMHD.Text = TaoMaHoaDon();
@@ -292,11 +292,11 @@ namespace QuanLyQuayThuoc.User
                 db.SaveChanges();
 
                 CurrentBill.MaHoaDonHienTai = labMHD.Text;
+                CurrentBill.SoDienThoaiHienTai = soDienThoai;
 
                 dgvdsThuoc.Enabled = true;
                 txtSDT.Enabled = false;
             }
-
             int slTon = db.Thuocs.Where(p => p.Ma_san_pham == txtmasanpham.Text)
                                  .Select(p => p.So_Luong_ton)
                                  .FirstOrDefault();
@@ -370,6 +370,7 @@ namespace QuanLyQuayThuoc.User
                 labtongcong.Text = "0";
                 labMHD.Text = "0";
                 CurrentBill.MaHoaDonHienTai = "0";
+                CurrentBill.SoDienThoaiHienTai = "";
                 loadgridviewchitiethoadon();
                 clearInputFields();
                 txtSDT.Enabled = true;
