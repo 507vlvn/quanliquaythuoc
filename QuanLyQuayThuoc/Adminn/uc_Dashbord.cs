@@ -60,12 +60,24 @@ namespace QuanLyQuayThuoc.Adminn
                 var today = DateTime.Now.Date;
                 var futureDate = today.AddDays(30);
 
-                var expiringMedicines = db.Thuocs
+                // Đếm thuốc sắp hết hạn (trong 30 ngày tới)
+                int expiringMedicines = db.Thuocs
                     .Where(med => med.Ngay_het_han >= today && med.Ngay_het_han <= futureDate)
-                    .ToList();
+                    .Count();
 
-                btnHSD.Text = $"Thuốc sắp hết hạn: {expiringMedicines.Count}";
-                btnHSD.FillColor = Color.OrangeRed;
+       
+                if (expiringMedicines > 0)
+                {
+                    btnHSD.Text = $"Sắp hết hạn: {expiringMedicines}";
+                    btnHSD.FillColor = Color.Red; // Đỏ cho đã hết hạn
+
+                }
+                else
+                {
+                    btnHSD.Text = "Sắp hết hạn:0";
+                    btnHSD.FillColor = Color.LightGreen;
+                }
+
                 btnHSD.Enabled = true;
             }
             catch (Exception ex)
@@ -73,7 +85,7 @@ namespace QuanLyQuayThuoc.Adminn
                 MessageBox.Show($"Lỗi khi kiểm tra hạn sử dụng thuốc: {ex.Message}",
                     "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }   
+        }
         private void TongNhanVien()
         {
             try

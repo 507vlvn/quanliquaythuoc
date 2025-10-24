@@ -30,8 +30,11 @@ namespace QuanLyQuayThuoc.Adminn
         {
             hienthi();
             dateStart.Value = DateTime.Now.Date.AddDays(-30);
+            dateStart.MinDate = DateTime.Now.AddMonths(-5);
+            dateEnd.MaxDate = DateTime.Now.Date;
             loadccb();
             loadtongtien();
+
         }
         private void hienthi()
         {
