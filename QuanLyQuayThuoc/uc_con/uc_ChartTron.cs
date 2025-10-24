@@ -76,6 +76,9 @@ namespace QuanLyQuayThuoc.uc_con
                     return;
                 }
 
+                // Đảo ngược danh sách để hiển thị từ cao đến thấp trên biểu đồ ngang
+                topProducts.Reverse();
+
                 // Chuẩn bị dữ liệu cho biểu đồ
                 var tenSanPham = new List<string>();
                 var soLuongBan = new List<int>();
@@ -93,48 +96,48 @@ namespace QuanLyQuayThuoc.uc_con
 
                 // Cấu hình biểu đồ cột ngang (RowSeries)
                 cartesianChart1.Series = new SeriesCollection
-                {
-                    new RowSeries
-                    {
-                        Title = "Số lượng đã bán",
-                        Values = new ChartValues<int>(soLuongBan),
-                        DataLabels = true,
-                        Fill = System.Windows.Media.Brushes.MediumSeaGreen,
-                        LabelPoint = point => $"{point.Y} viên",
-                        MaxRowHeigth = 40
-                    }
-                };
+        {
+            new RowSeries
+            {
+                Title = "Số lượng đã bán",
+                Values = new ChartValues<int>(soLuongBan),
+                DataLabels = true,
+                Fill = System.Windows.Media.Brushes.MediumSeaGreen,
+                LabelPoint = point => $"{point.Y} viên",
+                MaxRowHeigth = 40
+            }
+        };
 
                 // Cấu hình trục X (số lượng)
                 cartesianChart1.AxisX = new AxesCollection
+        {
+            new Axis
+            {
+                Title = "Số lượng bán ra",
+                LabelFormatter = value => value.ToString("N0"),
+                MinValue = 0,
+                Separator = new Separator
                 {
-                    new Axis
-                    {
-                        Title = "Số lượng bán ra",
-                        LabelFormatter = value => value.ToString("N0"),
-                        MinValue = 0,
-                        Separator = new Separator
-                        {
-                            Stroke = System.Windows.Media.Brushes.LightGray,
-                            StrokeThickness = 1
-                        }
-                    }
-                };
+                    Stroke = System.Windows.Media.Brushes.LightGray,
+                    StrokeThickness = 1
+                }
+            }
+        };
 
                 // Cấu hình trục Y (tên sản phẩm)
                 cartesianChart1.AxisY = new AxesCollection
+        {
+            new Axis
+            {
+                Title = "Sản phẩm",
+                Labels = tenSanPham,
+                Separator = new Separator
                 {
-                    new Axis
-                    {
-                        Title = "Sản phẩm",
-                        Labels = tenSanPham,
-                        Separator = new Separator
-                        {
-                            Step = 1,
-                            IsEnabled = false
-                        }
-                    }
-                };
+                    Step = 1,
+                    IsEnabled = false
+                }
+            }
+        };
 
                 // Cấu hình Legend
                 cartesianChart1.LegendLocation = LegendLocation.Top;
