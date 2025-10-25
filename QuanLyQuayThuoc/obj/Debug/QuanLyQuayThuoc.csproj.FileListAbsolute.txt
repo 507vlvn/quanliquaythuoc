@@ -254,7 +254,6 @@ D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.CoreCompileInputs.cach
 D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQu.BA465F03.Up2Date
 D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe
 D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.pdb
-D:\doan2\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe.config
 C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.csproj.AssemblyReference.cache
 C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.exe.config
 C:\Users\az012\OneDrive\Desktop\backup 2310\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.admin2.resources

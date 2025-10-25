@@ -221,7 +221,7 @@ namespace QuanLyQuayThuoc.Adminn
         {
             txtMaND.Text = dgvNguoiDung.CurrentRow.Cells["UserID"].Value.ToString();
             //txtTenND.Text = dgvNguoiDung.CurrentRow.Cells["FullName"].Value.ToString();
-            if (dgvNguoiDung.CurrentRow.Cells["PasswordHash"].Value != null)
+            if (dgvNguoiDung.CurrentRow.Cells["FullName"].Value != null)
                 txtTenND.Text = dgvNguoiDung.CurrentRow.Cells["FullName"].Value.ToString();
             else txtTenND.Text = null;
             if (dgvNguoiDung.CurrentRow.Cells["PasswordHash"].Value != null)

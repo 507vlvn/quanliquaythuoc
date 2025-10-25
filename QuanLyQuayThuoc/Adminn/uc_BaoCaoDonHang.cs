@@ -304,44 +304,7 @@ namespace QuanLyQuayThuoc.User
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        //// Thêm phương thức lọc theo ngày (nếu có DateTimePicker)
-        //private void FilterByDate(DateTime? tuNgay, DateTime? denNgay)
-        //{
-        //    try
-        //    {
-        //        var query = db.HoaDons.AsQueryable();
-
-        //        if (tuNgay.HasValue)
-        //        {
-        //            query = query.Where(hd => hd.Ngay_ban >= tuNgay.Value);
-        //        }
-
-        //        if (denNgay.HasValue)
-        //        {
-        //            DateTime endDate = denNgay.Value.Date.AddDays(1).AddSeconds(-1);
-        //            query = query.Where(hd => hd.Ngay_ban <= endDate);
-        //        }
-
-        //        var result = query
-        //            .Select(hd => new
-        //            {
-        //                Ma_Hoa_Don = hd.Ma_hoa_don,
-        //                Ngay_Ban = hd.Ngay_ban,
-        //                So_Dien_Thoai = hd.So_Dien_Thoai,
-        //                Tong_Tien = hd.Tong_Tien,
-        //                So_San_Pham = hd.ChiTietHoaDons.Count()
-        //            })
-        //            .OrderByDescending(hd => hd.Ngay_Ban)
-        //            .ToList();
-
-        //        dgvQuanLiHoaDon.DataSource = result;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show($"Lỗi khi lọc theo ngày: {ex.Message}", "Lỗi",
-        //            MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
+        
 
         private void dgvQuanLiHoaDon_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
         {

@@ -96,17 +96,17 @@ namespace QuanLyQuayThuoc.uc_con
 
                 // Cấu hình biểu đồ cột ngang (RowSeries)
                 cartesianChart1.Series = new SeriesCollection
-        {
-            new RowSeries
-            {
+                {
+                new RowSeries
+                {
                 Title = "Số lượng đã bán",
                 Values = new ChartValues<int>(soLuongBan),
                 DataLabels = true,
                 Fill = System.Windows.Media.Brushes.MediumSeaGreen,
                 LabelPoint = point => $"{point.Y} viên",
                 MaxRowHeigth = 40
-            }
-        };
+                 }
+                 };
 
                 // Cấu hình trục X (số lượng)
                 cartesianChart1.AxisX = new AxesCollection
