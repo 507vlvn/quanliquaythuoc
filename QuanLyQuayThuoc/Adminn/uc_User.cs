@@ -51,6 +51,7 @@ namespace QuanLyQuayThuoc.Adminn
                 RoleName = p.Role != null ? p.Role.Role1 : "",
                 
             }).ToList();
+
             dgvNguoiDung.DataSource = list;
             dgvNguoiDung.Columns["UserID"].HeaderText = "Tên Đăng Nhập";
             dgvNguoiDung.Columns["FullName"].HeaderText = "Tên Người Dùng";
@@ -221,7 +222,7 @@ namespace QuanLyQuayThuoc.Adminn
         {
             txtMaND.Text = dgvNguoiDung.CurrentRow.Cells["UserID"].Value.ToString();
             //txtTenND.Text = dgvNguoiDung.CurrentRow.Cells["FullName"].Value.ToString();
-            if (dgvNguoiDung.CurrentRow.Cells["PasswordHash"].Value != null)
+            if (dgvNguoiDung.CurrentRow.Cells["FullName"].Value != null)
                 txtTenND.Text = dgvNguoiDung.CurrentRow.Cells["FullName"].Value.ToString();
             else txtTenND.Text = null;
             if (dgvNguoiDung.CurrentRow.Cells["PasswordHash"].Value != null)

@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.NgayThangNam = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,7 +47,6 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2Button();
-            this.NgayThangNam = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -72,7 +72,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(56, 52);
             this.btnExit.TabIndex = 1;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
             // 
             // label2
             // 
@@ -115,6 +115,26 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(329, 636);
             this.panel2.TabIndex = 0;
+            // 
+            // NgayThangNam
+            // 
+            this.NgayThangNam.AutoRoundedCorners = true;
+            this.NgayThangNam.BackColor = System.Drawing.Color.Transparent;
+            this.NgayThangNam.BorderThickness = 2;
+            this.NgayThangNam.Checked = true;
+            this.NgayThangNam.CustomFormat = "yyyy-MM-dd";
+            this.NgayThangNam.Enabled = false;
+            this.NgayThangNam.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
+            this.NgayThangNam.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.NgayThangNam.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.NgayThangNam.Location = new System.Drawing.Point(12, 3);
+            this.NgayThangNam.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.NgayThangNam.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.NgayThangNam.Name = "NgayThangNam";
+            this.NgayThangNam.Size = new System.Drawing.Size(314, 36);
+            this.NgayThangNam.TabIndex = 39;
+            this.NgayThangNam.UseTransparentBackground = true;
+            this.NgayThangNam.Value = new System.DateTime(2025, 10, 22, 15, 23, 52, 363);
             // 
             // guna2CirclePictureBox1
             // 
@@ -301,26 +321,6 @@
             this.btnSignIn.TabIndex = 3;
             this.btnSignIn.Text = "Đăng Nhập";
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
-            // 
-            // NgayThangNam
-            // 
-            this.NgayThangNam.AutoRoundedCorners = true;
-            this.NgayThangNam.BackColor = System.Drawing.Color.Transparent;
-            this.NgayThangNam.BorderThickness = 2;
-            this.NgayThangNam.Checked = true;
-            this.NgayThangNam.CustomFormat = "yyyy-MM-dd";
-            this.NgayThangNam.Enabled = false;
-            this.NgayThangNam.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(204)))));
-            this.NgayThangNam.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.NgayThangNam.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.NgayThangNam.Location = new System.Drawing.Point(12, 3);
-            this.NgayThangNam.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.NgayThangNam.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.NgayThangNam.Name = "NgayThangNam";
-            this.NgayThangNam.Size = new System.Drawing.Size(314, 36);
-            this.NgayThangNam.TabIndex = 39;
-            this.NgayThangNam.UseTransparentBackground = true;
-            this.NgayThangNam.Value = new System.DateTime(2025, 10, 22, 15, 23, 52, 363);
             // 
             // Form1
             // 

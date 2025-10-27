@@ -35,7 +35,7 @@ namespace QuanLyQuayThuoc
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
 
         }
         private void btnSignIn_Click(object sender, EventArgs e)
@@ -55,29 +55,10 @@ namespace QuanLyQuayThuoc
             }
 
             var user = db.People.FirstOrDefault(p => p.UserID == txtName.Text && p.PasswordHash == txtMK.Text);
-            var now = DateTime.Now;
 
             if (user != null)
             {
-                if (user.Timekeeping.HasValue && user.Timekeeping.Value.Date == now.Date)
-                {
-                    notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                    notifyIcon1.BalloonTipTitle = "Thông báo";
-                    notifyIcon1.BalloonTipText = $"Bạn đã đăng nhập hôm nay ({now:dd/MM/yyyy})\n" +
-                                                  $"Lần đăng nhập trước: {user.Timekeeping.Value:HH:mm:ss}";
-                    notifyIcon1.ShowBalloonTip(1500);
-                }
-                else
-                {
-                    user.Timekeeping = now;
-                    db.SaveChanges();
-
-                    notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                    notifyIcon1.BalloonTipTitle = "Thông báo";
-                    notifyIcon1.BalloonTipText = $"Điểm danh thành công lúc {now:HH:mm:ss dd/MM/yyyy}";
-                    notifyIcon1.ShowBalloonTip(1500);
-                }
-
+               
                 CurrentUser.UserID = user.UserID;
                 CurrentUser.FullName = user.FullName;
                 CurrentUser.Role = user.Role.Role1;
@@ -85,10 +66,20 @@ namespace QuanLyQuayThuoc
                 this.Hide();
                 if (user.Role.Role1 == "Admin")
                 {
+
+                    notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+                    notifyIcon1.BalloonTipTitle = "Thông báo";
+                    notifyIcon1.BalloonTipText = "Bạn Đang Đăng Nhập Với Chức Vụ Là Quản Trị Viên";
+                    notifyIcon1.ShowBalloonTip(1000);
                     new admin2().ShowDialog();
                 }
                 else
                 {
+
+                    notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+                    notifyIcon1.BalloonTipTitle = "Thông báo";
+                    notifyIcon1.BalloonTipText = "Bạn Đang Đăng Nhập Với Chức Vụ Là Nhân Viên";
+                    notifyIcon1.ShowBalloonTip(1000);
                     new FormNV().ShowDialog();
                 }
 
@@ -105,6 +96,7 @@ namespace QuanLyQuayThuoc
                 notifyIcon1.ShowBalloonTip(1000);
             }
         }
+
         private void btnReload_Click(object sender, EventArgs e)
         {
 
@@ -155,7 +147,10 @@ namespace QuanLyQuayThuoc
             }
         }
 
-  
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
 

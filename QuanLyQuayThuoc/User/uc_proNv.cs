@@ -1,4 +1,6 @@
-﻿using QuanLyQuayThuoc.sql;
+﻿using QuanLyQuayThuoc.Adminn;
+using QuanLyQuayThuoc.sql;
+using QuanLyQuayThuoc.uc_con;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
@@ -23,11 +25,10 @@ namespace QuanLyQuayThuoc.User
 
         private void uc_proNv_Load(object sender, EventArgs e)
         {
-            dgv.DataSource = db.People.Select(p => new
-            {
-                p.Timekeeping,
-            }).ToList();
-
+            uc_ChartTron banThuoc = new uc_ChartTron();
+            banThuoc.Dock = DockStyle.Fill;  // Cho vừa khít panel
+            panel1.Controls.Clear();   // Xóa các control cũ (nếu có)
+            panel1.Controls.Add(banThuoc);   // Thêm usercontrol mới vào panel.
             Loaddata();
         }
 

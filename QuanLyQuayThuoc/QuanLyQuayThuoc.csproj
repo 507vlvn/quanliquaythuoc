@@ -108,12 +108,6 @@
     <Compile Include="sql\Person.cs" />
     <Compile Include="sql\Role.cs" />
     <Compile Include="sql\Thuoc.cs" />
-    <Compile Include="uc_con\uc_banChay.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="uc_con\uc_banChay.Designer.cs">
-      <DependentUpon>uc_banChay.cs</DependentUpon>
-    </Compile>
     <Compile Include="uc_con\uc_ChartNgang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -202,9 +196,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Adminn\uc_User.resx">
       <DependentUpon>uc_User.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="uc_con\uc_banChay.resx">
-      <DependentUpon>uc_banChay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uc_con\uc_ChartNgang.resx">
       <DependentUpon>uc_ChartNgang.cs</DependentUpon>

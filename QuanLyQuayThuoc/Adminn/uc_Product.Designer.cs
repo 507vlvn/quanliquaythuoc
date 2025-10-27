@@ -110,12 +110,12 @@
             this.txtseach.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtseach.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtseach.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtseach.Location = new System.Drawing.Point(894, 3);
+            this.txtseach.Location = new System.Drawing.Point(843, 3);
             this.txtseach.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtseach.Name = "txtseach";
             this.txtseach.PlaceholderText = "";
             this.txtseach.SelectedText = "";
-            this.txtseach.Size = new System.Drawing.Size(148, 31);
+            this.txtseach.Size = new System.Drawing.Size(199, 31);
             this.txtseach.TabIndex = 3;
             this.txtseach.TextChanged += new System.EventHandler(this.txtseach_TextChanged);
             // 
@@ -124,7 +124,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label5.Location = new System.Drawing.Point(791, 10);
+            this.label5.Location = new System.Drawing.Point(740, 6);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 24);

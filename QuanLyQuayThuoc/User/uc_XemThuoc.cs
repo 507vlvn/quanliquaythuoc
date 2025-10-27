@@ -70,15 +70,7 @@ namespace QuanLyQuayThuoc.User
                 var result = db.Thuocs
                     .Where(t =>
                         t.Ma_san_pham.ToLower().Contains(keyword) ||
-                        t.Ten_san_pham.ToLower().Contains(keyword) ||
-                        t.Thanh_phan.ToLower().Contains(keyword) ||
-                        t.Cong_dung.ToLower().Contains(keyword) ||
-                        t.Tac_dung_phu.ToLower().Contains(keyword) ||
-                        t.Nha_san_xuat.ToLower().Contains(keyword) ||
-                        t.So_Luong_ton.ToString().Contains(keyword) ||
-                        t.Gia_ban.ToString().Contains(keyword) ||
-                        t.Ngay_san_xuat.ToString().Contains(keyword) ||
-                        t.Ngay_het_han.ToString().Contains(keyword)
+                        t.Ten_san_pham.ToLower().Contains(keyword)
                     )
                     .Select(t => new
                     {
@@ -169,7 +161,7 @@ namespace QuanLyQuayThuoc.User
                 Thanh_Tien = ct.Thanh_Tien
             }).ToList();
 
-            string thongTin = $"===== CHI TIẾT THUỐC =====\n\n";
+            string thongTin = $"    CHI TIẾT THUỐC      \n\n";
             thongTin += $"Mã thuốc: {thuoc.Ma_san_pham}\n";
             thongTin += $"Tên thuốc: {thuoc.Ten_san_pham}\n";
             thongTin += $"Thành phần: {thuoc.Thanh_phan}\n";

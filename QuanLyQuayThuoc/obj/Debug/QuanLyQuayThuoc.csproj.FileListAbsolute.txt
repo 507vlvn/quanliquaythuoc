@@ -63,7 +63,6 @@ C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.admin2.resources
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_ThongKeDoanhThu.resources
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_User.resources
-C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_banChay.resources
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.uc_con.uc_ChartNgang.resources
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.uc_con.uc_ChartTron.resources
 C:\Users\HP\Documents\quanliquaythuoc\QuanLyQuayThuoc\obj\Debug\QuanLyQuayThuoc.Adminn.uc_danhsachdonhang.resources
